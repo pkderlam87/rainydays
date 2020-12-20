@@ -27,7 +27,18 @@
             </ul>
         </nav>
     </header>
-
+    <main>
+        <h4>You can send a message for us. We will return as soon as possible.</h4>
+        <form action="submit.php" method="POST">
+            <label for="name">Your name</label>
+            <input id="name" class="form" type="text" name="your_name">
+            <label for="email">Your e-mail</label>
+            <input id="email" class="form" type="email" name="your_email">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" type="text" rows="7" cols="60"></textarea>
+            <input class="cta-about_send" type="submit" value="Send">
+        </form>
+    </main>
     <footer>
         <div>
             <p>Rainydays</p>
