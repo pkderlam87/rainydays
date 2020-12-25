@@ -75,18 +75,14 @@
                     </select>
                     <div>
                         <h4>Color</h4>
-                        <label for="color-yellow"><img src="../images/raincoat-dovre_yellow.jpg"
-                                alt="The same yellow raincoat"></label>
-                        <input type="checkbox" id="color-yellow">
-                        <label for="color-marine"><img src="../images/raincoat-dovre_marine.jpg"
-                                alt="The same marine raincoat"></label>
-                        <input type="checkbox" id="color-marine">
-                        <label for="color-gray"><img src="../images/raincoat-dovre_gray.jpg"
-                                alt="The same lightgray raincoat"></label>
-                        <input type="checkbox" id="color-gray">
-                        <label for="color-red"><img src="../images/raincoat-dovre_red.jpg"
-                                alt="The same red raincoat"></label>
-                        <input type="checkbox" id="color-red">
+                        <input type="radio" name="color" value="yellow" id="color-yellow"><label for="color-yellow"><img
+                                src="../images/raincoat-dovre_yellow.jpg" alt="The same yellow raincoat"></label>
+                        <input type="radio" name="color" value="marine" id="color-marine"><label for="color-marine"><img
+                                src="../images/raincoat-dovre_marine.jpg" alt="The same marine raincoat"></label>
+                        <input type="radio" name="color" value="gray" id="color-gray"><label for="color-gray"><img
+                                src="../images/raincoat-dovre_gray.jpg" alt="The same lightgray raincoat"></label>
+                        <input type="radio" name="color" value="red" id="color-red"><label for="color-red"><img
+                                src="../images/raincoat-dovre_red.jpg" alt="The same red raincoat"></label>
                     </div>
                 </form>
                 <div>
@@ -94,16 +90,16 @@
                     <h2 class="sale">350,00</h2>
                 </div>
                 <div>
-                    <p id="cta_add">add<i class="fas fa-shopping-cart"></i></p>
+                    <a href="checkout/checkout-full.html" class="cta_add">add<i class="fas fa-cart-plus"></i></a>
                 </div>
             </div>
         </section>
         <p id="cta_back">back</p>
-        <p id="cta_details">details</p>
-        <p id="cta_reviews">reviews</p>
+        <p class="cta_details">details</p>
+        <p class="cta_reviews">reviews</p>
         <footer>
             <div>
-                <img src="images/footer_rainydays.jpg" alt="The second logo of the Rainydays brand.">
+                <img src="../images/footer_rainydays.jpg" alt="The second logo of the Rainydays brand.">
                 <p>Phone: +47 911 11 111</p>
                 <p>E-mail: contact@rainydays.com</p>
             </div>
