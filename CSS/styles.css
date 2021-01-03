@@ -9,6 +9,21 @@ h3,
 h4,
 nav,
 a {
-    font-family: 'Work Sans';
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
+    text-decoration: none;
+}
+p{
+    font-family: 'verdana', sans-serif;
+}
+
+/*hamburger menu*/
+nav{
+    display: none;
+}
+#hamburger-menu{
+    display:none;
+}
+#hamburger-menu:checked ~nav{
+    display: block;
 }
