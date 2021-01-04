@@ -27,7 +27,13 @@ nav{
 }
 #hamburger-menu:checked ~nav{
     display: block;
+    background-color:#f7f7f7;
+    border: 2px solid #595452;
+    border-radius: 6px;
+    color:#595452;
+    width: 40%;
 }
 li{
     list-style: none;
+    padding: 3%;
 }
