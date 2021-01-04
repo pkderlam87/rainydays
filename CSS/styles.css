@@ -16,7 +16,24 @@ a {
 p{
     font-family: 'verdana', sans-serif;
 }
+/*Grid template areas
+.logo{grid-area: rdlogo;}
+nav{grid-area: rdnav;}
+main{grid-area: rdmain;}
+footer{grid-area: rdfooter;}
 
+body{
+    display: grid;
+    grid-template-areas:
+    'rdnav  rdlogo'
+    'main'
+    'footer'
+}*/
+/*logo*/
+.logo img{
+    display: grid;
+    width: 70%;
+}
 /*hamburger menu*/
 nav{
     display: none;
@@ -37,3 +54,11 @@ li{
     list-style: none;
     padding: 3%;
 }
+/*Raincoat-dovre*/
+#add-to-cart, .cart {
+    display: none;
+  }
+  
+  #add-to-cart:checked ~ .cart{
+    display: block;
+  }
