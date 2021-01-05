@@ -90,17 +90,19 @@ li{
     text-align: center;
     justify-content: center;
   }
-.circle{
+.circle img{
     animation-name: rotation;
     animation-duration: 2s;
     animation-iteration-count: 4;
     animation-fill-mode: url('../../checkout-sucess.html');
 }
 @keyframes rotation{
-    0% {left: 90}
-    50% {left:}
-    100% {left:}
+    100% {rotate: 90deg;}
+    50% {rotate: 180deg;}
+    70% {rotate: 240deg;}
+    100% {rotate: 360deg;}
 }
+
 /*Media Querie*/
 @media (min-width:600px){
     nav li {
