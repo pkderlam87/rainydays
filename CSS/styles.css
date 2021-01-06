@@ -69,6 +69,7 @@ li{
     padding: 1% 2%; 
 }
 #cta_back,
+.cta_done,
 .cta-products__autumn2020,
 .cta-products__winter2020-2021,
 .cta-products__autumn-men,
@@ -87,7 +88,8 @@ li{
     display: flex;
 }
 .cta-products__autumn2020,
-.cta-products__winter2020-2021{
+.cta-products__winter2020-2021,
+.cta_done{
     width: 50%;
     border-radius: 20px;
 }
@@ -96,7 +98,8 @@ li{
 .cta-products__autumn-men,
 .cta-products__autumn-woman,
 .cta-products__autumn-unisex,
-.cta_especific-products{
+.cta_especific-products,
+.cta_done{
     padding: 3%;
     justify-content: center;
 }
@@ -142,6 +145,11 @@ i.fas.fa-cart-plus{
     width: 10%;
     justify-content: center;
 }
+.cta_done{
+    background-color: #86888A;
+    color: #FFF;
+    margin: 5%;
+}
 /*Home*/
 .home_main{
     background: url('/images/background-triangle.jpg') right no-repeat;
@@ -167,6 +175,7 @@ i.fas.fa-cart-plus{
     border: 1px solid #707070;
     text-align: center;
     justify-content: center;
+    margin: 10%;
   }
 .circle img{
     animation-name: rotation;
