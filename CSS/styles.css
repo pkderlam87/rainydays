@@ -34,7 +34,6 @@ img{
 /*hamburger menu*/
 nav{
     display: none;
-    
 }
 #hamburger-menu{
     display:none;
@@ -62,6 +61,17 @@ li{
 }
 /*CTA*/
 #cta_back{
+    background-color: #F1F2E6;
+    border-radius: 40px;
+    width: 6%;
+    padding: 1% 2%; 
+}
+#cta_back,
+.cta-products__autumn2020,
+.cta-products__winter2020-2021,
+.cta-products__autumn-men,
+.cta-products__autumn-woman,
+.cta-products__autumn-unisex{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -69,10 +79,33 @@ li{
     text-transform: uppercase ;
     background-color: #F1F2E6;
     border: 3px solid #707070;
-    border-radius: 40%;
     display: flex;
-    width: 6%;
-    padding: 1% 2%;
+}
+.cta-products__autumn2020,
+.cta-products__winter2020-2021{
+    width: 50%;
+    border-radius: 20px;
+}
+.cta-products__autumn2020,
+.cta-products__winter2020-2021,
+.cta-products__autumn-men,
+.cta-products__autumn-woman,
+.cta-products__autumn-unisex{
+    padding: 3%;
+    justify-content: center;
+}
+.cta-products__winter2020-2021,
+.cta-products__autumn-men{
+    background-color: #dbe2e7;
+}
+.cta-products__autumn-woman{
+    background-color: #F4F6F8;
+}
+.cta-products__autumn-men,
+.cta-products__autumn-woman,
+.cta-products__autumn-unisex{
+    border-radius: 23px;
+    width: 30%;
 }
 /*Home*/
 .home_main{
