@@ -8,8 +8,10 @@ h2,
 h3,
 h4,
 h5,
+h6,
 nav,
-a{
+a,
+figure p{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -71,13 +73,16 @@ li{
 .cta-products__winter2020-2021,
 .cta-products__autumn-men,
 .cta-products__autumn-woman,
-.cta-products__autumn-unisex{
+.cta-products__autumn-unisex,
+.cta_especific-products,
+.cta_add,
+.cta_checkout,
+.cta_edit{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
     color: #595452;
     text-transform: uppercase ;
-    background-color: #F1F2E6;
     border: 3px solid #707070;
     display: flex;
 }
@@ -90,12 +95,15 @@ li{
 .cta-products__winter2020-2021,
 .cta-products__autumn-men,
 .cta-products__autumn-woman,
-.cta-products__autumn-unisex{
+.cta-products__autumn-unisex,
+.cta_especific-products{
     padding: 3%;
     justify-content: center;
 }
 .cta-products__winter2020-2021,
-.cta-products__autumn-men{
+.cta-products__autumn-men,
+.cta_checkout,
+.cta_edit{
     background-color: #dbe2e7;
 }
 .cta-products__autumn-woman{
@@ -103,9 +111,36 @@ li{
 }
 .cta-products__autumn-men,
 .cta-products__autumn-woman,
-.cta-products__autumn-unisex{
+.cta-products__autumn-unisex,
+.cta_especific-products,
+.cta_checkout{
     border-radius: 23px;
     width: 30%;
+}
+.cta_especific-products{
+    background-color: #DAE1E6;
+    width: 10%;
+    padding: 1% 2%;
+}
+.cta_add{
+    background-color: #86888A;
+    color: #FFF;
+    width: 20%;
+    border-radius: 23px;
+    padding: 10px;
+}
+i.fas.fa-cart-plus{
+    margin: 0px 0px 0px 10px; 
+}
+.cta_checkout{
+    width: 20%;
+    padding: 0%;
+    justify-content: center;
+}
+.cta_edit{
+    border-radius: 23px;
+    width: 10%;
+    justify-content: center;
 }
 /*Home*/
 .home_main{
@@ -119,6 +154,9 @@ li{
   #add-to-cart:checked ~ .cart{
     display: block;
   }
+.sale{
+    text-decoration: line-through;
+}
 /*Checkout-full*/
 #cta_done, .modal_wait {
     display: none;
@@ -144,7 +182,8 @@ li{
 /*Footer*/
 footer{
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
-    font-weight: 600;
+}
+footer h5{
     color: #5F5C54;
 }
 .footer_logo{
