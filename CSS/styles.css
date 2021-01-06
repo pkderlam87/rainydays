@@ -7,32 +7,29 @@ h1,
 h2,
 h3,
 h4,
+h5,
 nav,
 a {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
+    color: #595452;
 }
 p{
     font-family: 'verdana', sans-serif;
+    font-size: 0.6em;
 }
-/*Grid template areas
-.logo{grid-area: rdlogo;}
-nav{grid-area: rdnav;}
-main{grid-area: rdmain;}
-footer{grid-area: rdfooter;}
-
-body{
-    display: grid;
-    grid-template-areas:
-    'rdnav  rdlogo'
-    'main'
-    'footer'
-}*/
+i{
+    color: #0F100A;
+}
 /*logo*/
 .logo img{
     display: grid;
     width: 70%;
+}
+/*Images*/
+img{
+    width: 60%;
 }
 /*hamburger menu*/
 nav{
@@ -71,6 +68,10 @@ li{
     background-color: #B8BF80;
     border: 3px solid #707070;
 }
+/*Home*/
+.home_main{
+    background: url('/images/background-triangle.jpg') right no-repeat;
+}
 /*Raincoat-dovre*/
 #add-to-cart, .cart {
     display: none;
@@ -94,7 +95,6 @@ li{
     animation-name: rotation;
     animation-duration: 2s;
     animation-iteration-count: 4;
-    animation-fill-mode: url('../../checkout-sucess.html');
 }
 @keyframes rotation{
     100% {rotate: 90deg;}
@@ -102,9 +102,35 @@ li{
     70% {rotate: 240deg;}
     100% {rotate: 360deg;}
 }
-
+/*Footer*/
+footer{
+    background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
+    font-weight: 600;
+    color: #5F5C54;
+}
+.footer_logo{
+    width: 30%;
+}
+.email_footer{
+    font-style:italic;
+    color: #A3A7A2;
+    text-decoration: underline;
+}
 /*Media Querie*/
 @media (min-width:600px){
+    /*Grid template areas
+.logo{grid-area: rdlogo;}
+nav{grid-area: rdnav;}
+main{grid-area: rdmain;}
+footer{grid-area: rdfooter;}
+
+body{
+    display: grid;
+    grid-template-areas:
+    'rdnav  rdlogo'
+    'main'
+    'footer'
+}*/
     nav li {
         display: inline-block;
         padding: 0px;
@@ -117,5 +143,6 @@ li{
       }
 
 }
+
 @media (min-width:800px){
 }
