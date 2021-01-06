@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 nav,
-a {
+a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -62,11 +62,17 @@ li{
 }
 /*CTA*/
 #cta_back{
-    font-family: 'Work Sans';
-    font-size: 1em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
     color: #595452;
-    background-color: #B8BF80;
+    text-transform: uppercase ;
+    background-color: #F1F2E6;
     border: 3px solid #707070;
+    border-radius: 40%;
+    display: flex;
+    width: 6%;
+    padding: 1% 2%;
 }
 /*Home*/
 .home_main{
