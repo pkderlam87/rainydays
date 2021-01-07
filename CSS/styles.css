@@ -197,6 +197,18 @@ i.fas.fa-cart-plus{
 .home_main{
     background: url('/images/background-triangle.jpg') right no-repeat;
 }
+/*Products*/
+.products-menu{
+    display: block;
+    justify-content: left;
+    background: linear-gradient(0.50turn, #E3E6CE, #E7E9D6, #f2f3e7);
+    width: 24%;
+}
+.products-menu li{
+    font-size: 0.5em;
+    padding: 3%;
+    margin: 3%;
+}
 /*Raincoat-dovre*/
 #add-to-cart, .cart {
     display: none;
