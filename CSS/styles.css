@@ -40,7 +40,8 @@ img{
 .products-options-unisex-autumn img,
 .raincoat-dovre_secondary img,
 .raincoat-dovre_main img,
-.about-product img{
+.about-product img,
+.product_buyed img{
     border-width: 6px;
     border-style: solid;
     border-image: linear-gradient(0.4turn, #F2F1F1, #808080) 2;
@@ -66,7 +67,8 @@ nav{
     left: -1000px;
     position: relative;
 }
-nav ul{
+nav ul,
+.cart ul{
     padding: 3%;
     margin: 3%;
 }
@@ -207,6 +209,20 @@ i.fas.fa-cart-plus{
 }
 .select-color img{
     max-width: 10%;
+}
+.cart{
+    border: 3px solid #707070;
+    width: 90%;
+}
+.cart,
+.cart h5,
+.cart h6{
+    margin: 0%;
+    padding: 1%;   
+}
+.sucess_add,
+.sucess_add i{
+    color: #768C56;
 }
 /*Checkout-full*/
 #cta_done, .modal_wait {
