@@ -34,6 +34,17 @@ i{
 img{
     width: 60%;
 }
+.index_raincoat-red,
+.products_collections img,
+.options-autumn img,
+.products-options-unisex-autumn img,
+.raincoat-dovre_secondary img,
+.raincoat-dovre_main img{
+    border-width: 6px;
+    border-style: solid;
+    border-image: linear-gradient(0.4turn, #F2F1F1, #808080) 2;
+    border-radius: 6px;
+}
 /*hamburger menu*/
 nav{
     display: none;
@@ -47,12 +58,16 @@ nav{
     border: 2px solid #595452;
     border-radius: 6px;
     color:#595452;
-    width: 40%;
+    width: 23%;
     animation-name: menu;
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
     left: -1000px;
     position: relative;
+}
+nav ul{
+    padding: 3%;
+    margin: 3%;
 }
 li{
     list-style: none;
@@ -92,7 +107,7 @@ li{
 .cta-products__winter2020-2021,
 .cta_done{
     width: 50%;
-    border-radius: 20px;
+    border-radius: 23px;
 }
 .cta-products__autumn2020,
 .cta-products__winter2020-2021,
@@ -151,39 +166,51 @@ i.fas.fa-cart-plus{
     color: #FFF;
     margin: 5%;
 }
+.cta-products__autumn2020,
+.cta-products__autumn-unisex{
+    background-color: #F1F2E6;
+}
 /*Home*/
 .index_raincoat-red{
-    box-shadow: 4px 4px 12px 1px rgba(89, 84, 82, .6);
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(2turn, #F2F1F1, #808080) 2;
+    box-shadow: 1px 1px 5px 1px rgba(89, 84, 82, .2);
 }
 .home_main{
     background: url('/images/background-triangle.jpg') right no-repeat;
 }
+.search_shopping i{
+    padding: 1%;
+    background-color: #E5EAED;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+/*Unisex-autumn*/
+
 /*Raincoat-dovre*/
 #add-to-cart, .cart {
     display: none;
-  }
+}
   
-  #add-to-cart:checked ~ .cart{
+#add-to-cart:checked ~ .cart{
     display: block;
-  }
+}
 .sale{
     text-decoration: line-through;
+}
+.select-color img{
+    max-width: 10%;
 }
 /*Checkout-full*/
 #cta_done, .modal_wait {
     display: none;
-  }
+}
   
-  #cta_done:checked ~ .modal_wait{
+#cta_done:checked ~ .modal_wait{
     display: block;
     border: 1px solid #707070;
     text-align: center;
     justify-content: center;
     margin: 10%;
-  }
+}
 .circle img{
     animation-name: rotation;
     animation-duration: 2s;
