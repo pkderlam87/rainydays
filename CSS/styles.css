@@ -12,7 +12,8 @@ h6,
 nav,
 a,
 figure p,
-footer p{
+footer p,
+.bought p{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -41,7 +42,7 @@ img{
 .raincoat-dovre_secondary img,
 .raincoat-dovre_main img,
 .about-product img,
-.product_buyed img{
+.product_bought img{
     border-width: 6px;
     border-style: solid;
     border-image: linear-gradient(0.4turn, #F2F1F1, #808080) 2;
@@ -181,6 +182,14 @@ i.fas.fa-cart-plus{
     width: 20%;
     border-radius: 23px;
 }
+/*Search icon and filter*/
+.search_shopping i,
+.filter_sorter i{
+    padding: 1%;
+    background-color: #E5EAED;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
 /*Home*/
 .index_raincoat-red{
     box-shadow: 1px 1px 5px 1px rgba(89, 84, 82, .2);
@@ -188,19 +197,10 @@ i.fas.fa-cart-plus{
 .home_main{
     background: url('/images/background-triangle.jpg') right no-repeat;
 }
-.search_shopping i{
-    padding: 1%;
-    background-color: #E5EAED;
-    border: 1px solid #707070;
-    border-radius: 10px;
-}
-/*Unisex-autumn*/
-
 /*Raincoat-dovre*/
 #add-to-cart, .cart {
     display: none;
 }
-  
 #add-to-cart:checked ~ .cart{
     display: block;
 }
@@ -225,10 +225,17 @@ i.fas.fa-cart-plus{
     color: #768C56;
 }
 /*Checkout-full*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+input[type="number"] {
+   -moz-appearance: textfield;
+}
 #cta_done, .modal_wait {
     display: none;
 }
-  
 #cta_done:checked ~ .modal_wait{
     display: block;
     border: 1px solid #707070;
@@ -289,6 +296,5 @@ body{
       }
 
 }
-
 @media (min-width:800px){
 }
