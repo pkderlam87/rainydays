@@ -13,7 +13,8 @@ nav,
 a,
 figure p,
 footer p,
-.bought p{
+.bought p,
+.product_raincoat-dovre p{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -197,7 +198,15 @@ i.fas.fa-cart-plus{
 .home_main{
     background: url('/images/background-triangle.jpg') right no-repeat;
 }
-/*Raincoat-dovre*/
+/*Unisex-autumn*/
+#raincoat-dovre, .modal_raincoat-dovre{
+    display: none;
+}
+#raincoat-dovre:checked ~ .modal_raincoat-dovre{
+    display: block;
+    border: 3px solid #707070;
+}
+/*Modal Raincoat-dovre*/
 #add-to-cart, .cart {
     display: none;
 }
