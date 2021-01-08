@@ -180,22 +180,21 @@ i.fas.fa-cart-plus{
 }
 /*GRID*/
 
-
 /*Header*/
-.logo img{
-    display: flex;
-    max-width: 80%;
-    justify-content: center;
-    align-items: center;
+.logo img{
+   display: flex;
+   max-width: 80%;
+   justify-content: center;
+   align-content: center;
 }
 .navegation_search_cart{
-    display: flex;
+    display: flex;
 }
-.navegation_search_cart nav{
-    flex: 1;
+.navegation_search_cart nav{
+    flex: 1;
 }
 .search_shopping{
-    flex: 4;
+    flex: 4;
 }
 /*Search icon and filter*/
 .search_shopping i,
@@ -211,6 +210,13 @@ i.fas.fa-cart-plus{
 }
 .home_main{
     background: url('/images/background-triangle.jpg');
+}
+/*About*/
+.about_history-filosofy,
+.our-team{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
 }
 /*Unisex-autumn*/
 #raincoat-dovre, .modal_raincoat-dovre{
@@ -327,7 +333,7 @@ body{
     .label_hamburger{
         display: none;
       }
-    .navegation_search_cart nav{
+    .navegation_search_cart nav > li{
         display: inline;
         border: 1px solid #707070;
     }  
