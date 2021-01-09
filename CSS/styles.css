@@ -3,31 +3,6 @@
     font-family: 'Work Sans';
     src: url("https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nWBi8Jpg.woff2") format('woff2');
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-nav,
-a,
-figure p,
-footer p,
-.bought p,
-.product_raincoat-dovre p,
-.checkout-empty_text{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color: #595452;
-}
-p{
-    font-family: 'verdana', sans-serif;
-    font-size: 0.6em;
-}
-i{
-    color: #0F100A;
-}
 /*Images*/
 img{
     max-width: 50%;
@@ -201,9 +176,9 @@ i.fas.fa-cart-plus{
 .navegation_search_cart{
     display: flex;
 }
-.navegation_search_cart nav{
+/*.navegation_search_cart nav{
     flex: 1;
-}
+}*/
 .search_shopping{
     flex: 4;
 }
@@ -221,6 +196,14 @@ i.fas.fa-cart-plus{
 }
 .home_main{
     background: url('/images/background-triangle.jpg');
+}
+.home_main p{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.home_main div{
+    display: flex;
 }
 /*About*/
 .about_history-filosofy,
@@ -302,15 +285,15 @@ footer{
     display: flex;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
 }
-footer h5{
+footer h6{
     color: #5F5C54;
 }
 .footer_logo,
 .social-media,
 .footer_about,
 .footer_contactus{
-    margin: 2%;
-    padding: 2%;
+    margin: 2% 0% 2% 0%;
+    padding: 2% 1% 2% 0%;
 }
 .footer_logo{
     min-width: 30%;
@@ -342,13 +325,13 @@ body{
       header{
         justify-content: start;
     }
-    .label_hamburger{
+    /*.label_hamburger{
         display: none;
-      }
-    .navegation_search_cart nav > li{
+      }*/
+    /*.navegation_search_cart nav > li{
         display: inline;
         border: 1px solid #707070;
-    }  
+    }  */
 
 }
 @media (min-width:800px){
