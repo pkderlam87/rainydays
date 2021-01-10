@@ -202,15 +202,12 @@ i.fas.fa-cart-plus{
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -50%;
+    background-position-x: -100%;
 }
 .home_main p{
     max-width: 600px;
     margin: 0 auto;
     padding: 5px;
-}
-.home_main div{
-    display: flex;
 }
 /*About*/
 .about_history-filosofy,
