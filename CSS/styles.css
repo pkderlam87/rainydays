@@ -195,7 +195,7 @@ i.fas.fa-cart-plus{
     box-shadow: 1px 1px 5px 1px rgba(89, 84, 82, .2);
 }
 .home_main{
-    background: url('/images/background-triangle.jpg');
+    background: url('../images/background-triangle.jpg');
 }
 .home_main p{
     max-width: 600px;
