@@ -136,7 +136,7 @@ i.fas.fa-cart-plus{
 }
 .cta_checkout{
     width: 20%;
-    padding: 0%;
+    padding: 0;
     justify-content: center;
 }
 .cta_edit{
@@ -193,9 +193,16 @@ i.fas.fa-cart-plus{
 /*Home*/
 .index_raincoat-red{
     box-shadow: 1px 1px 5px 1px rgba(89, 84, 82, .2);
+    float:left;
 }
-.home_main{
+.home_main,
+.about_wrap,
+.contact_wrap{
     background: url('../images/background-triangle.jpg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -50%;
 }
 .home_main p{
     max-width: 600px;
@@ -240,7 +247,7 @@ i.fas.fa-cart-plus{
 .cart,
 .cart h5,
 .cart h6{
-    margin: 0%;
+    margin: 0;
     padding: 1%;   
 }
 .sucess_add,
@@ -292,8 +299,8 @@ footer h6{
 .social-media,
 .footer_about,
 .footer_contactus{
-    margin: 2% 0% 2% 0%;
-    padding: 2% 1% 2% 0%;
+    margin: 2% 0 2% 0;
+    padding: 2% 1% 2% 0;
 }
 .footer_logo{
     min-width: 30%;
