@@ -65,11 +65,11 @@ li{
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -100%;
+    background-position-x: -400%;
 }
 /*Header*/
 .logo img{
-    max-width: 80%;
+    max-width: 60%;
     display: block;
     margin: auto;
 }
@@ -99,11 +99,11 @@ li{
     padding: 5px;
 }
 .home_main h3{
-    font-size: 1em;
+    font-size: 0.8em;
 }
 .brand-adjectives img{
     display: block;
-    margin: 200px;
+    margin: auto;
     margin-bottom: 15px;
     max-width: 60%;
 }
@@ -258,6 +258,9 @@ body{
 }
 .home_main h3{
     font-size: larger;
+}
+.brand-adjectives img{
+    margin-top: 200px;
 }
 }
 @media (min-width:700px){
