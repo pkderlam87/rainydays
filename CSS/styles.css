@@ -166,19 +166,21 @@ i.fas.fa-cart-plus{
     border-color: #595452;
     text-align: center;
 }
+/*Background*/
+.home_main,
+.about_wrap,
+.contact_wrap{
+    background: url('../images/background-triangle.jpg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -100%;
+}
 /*Header*/
 .logo{
     min-width: 80%;
 }
-.navegation_search_cart{
-    display: flex;
-}
-/*.navegation_search_cart nav{
-    flex: 1;
-}*/
-.search_shopping{
-    flex: 4;
-}
+
 /*Search icon and filter*/
 .search_shopping i,
 .filter_sorter i{
@@ -193,15 +195,6 @@ i.fas.fa-cart-plus{
     float:left;
     margin-right: 10px;
 }
-.home_main,
-.about_wrap,
-.contact_wrap{
-    background: url('../images/background-triangle.jpg');
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -100%;
-}
 .home_main p{
     max-width: 600px;
     margin: 0 auto;
@@ -213,11 +206,20 @@ i.fas.fa-cart-plus{
     width: 100%;
 }
 /*About*/
+.about-product img{
+    float: right;
+    max-width: 150px;
+}
 .about_history-filosofy,
 .our-team{
     max-width: 600px;
     margin: 0 auto;
     padding: 5px;
+    overflow: hidden;
+}
+.our-team img{
+    float: left;
+    margin-right: 10px;
 }
 /*Unisex-autumn*/
 #raincoat-dovre, .modal_raincoat-dovre{
@@ -341,5 +343,7 @@ body{
     }  */
 
 }
-@media (min-width:800px){
+
+@media (min-width:700px){
+
 }
