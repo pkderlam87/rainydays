@@ -213,35 +213,33 @@ footer h6{
 }
 /*Media Querie*/
 @media (min-width:600px){
-    /*Grid template areas
-.logo{grid-area: rdlogo;}
-nav{grid-area: rdnav;}
-main{grid-area: rdmain;}
-footer{grid-area: rdfooter;}
-
-body{
-    display: grid;
-    grid-template-areas:
-    'rdnav  rdlogo'
-    'main'
-    'footer'
-}*/
+    nav{
+        display: block;
+    }
+    nav ul{
+        float: left;
+        padding: 0;
+        margin: 1% 0;
+    }
     nav li {
         display: inline-block;
-        padding: 0px;
-      }
-      header{
-        justify-content: start;
+        padding: 5px 40px;
+        border:1px solid #707070;
+        border-radius: 6px;
     }
-    /*.label_hamburger{
+    #search{
+        padding: 6px 20px;
+    }
+    .fas.fa-bars{
         display: none;
-      }*/
-    /*.navegation_search_cart nav > li{
-        display: inline;
-        border: 1px solid #707070;
-    }  */
+    }
     .logo img{
         max-width: 40%;
+    }
+    .search_shopping{
+        display: block ruby;
+        min-height: 50px;
+        margin: 1%;
     }
     .title-page h1{
         font-size: 1.3em;
@@ -249,7 +247,4 @@ body{
         width: 40%;
         margin: 1% auto;
     }
-}
-@media (min-width:700px){
-
 }
