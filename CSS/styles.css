@@ -60,8 +60,6 @@ li{
         0% {left: -1000px;}
         100% {left: 0px;}
 }
-/*CTA*/
-
 /*Background*/
 .home_main,
 .about_wrap,
@@ -75,6 +73,10 @@ li{
 /*Header*/
 .logo{
     min-width: 80%;
+}
+.current{
+    background-color: #F4F6F8;
+    text-decoration: underline;
 }
 /*Search icon and filter*/
 .search_shopping i,
