@@ -6,6 +6,9 @@
 /*h1 each page*/
 .title-page h1{
     background-color: #F1F2E6;
+    font-size: 1em;
+    padding: 2%;
+    justify-content: center;
 }
 /*Images*/
 img{
@@ -58,114 +61,7 @@ li{
         100% {left: 0px;}
 }
 /*CTA*/
-#cta_back{
-    background-color: #F1F2E6;
-    border-radius: 40px;
-    width: 6%;
-    padding: 1% 2%;
-    justify-content: center; 
-}
-#cta_back,
-.cta_done,
-.cta-products__autumn2020,
-.cta-products__winter2020-2021,
-.cta-products__autumn-men,
-.cta-products__autumn-woman,
-.cta-products__autumn-unisex,
-.cta_especific-products,
-.cta_add,
-.cta_checkout,
-.cta_edit,
-.cta-contact_send,
-.cta_wait-continuebuying,
-.cta_continuebuying-empty,
-.title-page h1{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color: #595452;
-    text-transform: uppercase ;
-    border: 3px solid #707070;
-    display: flex;
-    border-radius: 23px;
-}
-.cta-products__autumn2020,
-.cta-products__winter2020-2021,
-.cta_done,
-.cta_continuebuying-empty{
-    width: 50%;
-}
-.cta-products__autumn2020,
-.cta-products__winter2020-2021,
-.cta-products__autumn-men,
-.cta-products__autumn-woman,
-.cta-products__autumn-unisex,
-.cta_especific-products,
-.cta_done,
-.cta_continuebuying-empty,
-.title-page h1{
-    padding: 3%;
-    justify-content: center;
-}
-.cta-products__winter2020-2021,
-.cta-products__autumn-men,
-.cta_checkout,
-.cta_edit{
-    background-color: #dbe2e7;
-}
-.cta-products__autumn-woman{
-    background-color: #F4F6F8;
-}
-.cta-products__autumn-men,
-.cta-products__autumn-woman,
-.cta-products__autumn-unisex,
-.cta_especific-products,
-.cta_checkout,
-.cta_wait-continuebuying{
-    width: 30%;
-}
-.cta_especific-products{
-    background-color: #DAE1E6;
-    width: 10%;
-    padding: 1% 2%;
-}
-.cta_add{
-    background-color: #86888A;
-    color: #FFF;
-    width: 20%;
-    padding: 10px;
-}
-i.fas.fa-cart-plus{
-    margin: 0px 0px 0px 10px; 
-}
-.cta_checkout{
-    width: 20%;
-    padding: 0;
-    justify-content: center;
-}
-.cta_edit{
-    width: 10%;
-    justify-content: center;
-}
-.cta_done{
-    background-color: #86888A;
-    color: #FFF;
-    margin: 5%;
-}
-.cta-products__autumn2020,
-.cta-products__autumn-unisex,
-.cta_wait-continuebuying{
-    background-color: #F1F2E6;
-}
-.cta-contact_send{
-    width: 20%;
-}
-.cta_continuebuying-empty{
-    background: #595452;
-    color:#fff;
-    border-color: #595452;
-    text-align: center;
-}
+
 /*Background*/
 .home_main,
 .about_wrap,
@@ -180,7 +76,6 @@ i.fas.fa-cart-plus{
 .logo{
     min-width: 80%;
 }
-
 /*Search icon and filter*/
 .search_shopping i,
 .filter_sorter i{
