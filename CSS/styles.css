@@ -167,11 +167,8 @@ i.fas.fa-cart-plus{
 /*GRID*/
 
 /*Header*/
-.logo img{
-   display: flex;
-   max-width: 80%;
-   justify-content: center;
-   align-content: center;
+.logo{
+    min-width: 80%;
 }
 .navegation_search_cart{
     display: flex;
@@ -194,6 +191,7 @@ i.fas.fa-cart-plus{
 .index_raincoat-red{
     box-shadow: 1px 1px 5px 1px rgba(89, 84, 82, .2);
     float:left;
+    margin-right: 10px;
 }
 .home_main,
 .about_wrap,
@@ -208,6 +206,11 @@ i.fas.fa-cart-plus{
     max-width: 600px;
     margin: 0 auto;
     padding: 5px;
+}
+.brand-adjectives img{
+    display: block;
+    margin: auto;
+    width: 100%;
 }
 /*About*/
 .about_history-filosofy,
