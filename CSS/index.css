@@ -1,0 +1,41 @@
+.index_raincoat-red{
+    box-shadow: 1px 1px 5px 1px rgba(89, 84, 82, .2);
+    float:left;
+    margin: 10px 10px 15px 10px;
+    max-width: 35%;
+}
+.home_main p,
+.home_main h3{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.home_main h3{
+    font-size: 0.8em;
+}
+.brand-adjectives img{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    max-width: 60%;
+}
+@media (min-width:600px){
+    .home_main{
+        background-size: initial;
+        background-position-x: -65%;
+    }
+    .home_main p,
+    .home_main h3{
+        max-width: 600px;
+        margin-top: 100px;
+        margin: 0 auto;
+        padding: 5px;
+        font-size: medium;
+    }
+    .home_main h3{
+        font-size: larger;
+    }
+    .brand-adjectives img{
+        margin-top: 200px;
+    }
+}
