@@ -18,7 +18,7 @@
 .cta_edit,
 .cta-contact_send,
 .cta_wait-continuebuying,
-.cta_continuebuying-empty,
+.cta_continuebuying,
 .title-page h1{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
@@ -32,7 +32,7 @@
 .cta-products__autumn2020,
 .cta-products__winter2020-2021,
 .cta_done,
-.cta_continuebuying-empty{
+.cta_continuebuying{
     width: 50%;
 }
 .cta-products__autumn2020,
@@ -42,7 +42,7 @@
 .cta-products__autumn-unisex,
 .cta_especific-products,
 .cta_done,
-.cta_continuebuying-empty{
+.cta_continuebuying{
     padding: 3%;
     justify-content: center;
 }
@@ -99,9 +99,17 @@ i.fas.fa-cart-plus{
 .cta-contact_send{
     width: 20%;
 }
-.cta_continuebuying-empty{
+.cta_continuebuying{
     background: #595452;
     color:#fff;
     border-color: #595452;
     text-align: center;
+}
+@media (min-width:600px){
+.cta-products__autumn2020,
+.cta-products__winter2020-2021,
+.cta_done,
+.cta_continuebuying{
+    width: 30%;
+}
 }

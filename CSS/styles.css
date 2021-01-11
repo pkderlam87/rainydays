@@ -18,7 +18,8 @@
 .raincoat-dovre_secondary img,
 .raincoat-dovre_main img,
 .about-product img,
-.product_bought img{
+.product_bought img,
+.photo-product-bought img{
     border-width: 6px;
     border-style: solid;
     border-image: linear-gradient(0.4turn, #F2F1F1, #808080) 2;
@@ -181,6 +182,10 @@ input[type="number"] {
     50% {rotate: 180deg;}
     70% {rotate: 240deg;}
     100% {rotate: 360deg;}
+}
+/*Checkout sucess*/
+.payment_wrap{
+    border: 3px solid #768C56;
 }
 /*Footer*/
 footer{
