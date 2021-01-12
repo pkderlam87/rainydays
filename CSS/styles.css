@@ -75,6 +75,13 @@ li{
 .about_wrap{
     background-position-x: -15%;
 }
+.checkout_wrap{
+    background: url("../images/checkout_triangle.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -10%;
+}
 /*Header*/
 .logo img{
     max-width: 60%;
@@ -97,31 +104,8 @@ li{
     display: inline;
     position: unset;
 }
-/*Checkout*/
-.checkout_wrap{
-    background: url("../images/checkout_triangle.jpg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -10%;
-}
 /*About*/
-.about-product img{
-    float: right;
-    max-width: 150px;
-}
-.about_history-filosofy,
-.our-team{
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 5px;
-    overflow: hidden;
-}
-.our-team img{
-    float: left;
-    margin-right: 10px;
-    max-width: 100px;
-}
+
 /*Unisex-autumn*/
 #raincoat-dovre, .modal_raincoat-dovre{
     display: none;

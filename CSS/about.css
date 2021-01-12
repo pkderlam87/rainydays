@@ -1,0 +1,16 @@
+.about-product img{
+    float: right;
+    max-width: 150px;
+}
+.about_history-filosofy,
+.our-team{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+    overflow: hidden;
+}
+.our-team img{
+    float: left;
+    margin-right: 10px;
+    max-width: 100px;
+}
