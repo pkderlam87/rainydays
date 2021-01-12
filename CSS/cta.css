@@ -31,8 +31,7 @@
 }
 .cta-products__autumn2020,
 .cta-products__winter2020-2021,
-.cta_done,
-.cta_continuebuying{
+.cta_done{
     width: 50%;
 }
 .cta-products__autumn2020,
@@ -60,7 +59,8 @@
 .cta-products__autumn-unisex,
 .cta_especific-products,
 .cta_checkout,
-.cta_wait-continuebuying{
+.cta_wait-continuebuying,
+.cta_continuebuying{
     width: 30%;
 }
 .cta_especific-products{
@@ -104,12 +104,13 @@ i.fas.fa-cart-plus{
     color:#fff;
     border-color: #595452;
     text-align: center;
+    justify-content: end;
 }
 @media (min-width:600px){
 .cta-products__autumn2020,
 .cta-products__winter2020-2021,
 .cta_done,
 .cta_continuebuying{
-    width: 20%;
+   max-width: 20%;
 }
 }

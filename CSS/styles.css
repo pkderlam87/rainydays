@@ -219,24 +219,36 @@ footer{
     display: flex;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
 }
-footer h6{
+footer h6,
+footer h5{
     color: #5F5C54;
+    margin: 2% 0;
+    font-size: 0.7em;
+}
+.footer_about,
+.footer_contactus{
+    margin: 0 1%;
 }
 .footer_logo,
 .social-media,
 .footer_about,
 .footer_contactus{
-    margin: 2% 0 2% 0;
     padding: 2% 1% 2% 0;
+    flex: auto;
 }
 .footer_logo{
     max-width: 50%;
-    float: left;
 }
 .email_footer{
     font-style:italic;
     color: #A3A7A2;
     text-decoration: underline;
+}
+.social-media figure{
+    margin: 0 auto;
+}
+.social-media i{
+    text-align: center;
 }
 /*Media Querie*/
 @media (min-width:600px){
@@ -253,6 +265,7 @@ footer h6{
         padding: 5px 40px;
         border:1px solid #707070;
         border-radius: 6px;
+        margin: 0 -0.5%;
     }
     .current {
         background: #F4F6F8;
