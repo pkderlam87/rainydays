@@ -1,8 +1,6 @@
 form{
-    min-height: 10px;
-    margin: 0;
     display:grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr;
     grid-template-columns: 0.1fr;
 }
 #name,
@@ -15,4 +13,9 @@ form{
 .cta-contact_send{
     position: relative;
     left: 50%;
+}
+.contact_name,
+.contact_email,
+.contact_message{
+    max-width: 70%;
 }
