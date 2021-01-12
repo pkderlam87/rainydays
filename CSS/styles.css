@@ -194,6 +194,10 @@ input[type="number"] {
 .payment_wrap{
     border: 3px solid #768C56;
     overflow: hidden;
+    padding: 0;
+    width: 230px;
+    position: relative;
+    left: 30%;
 }
 .payment_wrap p,
 .payment_wrap h4{
@@ -293,5 +297,16 @@ footer h5{
     .checkout_wrap{
         background-size: cover;
         background-position-x: 600px;
+    }
+    .bought{
+        position: relative;
+        top: 10px;
+    }
+    .sucess_wrap{
+        max-width: 600px;
+        margin: 0 auto;
+        }
+    .payment_wrap{
+        top: -90px;
     }
 }

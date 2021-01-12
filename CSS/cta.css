@@ -104,7 +104,9 @@ i.fas.fa-cart-plus{
     color:#fff;
     border-color: #595452;
     text-align: center;
-    justify-content: end;
+    position: relative;
+    top: 40px;
+    left: 60%;
 }
 @media (min-width:600px){
 .cta-products__autumn2020,
@@ -112,5 +114,10 @@ i.fas.fa-cart-plus{
 .cta_done,
 .cta_continuebuying{
    max-width: 20%;
+}
+.cta_continuebuying{
+    top: 50px;
+    left: 40%;
+    padding: 1%;
 }
 }
