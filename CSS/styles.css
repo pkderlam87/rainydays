@@ -82,7 +82,6 @@ li{
     margin: auto;
 }
 .current{
-    background-color: #F4F6F8;
     text-decoration: underline;
 }
 /*Search icon and filter*/
@@ -226,6 +225,9 @@ footer h6{
         padding: 5px 40px;
         border:1px solid #707070;
         border-radius: 6px;
+    }
+    .current {
+        background: #F4F6F8;
     }
     #search{
         padding: 6px 20px;
