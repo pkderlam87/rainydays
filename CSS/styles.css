@@ -104,6 +104,27 @@ li{
     display: inline;
     position: unset;
 }
+
+/*Products*/
+.products_page-container,
+.products-menu{
+    display: flex;
+}
+products_autumn-wrap{
+    flex: 2;
+}
+.products_winter-wrap{
+    flex: 2;
+}
+.products-menu{
+    /*flex: 1;*/
+    background: linear-gradient(0.50turn, #E5E7D1, #ffffff, #EFF1E2);
+    max-width: 50%;
+    font-size: 0.5em;
+}
+.products_collections img{
+    max-width: 40%;
+}
 /*Unisex-autumn*/
 #raincoat-dovre, .modal_raincoat-dovre{
     display: none;
@@ -290,5 +311,8 @@ footer h5{
         }
     .payment_wrap{
         top: -90px;
+    }
+    .products-menu{
+        border: none;
     }
 }
