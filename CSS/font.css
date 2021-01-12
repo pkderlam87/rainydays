@@ -15,7 +15,10 @@ footer p,
 .bought p,
 .product_raincoat-dovre p,
 .checkout-empty_text,
-.payment_wrap p{
+.payment_wrap p,
+.contact_name,
+.contact_email,
+.contact_message{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -27,4 +30,9 @@ p{
 }
 i{
     color: #0F100A;
+}
+.contact_name,
+.contact_email,
+.contact_message{
+    font-size: 0.7em;
 }
