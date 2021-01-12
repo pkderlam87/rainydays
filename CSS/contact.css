@@ -1,0 +1,18 @@
+form{
+    min-height: 10px;
+    margin: 0;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 0.1fr;
+}
+#name,
+#email{
+    max-width: 50%;
+}
+#message{
+    max-width: 70%;
+}
+.cta-contact_send{
+    position: relative;
+    left: 50%;
+}
