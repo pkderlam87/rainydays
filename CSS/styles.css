@@ -63,13 +63,13 @@ li{
 .home_main,
 .about_wrap,
 .contact_wrap{
-    background: url('../images/background-triangle.jpg');
+    background: url("../images/background-triangle.jpg");
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .home_main{
-    background-position-x: 600%;
+    background-position-x: -1500%;
 }
 .contact_wrap,
 .about_wrap{
@@ -96,6 +96,14 @@ li{
 .search_shopping i{
     display: inline;
     position: unset;
+}
+/*Checkout*/
+.checkout_wrap{
+    background: url("../images/checkout_triangle.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -10%;
 }
 /*About*/
 .about-product img{
@@ -185,6 +193,26 @@ input[type="number"] {
 /*Checkout sucess*/
 .payment_wrap{
     border: 3px solid #768C56;
+    overflow: hidden;
+}
+.payment_wrap p,
+.payment_wrap h4{
+    margin: 0;
+    text-align: left;
+}
+.congrat{
+    text-align: center;
+}
+.photo-product-bought img{
+    max-width: 15%;
+    float: left;
+    margin: 2% 1%;
+}
+.pay-sucess{
+    color: #768C56;
+}
+.datails_delivery{
+    text-decoration: underline;
 }
 /*Footer*/
 footer{
@@ -248,5 +276,9 @@ footer h6{
         padding: 0;
         width: 40%;
         margin: 1% auto;
+    }
+    .checkout_wrap{
+        background-size: cover;
+        background-position-x: 600px;
     }
 }
