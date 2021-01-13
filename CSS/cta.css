@@ -113,6 +113,13 @@ i.fas.fa-cart-plus{
     top: 40px;
     left: 60%;
 }
+.cta-products__autumn-men,
+.cta-products__autumn-woman,
+.cta-products__autumn-unisex{
+    font-size: 0.5em;
+    position: relative;
+    left: 8%;
+}
 @media (min-width:600px){
 .cta-products__autumn2020,
 .cta-products__winter2020-2021,
@@ -124,5 +131,9 @@ i.fas.fa-cart-plus{
     top: 50px;
     left: 60%;
     padding: 1%;
+}
+.cta-products__autumn2020,
+.cta-products__winter2020-2021{
+    font-size: 1em;
 }
 }

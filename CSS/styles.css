@@ -114,6 +114,9 @@ li{
 .products-menu li{
     padding: 4px 0;
 }
+.products_current{
+    color: #9B9897;
+}
 .products_autumn-wrap,
 .products_winter-wrap{
     display: grid;
@@ -124,6 +127,28 @@ li{
 }
 .products_collections img{
     max-width: 50%;
+}
+/*Autumn2020*/
+.autumn2020_wrap,
+.options-autumn{
+    display: flex;
+}
+.options-autumn{
+    justify-items: center;
+}
+.options-autumn img{
+    max-width: 50%;
+}
+.men_autumn,
+.woman_autumn,
+.unisex_autumn{
+    position: relative;
+    flex: 1;
+    left: 3%;
+    top: 3%;
+}
+.men_autumn img{
+    min-height: 53%;
 }
 /*Unisex-autumn*/
 #raincoat-dovre, .modal_raincoat-dovre{
