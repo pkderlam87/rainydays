@@ -35,6 +35,10 @@
             <a href="/products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
+    <div class="filter_sorter">
+        <i class="fas fa-filter"></i>
+        <i class="fas fa-sort-amount-down"></i>
+    </div>
     <main class="products-options-unisex-autumn">
         <nav class="products-menu">
             <ul>
@@ -49,100 +53,103 @@
                 <li>Unisex</li>
             </ul>
         </nav>
-        <div class="filter_sorter">
-            <i class="fas fa-filter"></i>
-            <i class="fas fa-sort-amount-down"></i>
-        </div>
-        <figure class="autumn_bergen">
-            <img src="../images/autumn2020_men.jpg" alt="a man wearing a rain jacket in the rain">
-            <p>Raincoat Bergen</p>
-        </figure>
-        <div>
-            <label for="raincoat-dovre" class="product_raincoat-dovre"><img src="../images/autumn2020_woman.jpg"
-                    alt="A woman wearing a yellow raincoat at the top of a cliff">
-                <p>Raincoat Dovre</p>
-            </label>
-            <input type="checkbox" id="raincoat-dovre">
-            <div class="modal_raincoat-dovre">
-                <h3>Raincoat Dovre</h3>
-                <div>
-                    <figure class="raincoat-dovre_secondary">
-                        <img src="../images/raincoat-dovre_first.jpg" alt="A woman standing wearing a yellow raincoat">
-                    </figure>
-                    <figure class="raincoat-dovre_main">
-                        <img src="../images/autumn2020_woman.jpg"
-                            alt="a woman standing wearing a yellow raincoat that goes up to her knee">
-                    </figure>
-                    <figure class="raincoat-dovre_secondary">
-                        <img src="../images/raincoat-dovre_third.jpg"
-                            alt="a woman sitting wearing a yellow raincoat, petting a dog">
-                    </figure>
-                </div>
-                <div>
-                    <h4>Unisex</h4>
-                    <form action="choose.php" method="GET">
-                        <h4><label for="size">Size</label></h4>
-                        <select name="size" id="size">
-                            <option value="xs">XS</option>
-                            <option value="s">S</option>
-                            <option value="m">M</option>
-                            <option value="l">L</option>
-                            <option value="xl">XL</option>
-                        </select>
-                        <div class="select-color">
-                            <h4>Color</h4>
-                            <input type="radio" name="color" value="yellow" id="color-yellow"><label
-                                for="color-yellow"><img src="../images/raincoat-dovre_yellow.jpg"
-                                    alt="The same yellow raincoat"></label>
-                            <input type="radio" name="color" value="marine" id="color-marine"><label
-                                for="color-marine"><img src="../images/raincoat-dovre_marine.jpg"
-                                    alt="The same marine raincoat"></label>
-                            <input type="radio" name="color" value="gray" id="color-gray"><label for="color-gray"><img
-                                    src="../images/raincoat-dovre_gray.jpg" alt="The same lightgray raincoat"></label>
-                            <input type="radio" name="color" value="red" id="color-red"><label for="color-red"><img
-                                    src="../images/raincoat-dovre_red.jpg" alt="The same red raincoat"></label>
-                        </div>
-                    </form>
+        <div class="products-photos">
+            <figure class="autumn_bergen">
+                <img src="../images/autumn2020_men.jpg" alt="a man wearing a rain jacket in the rain">
+                <p>Raincoat Bergen</p>
+            </figure>
+            <div>
+                <figure class="autumn_dovre">
+                    <label for="raincoat-dovre" class="product_raincoat-dovre"><img src="../images/autumn2020_woman.jpg"
+                            alt="A woman wearing a yellow raincoat at the top of a cliff">
+                        <p>Raincoat Dovre</p>
+                    </label>
+                </figure>
+                <input type="checkbox" id="raincoat-dovre">
+                <div class="modal_raincoat-dovre">
+                    <h3>Raincoat Dovre</h3>
                     <div>
-                        <h2>300,00 NOK</h2>
-                        <h2 class="sale">350,00</h2>
+                        <figure class="raincoat-dovre_secondary">
+                            <img src="../images/raincoat-dovre_first.jpg"
+                                alt="A woman standing wearing a yellow raincoat">
+                        </figure>
+                        <figure class="raincoat-dovre_main">
+                            <img src="../images/autumn2020_woman.jpg"
+                                alt="a woman standing wearing a yellow raincoat that goes up to her knee">
+                        </figure>
+                        <figure class="raincoat-dovre_secondary">
+                            <img src="../images/raincoat-dovre_third.jpg"
+                                alt="a woman sitting wearing a yellow raincoat, petting a dog">
+                        </figure>
                     </div>
                     <div>
-                        <label for="add-to-cart" class="cta_add">add<i class="fas fa-cart-plus"></i></label>
-                        <input type="checkbox" id="add-to-cart">
-                        <div class="cart">
-                            <ul>
-                                <h5>1 - Raincoat Dovre - XS - Yellow</h5>
-                                <h5 class="sucess_add">Added to cart <i class="fas fa-check"></i></h5>
-                                <h6 class="cta_checkout"><a href="checkout/checkout-full.html">Checkout</a></h6>
-                            </ul>
+                        <h4>Unisex</h4>
+                        <form action="choose.php" method="GET">
+                            <h4><label for="size">Size</label></h4>
+                            <select name="size" id="size">
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                            <div class="select-color">
+                                <h4>Color</h4>
+                                <input type="radio" name="color" value="yellow" id="color-yellow"><label
+                                    for="color-yellow"><img src="../images/raincoat-dovre_yellow.jpg"
+                                        alt="The same yellow raincoat"></label>
+                                <input type="radio" name="color" value="marine" id="color-marine"><label
+                                    for="color-marine"><img src="../images/raincoat-dovre_marine.jpg"
+                                        alt="The same marine raincoat"></label>
+                                <input type="radio" name="color" value="gray" id="color-gray"><label
+                                    for="color-gray"><img src="../images/raincoat-dovre_gray.jpg"
+                                        alt="The same lightgray raincoat"></label>
+                                <input type="radio" name="color" value="red" id="color-red"><label for="color-red"><img
+                                        src="../images/raincoat-dovre_red.jpg" alt="The same red raincoat"></label>
+                            </div>
+                        </form>
+                        <div>
+                            <h2>300,00 NOK</h2>
+                            <h2 class="sale">350,00</h2>
+                        </div>
+                        <div>
+                            <label for="add-to-cart" class="cta_add">add<i class="fas fa-cart-plus"></i></label>
+                            <input type="checkbox" id="add-to-cart">
+                            <div class="cart">
+                                <ul>
+                                    <h5>1 - Raincoat Dovre - XS - Yellow</h5>
+                                    <h5 class="sucess_add">Added to cart <i class="fas fa-check"></i></h5>
+                                    <h6 class="cta_checkout"><a href="checkout/checkout-full.html">Checkout</a></h6>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    </section>
+                    <p id="cta_back">back</p>
+                    <h6 class="cta_especific-products">details</h6>
+                    <h6 class="cta_especific-products">reviews</h6>
                 </div>
-                </section>
-                <p id="cta_back">back</p>
-                <h6 class="cta_especific-products">details</h6>
-                <h6 class="cta_especific-products">reviews</h6>
             </div>
+            <figure class="autumn_arendal">
+                <img src="../images/autumn2020_raincoatArendal.jpg"
+                    alt="A woman wearing a wool coat walking in the forest">
+                <p>Raincoat Arendal</p>
+            </figure>
+            <figure class="autumn_brekstad">
+                <img src="../images/autumn2020_unisex.jpg" alt="A person hiking wearing a rain jacket">
+                <p>Raincoat Brekstad</p>
+            </figure>
+            <figure class="autumn_namsos">
+                <img src="../images/raincoat-red.jpg" alt="A person wearing a red raincoat">
+                <p>Jacket Namsos</p>
+            </figure>
+            <figure class="autumn_trondheim">
+                <img src="../images/autumn2020_jacketTrondheim.jpg" alt="A men wearing a hooded jacket on a beach">
+                <p>Jacket Trondheim</p>
+            </figure>
         </div>
-        <figure class="autumn_arendal">
-            <img src="../images/autumn2020_raincoatArendal.jpg" alt="A woman wearing a wool coat walking in the forest">
-            <p>Raincoat Arendal</p>
-        </figure>
-        <figure class="autumn_brekstad">
-            <img src="../images/autumn2020_unisex.jpg" alt="A person hiking wearing a rain jacket">
-            <p>Raincoat Brekstad</p>
-        </figure>
-        <figure class="autumn_namsos">
-            <img src="../images/raincoat-red.jpg" alt="A person wearing a red raincoat">
-            <p>Jacket Namsos</p>
-        </figure>
-        <figure class="autumn_trondheim">
-            <img src="../images/autumn2020_jacketTrondheim.jpg" alt="A men wearing a hooded jacket on a beach">
-            <p>Jacket Trondheim</p>
-        </figure>
-        <p id="cta_back">back</p>
     </main>
+    <p id="cta_back">back</p>
     <img src="../images/discount-fifty.jpg" alt="This item is fifty krones off" class="discount_image">
 </body>
 <footer>

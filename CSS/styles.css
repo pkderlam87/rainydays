@@ -97,6 +97,10 @@ li{
     display: inline;
     position: unset;
 }
+.filter_sorter i{
+    position: relative;
+    left: 80%;
+}
 /*Products*/
 .products_page-container,
 .products-menu,
@@ -158,8 +162,30 @@ li{
     display: block;
     border: 3px solid #707070;
 }
+.products-options-unisex-autumn{
+    display: flex;
+}
+.products-photos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+}
+.products-photos img{
+    max-width: 70%;
+}
+.autumn_bergen,
+.product_raincoat-dovre,
+.autumn_arendal,
+.autumn_brekstad,
+.autumn_namsos,
+.autumn_trondheim{
+    position: relative;
+    left: 3%;
+    top: 3%;
+}
 .discount_image{
     position: absolute;
+    max-width: 10%;
     top: 8px;
     right: 16px;
 }
