@@ -69,7 +69,7 @@ li{
     background-size: cover;
 }
 .home_main{
-    background-position-x: -1500%;
+    background-position-x: 250px;
 }
 .contact_wrap,
 .about_wrap{
@@ -108,16 +108,17 @@ li{
 /*Products*/
 .products_page-container,
 .products-menu{
-    display: flex;
+    display: grid;
 }
-products_autumn-wrap{
-    flex: 2;
+.products_autumn-wrap figure{
+    max-width: 90%;
+    margin: 0 2%;
 }
-.products_winter-wrap{
-    flex: 2;
+.products_winter-wrap figure{
+    max-width: 90%;
+    margin: 0 1%;
 }
 .products-menu{
-    /*flex: 1;*/
     background: linear-gradient(0.50turn, #E5E7D1, #ffffff, #EFF1E2);
     max-width: 50%;
     font-size: 0.5em;

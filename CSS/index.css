@@ -19,10 +19,14 @@
     margin-bottom: 15px;
     max-width: 60%;
 }
+@media (min-width:400px){
+    .home_main{
+        background-position-x: 200px;
+    }
+}
 @media (min-width:600px){
     .home_main{
-        background-size: initial;
-        background-position-x: -65%;
+        background-position-x: 200px;
     }
     .home_main p,
     .home_main h3{
@@ -35,7 +39,15 @@
     .home_main h3{
         font-size: larger;
     }
+    .index_raincoat-red{
+        max-width: 25%;
+    }
     .brand-adjectives img{
         margin-top: 200px;
+    }
+}
+@media (min-width:800px){
+    .home_main{
+        background-position-x: 500px;
     }
 }
