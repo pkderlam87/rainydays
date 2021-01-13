@@ -75,13 +75,6 @@ li{
 .about_wrap{
     background-position-x: -15%;
 }
-.checkout_wrap{
-    background: url("../images/checkout_triangle.jpg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -10%;
-}
 /*Header*/
 .logo img{
     max-width: 60%;
@@ -134,6 +127,11 @@ li{
     display: block;
     border: 3px solid #707070;
 }
+.discount_image{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
 /*Modal Raincoat-dovre*/
 #add-to-cart, .cart {
     display: none;
@@ -164,83 +162,8 @@ li{
 .select-color img{
     border:none;
 }
-/*Checkout empty*/
-.checkout-empty_text{
-    padding-bottom: 80%;
-}
-@media (min-width:500px){
-    .checkout-empty_text{
-        padding-bottom: 60%;
-    }
-}
-@media (min-width:600px){
-    .checkout-empty_text{
-        padding-bottom: 50%;
-    }
-}
-@media (min-width:700px){
-    .checkout-empty_text{
-        padding-bottom: 20%;
-    }
-}
-/*Checkout-full*/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
-}
-input[type="number"] {
-   -moz-appearance: textfield;
-}
-#cta_done, .modal_wait {
-    display: none;
-}
-#cta_done:checked ~ .modal_wait{
-    display: block;
-    border: 1px solid #707070;
-    text-align: center;
-    justify-content: center;
-    margin: 10%;
-}
-.circle img{
-    animation-name: rotation;
-    animation-duration: 2s;
-    animation-iteration-count: 4;
-}
-@keyframes rotation{
-    100% {rotate: 90deg;}
-    50% {rotate: 180deg;}
-    70% {rotate: 240deg;}
-    100% {rotate: 360deg;}
-}
-/*Checkout sucess*/
-.payment_wrap{
-    border: 3px solid #768C56;
-    overflow: hidden;
-    padding: 0;
-    width: 230px;
-    position: relative;
-    left: 30%;
-}
-.payment_wrap p,
-.payment_wrap h4{
-    margin: 0;
-    text-align: left;
-}
-.congrat{
-    text-align: center;
-}
-.photo-product-bought img{
-    max-width: 15%;
-    float: left;
-    margin: 2% 1%;
-}
-.pay-sucess{
-    color: #768C56;
-}
-.datails_delivery{
-    text-decoration: underline;
-}
+
+
 /*Footer*/
 footer{
     display: flex;
@@ -317,9 +240,6 @@ footer h5{
         width: 40%;
         margin: 1% auto;
     }
-    .checkout_wrap{
-        background-position-x: 200px;
-    }
     .bought{
         position: relative;
         top: 10px;
@@ -331,7 +251,7 @@ footer h5{
     .payment_wrap{
         top: -90px;
     }
-    .products-menu{
+    .products-menu li{
         border: none;
     }
 }
