@@ -168,6 +168,25 @@ li{
     left: 20%;
     top: 3%;
 }
+.photos_specific-product{
+    display: flex;
+    align-items: center;
+}
+.raincoat-dovre_secondary,
+.raincoat-dovre_tertiary{
+    margin-right: -3px;
+    margin-left: 0;
+    max-width: 50%;
+    flex: 1;
+}
+.raincoat-dovre_tertiary{
+    margin-left: -25px;
+}
+.raincoat-dovre_main{
+    margin:0 auto;
+    max-width: 60%;
+    flex: 2;
+}
 .products-options-unisex-autumn{
     display: flex;
 }
