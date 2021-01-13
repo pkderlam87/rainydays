@@ -164,6 +164,25 @@ li{
 .select-color img{
     border:none;
 }
+/*Checkout empty*/
+.checkout-empty_text{
+    padding-bottom: 80%;
+}
+@media (min-width:500px){
+    .checkout-empty_text{
+        padding-bottom: 60%;
+    }
+}
+@media (min-width:600px){
+    .checkout-empty_text{
+        padding-bottom: 50%;
+    }
+}
+@media (min-width:700px){
+    .checkout-empty_text{
+        padding-bottom: 20%;
+    }
+}
 /*Checkout-full*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -299,8 +318,7 @@ footer h5{
         margin: 1% auto;
     }
     .checkout_wrap{
-        background-size: cover;
-        background-position-x: 600px;
+        background-position-x: 200px;
     }
     .bought{
         position: relative;
