@@ -114,14 +114,16 @@ li{
 .products-menu li{
     padding: 4px 0;
 }
-.products_autumn-wrap{
-    position: relative;
-}
+.products_autumn-wrap,
 .products_winter-wrap{
+    display: grid;
     position: relative;
+    max-width: 40%;
+    left: 50px;
+    justify-content: center;
 }
 .products_collections img{
-    max-width: 40%;
+    max-width: 50%;
 }
 /*Unisex-autumn*/
 #raincoat-dovre, .modal_raincoat-dovre{

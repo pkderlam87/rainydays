@@ -32,7 +32,13 @@
 .cta-products__autumn2020,
 .cta-products__winter2020-2021,
 .cta_done{
-    width: 50%;
+    max-width: 40%;
+    font-size: 0.5em;
+}
+.cta-products__winter2020-2021,
+.cta_continuebuying{
+    text-align: center;
+    max-height: 20%;
 }
 .cta-products__autumn2020,
 .cta-products__winter2020-2021,
@@ -103,7 +109,6 @@ i.fas.fa-cart-plus{
     background: #595452;
     color:#fff;
     border-color: #595452;
-    text-align: center;
     position: relative;
     top: 40px;
     left: 60%;
@@ -113,11 +118,11 @@ i.fas.fa-cart-plus{
 .cta-products__winter2020-2021,
 .cta_done,
 .cta_continuebuying{
-   max-width: 20%;
+   max-width: 50%;
 }
 .cta_continuebuying{
     top: 50px;
-    left: 70%;
+    left: 60%;
     padding: 1%;
 }
 }
