@@ -73,12 +73,24 @@
     background-color: #DAE1E6;
     width: 10%;
     padding: 1% 2%;
+    font-size: 0.5em;
 }
 .cta_add{
     background-color: #86888A;
     color: #FFF;
-    width: 20%;
-    padding: 10px;
+    max-width: 20%;
+    padding: 6px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ctas-modal_products-specific{
+    display:flex;
+    justify-content: space-around;
+}
+.ctas-modal_products-specific p{
+    height: 6%;
+    font-size: 0.5em;
+    margin-top: 10%;
 }
 i.fas.fa-cart-plus{
     margin-left: 10px; 

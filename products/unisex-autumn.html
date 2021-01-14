@@ -82,17 +82,20 @@
                                 alt="a woman sitting wearing a yellow raincoat, petting a dog">
                         </figure>
                     </div>
-                    <div>
+                    <div class="details_buying">
                         <h4>Unisex</h4>
-                        <form action="choose.php" method="GET">
-                            <h4><label for="size">Size</label></h4>
-                            <select name="size" id="size">
-                                <option value="xs">XS</option>
-                                <option value="s">S</option>
-                                <option value="m">M</option>
-                                <option value="l">L</option>
-                                <option value="xl">XL</option>
-                            </select>
+                        <div class="size_color_wrap">
+                            <div class="size_wrap">
+                                <form action="choose.php" method="GET">
+                                    <h4><label for="size">Size</label></h4>
+                                    <select name="size" id="size">
+                                        <option value="xs">XS</option>
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                    </select>
+                            </div>
                             <div class="select-color">
                                 <h4>Color</h4>
                                 <input type="radio" name="color" value="yellow" id="color-yellow"><label
@@ -107,8 +110,9 @@
                                 <input type="radio" name="color" value="red" id="color-red"><label for="color-red"><img
                                         src="../images/raincoat-dovre_red.jpg" alt="The same red raincoat"></label>
                             </div>
-                        </form>
-                        <div>
+                            </form>
+                        </div>
+                        <div class="price">
                             <h2>300,00 NOK</h2>
                             <h2 class="sale">350,00</h2>
                         </div>
@@ -125,9 +129,11 @@
                         </div>
                     </div>
                     </section>
-                    <p id="cta_back">back</p>
-                    <h6 class="cta_especific-products">details</h6>
-                    <h6 class="cta_especific-products">reviews</h6>
+                    <div class="ctas-modal_products-specific">
+                        <p id="cta_back">back</p>
+                        <h6 class="cta_especific-products">details</h6>
+                        <h6 class="cta_especific-products">reviews</h6>
+                    </div>
                 </div>
             </div>
             <figure class="autumn_arendal">

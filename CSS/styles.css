@@ -155,38 +155,6 @@ li{
     min-height: 53%;
 }
 /*Unisex-autumn*/
-#raincoat-dovre, .modal_raincoat-dovre{
-    display: none;
-}
-#raincoat-dovre:checked ~ .modal_raincoat-dovre{
-    display: block;
-    position: absolute;
-    background: white;
-    max-width: 60%;
-    z-index: 100;
-    border: 3px solid #707070;
-    left: 20%;
-    top: 3%;
-}
-.photos_specific-product{
-    display: flex;
-    align-items: center;
-}
-.raincoat-dovre_secondary,
-.raincoat-dovre_tertiary{
-    margin-right: -3px;
-    margin-left: 0;
-    max-width: 50%;
-    flex: 1;
-}
-.raincoat-dovre_tertiary{
-    margin-left: -25px;
-}
-.raincoat-dovre_main{
-    margin:0 auto;
-    max-width: 60%;
-    flex: 2;
-}
 .products-options-unisex-autumn{
     display: flex;
 }
@@ -215,17 +183,84 @@ li{
     right: 16px;
 }
 /*Modal Raincoat-dovre*/
+#raincoat-dovre, .modal_raincoat-dovre{
+    display: none;
+}
+#raincoat-dovre:checked ~ .modal_raincoat-dovre{
+    display: block;
+    position: absolute;
+    background: white;
+    max-width: 60%;
+    z-index: 100;
+    border: 3px solid #707070;
+    left: 20%;
+    top: 15%;
+}
+.modal_raincoat-dovre h3{
+    text-align: center;
+    margin: 1% 0;
+    font-size:0.8em
+}
+.photos_specific-product{
+    display: flex;
+    align-items: center;
+}
+.raincoat-dovre_secondary,
+.raincoat-dovre_tertiary{
+    margin-right: -3px;
+    margin-left: 0;
+    max-width: 50%;
+    flex: 1;
+}
+.raincoat-dovre_main{
+    margin:0 auto;
+    max-width: 60%;
+    flex: 2;
+}
+.raincoat-dovre_tertiary{
+    margin-left: -25px;
+}
+.modal_raincoat-dovre h4{
+    margin-bottom: 1%;
+}
+.details_buying{
+    display: block;
+    margin: 0;
+    font-size: 0.7em;
+}
+.size_color_wrap{
+    display:flex;
+    justify-content: space-around;
+}
+.select-color img{
+    max-width: 20%;
+    border: none;
+}
+.select-color{
+    margin-left: 6%;
+}
+#color-yellow,
+#color-marine,
+#color-gray,
+#color-red{
+    display:none;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+}
 #add-to-cart, .cart {
     display: none;
 }
 #add-to-cart:checked ~ .cart{
     display: block;
+    position: absolute;
+    top:10px;
+    z-index: 1000;
+    background-color:white;
 }
 .sale{
     text-decoration: line-through;
-}
-.select-color img{
-    max-width: 10%;
 }
 .cart{
     border: 3px solid #707070;
@@ -240,9 +275,6 @@ li{
 .sucess_add,
 .sucess_add i{
     color: #768C56;
-}
-.select-color img{
-    border:none;
 }
 /*Footer*/
 footer{
@@ -336,6 +368,9 @@ footer h5{
         border: none;
         font-size: 1.5em;
         padding: 10px 0;
+    }
+    #raincoat-dovre:checked ~ .modal_raincoat-dovre{
+        top: 45%;
     }
 }
 @media (min-width:1000px){
