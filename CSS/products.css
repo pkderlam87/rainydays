@@ -15,8 +15,8 @@
 .products-menu li{
     padding: 4px 0;
 }
-.products_current{
-    color: #9B9897;
+.products_current a{
+    color: #908E83;
 }
 .products_autumn-wrap,
 .products_winter-wrap{
@@ -76,7 +76,7 @@
 .discount_image{
     position: absolute;
     max-width: 10%;
-    top: 14%;
+    top: 18%;
     right: 26%;
 }
 /*Modal Raincoat-dovre*/
@@ -146,6 +146,9 @@
     display: flex;
     justify-content: space-around;
 }
+.sale{
+    text-decoration: line-through;
+}
 #add-to-cart, .cart {
     display: none;
 }
@@ -155,9 +158,6 @@
     top:0;
     z-index: 1000;
     background-color:white;
-}
-.sale{
-    text-decoration: line-through;
 }
 .cart{
     border: 3px solid #707070;
@@ -172,6 +172,9 @@
 .sucess_add,
 .sucess_add i{
     color: #768C56;
+}
+#cta_back{
+    left: 2%;
 }
 @media (min-width:600px){
     .products-menu li{
@@ -191,9 +194,29 @@
 @media (min-width:1000px){
     .products-menu{
         display: block;
+        max-width: 50%;
+        padding: 2%;
+    }
+    .products_autumn-wrap,
+    .products_winter-wrap{
+        margin: 0 auto;
     }
     .discount_image{
-        top: 27%;
-        right: 35%;
+        max-width: 5%;
+        top: 60%;
+        left: 37%;
+    }
+    .products-photos{
+        margin-left: 8%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        gap: 0;
+    }
+    .products-photos img{
+        max-width: 90%;
+    }
+    .products-photos p{
+        font-size: 0.6em;
+        text-align: center;
     }
 }

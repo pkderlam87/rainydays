@@ -3,7 +3,9 @@
     border-radius: 40px;
     width: 6%;
     padding: 1% 2%;
-    justify-content: center; 
+    justify-content: center;
+    position: relative;
+    left: 80%; 
 }
 #cta_back,
 .cta_done,
@@ -152,5 +154,10 @@ i.fas.fa-cart-plus{
 .ctas-modal_products-specific h6{
     max-width: 70%;
     font-size: 0.8em;
+}
+.cta-products__autumn-men,
+.cta-products__autumn-woman,
+.cta-products__autumn-unisex{
+    font-size: 1em;
 }
 }
