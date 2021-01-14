@@ -148,4 +148,8 @@ i.fas.fa-cart-plus{
 .cta-products__winter2020-2021{
     font-size: 1em;
 }
+.ctas-modal_products-specific h6{
+    max-width: 70%;
+    font-size: 0.8em;
+}
 }
