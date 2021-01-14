@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainydays | About</title>
     <link href="CSS/styles.css" rel="stylesheet">
+    <link href="CSS/font.css" rel="stylesheet">
+    <link href="CSS/cta.css" rel="stylesheet">
+    <link href="CSS/about.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1dd9a9266b.js" crossorigin="anonymous"></script>
@@ -23,34 +26,39 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="about.html" class="current">About</a></li>
+                <li class="current"><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="search_shopping">
             <input id="search" class="form" type="text" name="search">
             <label for="search"><i class="fas fa-search"></i></label>
-            <li><a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
-    <main>
+    <main class="about_wrap">
+        <section class="title-page">
+            <h1>About</h1>
+        </section>
         <figure class="about-product">
             <img src="images/winter-2020-21-wintercoat.jpg" alt="A person skiing wearing a winter jacket">
         </figure>
-        <section class="our-history">
-            <h2>Our history</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum provident assumenda ut optio?
-                Itaque rem eligendi quo, optio sequi rerum in, laborum qui reprehenderit eaque, voluptatibus id vel
-                ipsam?</p>
-        </section>
-        <section class="our-filosofy">
-            <h2>Our filosofy</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem eos perferendis ipsum magni
-                voluptas esse fugit, nobis cumque architecto quasi. Dolores eaque odit, quae nam reprehenderit nihil
-                iste tenetur.</p>
-        </section>
+        <div class="about_history-filosofy">
+            <section class="our-history">
+                <h3>Our history</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum provident assumenda ut optio?
+                    Itaque rem eligendi quo, optio sequi rerum in, laborum qui reprehenderit eaque, voluptatibus id vel
+                    ipsam?</p>
+            </section>
+            <section class="our-filosofy">
+                <h3>Our filosofy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem eos perferendis ipsum magni
+                    voluptas esse fugit, nobis cumque architecto quasi. Dolores eaque odit, quae nam reprehenderit nihil
+                    iste tenetur.</p>
+            </section>
+        </div>
         <section class="our-team">
-            <h2>Our Team</h2>
+            <h3>Our Team</h3>
             <img src="images/about_our-team.jpg"
                 alt="A four-pointer star with circles at the ends. Inside the first circle (clockwise) is a photo of a man wearing a yellow winter coat. Inside the second circle is a photo of a men wearing a hooded jacket on a beach. Inside the third circle is a photo of a seamstress in her studio.Inside the last circle is a photo of a woman wearing a wool coat walking in the forest">
             <h3>We understand you!</h3>
@@ -67,7 +75,7 @@
                 <a href: "emailto:contact@rainydays.com" class="email_footer">contact@rainydays.com</a>
             </p>
         </div>
-        <div>
+        <div class="social-media">
             <h5>Social Media</h5>
             <figure>
                 <i class="fab fa-facebook-f"></i>
@@ -76,10 +84,10 @@
                 <i class="fab fa-instagram"></i>
             </figure>
         </div>
-        <div>
+        <div class="footer_about">
             <h5><a href="about.html">About</a></h5>
         </div>
-        <div>
+        <div class="footer_contactus">
             <h5><a href="contact.html">Contact us</a></h5>
         </div>
     </footer>

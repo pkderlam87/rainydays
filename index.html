@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rainydays | Home</title>
   <link href="CSS/styles.css" rel="stylesheet">
+  <link href="CSS/font.css" rel="stylesheet">
+  <link href="CSS/cta.css" rel="stylesheet">
+  <link href="CSS/index.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1dd9a9266b.js" crossorigin="anonymous"></script>
@@ -21,7 +24,7 @@
     <input type="checkbox" id="hamburger-menu" />
     <nav>
       <ul>
-        <li><a href="index.html" class="current">Home</a></li>
+        <li class="current"><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -30,17 +33,20 @@
     <div class="search_shopping">
       <input id="search" class="form" type="text" name="search">
       <label for="search"><i class="fas fa-search"></i></label>
-      <li><a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a></li>
+      <a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
     </div>
   </header>
   <main class="home_main">
     <section>
-      <h2>Rain jackets designed for a wide range of outdoor activities. Buy now!</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laborum non fugit nulla culpa velit quia
-        voluptatem dolorum id voluptatibus excepturi ipsum quos alias, magni, dolorem totam, et iure maiores?</p>
       <img src="images/raincoat-red.jpg" alt="A person wearing a red raincoat" class="index_raincoat-red">
+      <div>
+        <h3>Rain jackets designed for a wide range of outdoor activities. Buy now!</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint laborum non fugit nulla culpa velit quia
+          voluptatem dolorum id voluptatibus excepturi ipsum quos alias, magni, dolorem totam, et iure maiores?</p>
+      </div>
     </section>
-    <section>
+    <section class="brand-adjectives">
       <img src="images/brand-adjectives.jpg"
         alt="A person wearing a jacket in the snow, A person hiking wearing a rain jacket, A woman wearing a rain jacket at the top of a cliff, a man wearing a rain jacket in the rain">
     </section>
@@ -54,7 +60,7 @@
       <a href: "emailto:contact@rainydays.com" class="email_footer">contact@rainydays.com</a>
     </p>
   </div>
-  <div>
+  <div class="social-media">
     <h5>Social Media</h5>
     <figure>
       <i class="fab fa-facebook-f"></i>
@@ -63,10 +69,10 @@
       <i class="fab fa-instagram"></i>
     </figure>
   </div>
-  <div>
+  <div class="footer_about">
     <h5><a href="about.html">About</a></h5>
   </div>
-  <div>
+  <div class="footer_contactus">
     <h5><a href="contact.html">Contact us</a></h5>
   </div>
 </footer>

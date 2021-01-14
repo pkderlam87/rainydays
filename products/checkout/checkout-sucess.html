@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainydays | Home</title>
     <link href="../../CSS/styles.css" rel="stylesheet">
+    <link href="../../CSS/font.css" rel="stylesheet">
+    <link href="../../CSS/cta.css" rel="stylesheet">
+    <link href="../../CSS/checkout.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1dd9a9266b.js" crossorigin="anonymous"></script>
@@ -30,43 +33,53 @@
         <div class="search_shopping">
             <input id="search" class="form" type="text" name="search">
             <label for="search"><i class="fas fa-search"></i></label>
-            <li><a href="checkout-empty.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <a href="checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
-    <main>
-        <section class="Congrat">
-            <h3>Congratulations!</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis recusandae sit alias similique enim
-                deserunt, deleniti repellat distinctio!</p>
-        </section>
-        <figure>
-            <img src="../../images/autumn2020_woman.jpg" alt="A woman wearing a yellow raincoat at the top of a cliff">
-        </figure>
-        <div class="bought">
-            <p>Raincoat Dovre</p>
-            <p>1 item</p>
-            <p>Yellow</p>
-            <p>XS</p>
-            <p>300 NOK</p>
+    <main class="checkout_wrap">
+        <div class="sucess_wrap">
+            <section class="title-page">
+                <h1>Checkout</h1>
+            </section>
+            <section class="congrat">
+                <h3>Congratulations!</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis recusandae sit alias similique enim
+                    deserunt, deleniti repellat distinctio!</p>
+            </section>
+            <figure class="photo-product-bought">
+                <img src="../../images/autumn2020_woman.jpg"
+                    alt="A woman wearing a yellow raincoat at the top of a cliff">
+            </figure>
+            <div class="bought">
+                <p>Raincoat Dovre</p>
+                <p>1 item</p>
+                <p>Yellow</p>
+                <p>XS</p>
+                <p>300 NOK</p>
+            </div>
+            <div class="payment_wrap">
+                <section class="data_buyer_confirmation">
+                    <p>Your name</p>
+                    <p>Your address</p>
+                    <p>Your e-mail</p>
+                    <p>Delivery address</p>
+                    <p>Name of contact person for delivery</p>
+                </section>
+                <section class="data_payment_confirmation">
+                    <div>
+                        <h4 class="pay-sucess">PAYMENT SUCCESSED</h4>
+                        <p>by card</p>
+                    </div>
+                    <p>0000.0000.0000.0000</p>
+                    <p>000 CVV</p>
+                    <p>00/00 Valid thru</p>
+                    <p>Same name as in the card</p>
+                </section>
+                <section class="datails_delivery">
+                    <p>WE SENT TO YOU AN E-MAIL WITH SOME DETAILS ABOUT THE DELIVERY.</p>
+                </section>
+            </div>
         </div>
-        <section class="data_buyer_confirmation">
-            <p>Your name</p>
-            <p>Your address</p>
-            <p>Your e-mail</p>
-            <p>Delivery address</p>
-            <p>Name of contact person for delivery</p>
-        </section>
-        <section class="data_payment_confirmation">
-            <p>
-            <h4 class="pay-sucess">PAYMENT SUCCESSED</h4>by card</p>
-            <p>0000.0000.0000.0000</p>
-            <p>000 CVV</p>
-            <p>00/00 Valid thru</p>
-            <p>Same name as in the card</p>
-        </section>
-        <section class="datails_delivery">
-            <p>WE SENT TO YOU AN E-MAIL WITH SOME DETAILS ABOUT THE DELIVERY.</p>
-        </section>
         <a href="../../products.html" class="cta_continuebuying">Continue Buying</a>
         <p id="cta_back">back</p>
     </main>
@@ -79,7 +92,7 @@
             <a href: "emailto:contact@rainydays.com" class="email_footer">contact@rainydays.com</a>
         </p>
     </div>
-    <div>
+    <div class="social-media">
         <h5>Social Media</h5>
         <figure>
             <i class="fab fa-facebook-f"></i>
@@ -88,11 +101,11 @@
             <i class="fab fa-instagram"></i>
         </figure>
     </div>
-    <div>
-        <h5><a href="about.html">About</a></h5>
+    <div class="footer_about">
+        <h5><a href="../../about.html">About</a></h5>
     </div>
-    <div>
-        <h5><a href="contact.html">Contact us</a></h5>
+    <div class="footer_contactus">
+        <h5><a href="../../contact.html">Contact us</a></h5>
     </div>
 </footer>
 

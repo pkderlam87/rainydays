@@ -1,0 +1,21 @@
+form{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.1fr;
+}
+#name,
+#email{
+    max-width: 50%;
+}
+#message{
+    max-width: 70%;
+}
+.cta-contact_send{
+    position: relative;
+    left: 50%;
+}
+.contact_name,
+.contact_email,
+.contact_message{
+    max-width: 70%;
+}

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainydays | Contact</title>
     <link href="CSS/styles.css" rel="stylesheet">
+    <link href="CSS/font.css" rel="stylesheet">
+    <link href="CSS/cta.css" rel="stylesheet">
+    <link href="CSS/contact.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1dd9a9266b.js" crossorigin="anonymous"></script>
@@ -24,23 +27,26 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="current">Contact</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="search_shopping">
             <input id="search" class="form" type="text" name="search">
             <label for="search"><i class="fas fa-search"></i></label>
-            <li><a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
-    <main>
+    <main class="contact_wrap">
+        <section class="title-page">
+            <h1>Contact us</h1>
+        </section>
         <h4>You can send a message for us. We will return as soon as possible.</h4>
         <form action="submit.php" method="POST">
-            <label for="name">Your name</label>
+            <label for="name" class="contact_name">Your name</label>
             <input id="name" class="form" type="text" name="your_name">
-            <label for="email">Your e-mail</label>
+            <label for="email" class="contact_email">Your e-mail</label>
             <input id="email" class="form" type="email" name="your_email">
-            <label for="message">Your message</label>
+            <label for="message" class="contact_message">Your message</label>
             <textarea id="message" name="message" type="text" rows="7" cols="60"></textarea>
             <h6><input class="cta-contact_send" type="submit" value="Send"></h6>
         </form>
@@ -53,7 +59,7 @@
                 <a href: "emailto:contact@rainydays.com" class="email_footer">contact@rainydays.com</a>
             </p>
         </div>
-        <div>
+        <div class="social-media">
             <h5>Social Media</h5>
             <figure>
                 <i class="fab fa-facebook-f"></i>
@@ -62,10 +68,10 @@
                 <i class="fab fa-instagram"></i>
             </figure>
         </div>
-        <div>
+        <div class="footer_about">
             <h5><a href="about.html">About</a></h5>
         </div>
-        <div>
+        <div class="footer_contactus">
             <h5><a href="contact.html">Contact us</a></h5>
         </div>
     </footer>
