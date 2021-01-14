@@ -25,6 +25,15 @@
     }
 }
 /*Checkout-full*/
+.product_bought img{
+    max-width: 40%;
+    float: left;
+    margin-right: 2%;
+}
+.bought{
+   position: relative;
+   margin: 10%; 
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
    -webkit-appearance: none;
@@ -32,6 +41,22 @@ input::-webkit-inner-spin-button {
 }
 input[type="number"] {
    -moz-appearance: textfield;
+   max-width: 15%;
+}
+.buyer_number-card,
+.buyer_card-cvv{
+    margin: 2% 0;
+}
+.buyer_card-cvv{
+    font-size: 0.6em;
+}
+.payment_option{
+    border-top: 1px solid #707070;
+    text-align: center;
+    font-size: 1em;
+}
+.vipps img{
+    max-width: 20%;
 }
 #cta_done, .modal_wait {
     display: none;

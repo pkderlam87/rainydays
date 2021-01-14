@@ -18,7 +18,10 @@ footer p,
 .payment_wrap p,
 .contact_name,
 .contact_email,
-.contact_message{
+.contact_message,
+legend,
+.payment_option,
+.buyer_card-cvv{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -33,6 +36,7 @@ i{
 }
 .contact_name,
 .contact_email,
-.contact_message{
+.contact_message,
+legend{
     font-size: 0.7em;
 }
