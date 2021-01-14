@@ -203,7 +203,7 @@
     }
     .discount_image{
         max-width: 5%;
-        top: 40%;
+        top: 30%;
         left: 37%;
     }
     .products-photos{
@@ -219,4 +219,25 @@
         font-size: 0.6em;
         text-align: center;
     }
+    /*Modal Raincoat-dovre*/
+    #raincoat-dovre:checked ~ .modal_raincoat-dovre{
+        max-width: 50%;
+        top: 10%;
+    }
+    .raincoat-dovre_secondary img,
+    .raincoat-dovre_tertiary img{
+    max-width: 40%;
+    }
+    .raincoat-dovre_main img{
+    max-width: 47%;
+    }
+    .select-color img{
+        max-width: 20%;
+    }
+    .cart,
+    .cart h5,
+    .cart h6{
+        font-size: 1em;
+    }
+
 }

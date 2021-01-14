@@ -79,7 +79,7 @@ li{
 .logo img{
     max-width: 90%;
     display: block;
-    margin: auto;
+    margin: 2% auto;
 }
 .current{
     text-decoration: underline;
@@ -170,7 +170,7 @@ footer h5{
     .search_shopping{
         display: block ruby;
         min-height: 50px;
-        margin: 1%;
+        margin: 3%;
     }
     .title-page h1{
         font-size: 1.3em;
