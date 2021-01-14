@@ -19,3 +19,10 @@ form{
 .contact_message{
     max-width: 70%;
 }
+@media (min-width:600px){
+.form_wrap{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+}
+}

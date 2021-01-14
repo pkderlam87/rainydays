@@ -178,19 +178,9 @@ footer h5{
         width: 40%;
         margin: 1% auto;
     }
-    .bought{
-        position: relative;
-        top: 10px;
-    }
-    .sucess_wrap{
-        max-width: 600px;
-        margin: 0 auto;
-        }
-    .payment_wrap{
-        top: -90px;
-    }
-    
-}
-@media (min-width:1000px){
 
+    .contact_wrap,
+    .about_wrap{
+    background-position-x: 300px;
+}
 }

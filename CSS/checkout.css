@@ -111,4 +111,15 @@ input[type="number"] {
     .checkout_wrap{
         background-position-x: 200px;
     }
+    .bought{
+        position: relative;
+        top: 10px;
+    }
+    .sucess_wrap{
+        max-width: 600px;
+        margin: 0 auto;
+        }
+    .payment_wrap{
+        top: -90px;
+    }
 }

@@ -138,7 +138,6 @@ i.fas.fa-cart-plus{
 @media (min-width:600px){
     .cta-products__autumn2020,
     .cta-products__winter2020-2021,
-    .cta_done,
     .cta_continuebuying{
     max-width: 50%;
     }
@@ -160,7 +159,15 @@ i.fas.fa-cart-plus{
     .cta-products__autumn-unisex{
         font-size: 1em;
     }
-    .cta_add{
+    .cta_add,
+    .cta_wait-continuebuying{
         justify-content: center;
+    }
+    .cta_done{
+        max-width: 20%;
+        padding: 1%;
+    }
+    .cta_wait-continuebuying{
+        max-width: 15%;
     }
 }
