@@ -1,3 +1,6 @@
+.logo img{
+    margin: 2% auto;
+}
 .index_raincoat-red{
     box-shadow: 1px 1px 5px 1px rgba(89, 84, 82, .2);
     float:left;
@@ -13,11 +16,14 @@
 .home_main h3{
     font-size: 0.8em;
 }
+.welcome_wrap{
+    position: relative;
+    margin-top: 8%;
+}
 .brand-adjectives img{
     display: block;
-    margin: auto;
-    margin-bottom: 15px;
-    max-width: 60%;
+    margin: 8% auto;
+    max-width: 90%;
 }
 @media (min-width:400px){
     .home_main{
@@ -42,8 +48,13 @@
     .index_raincoat-red{
         max-width: 25%;
     }
+    .welcome_wrap{
+        margin-top: 4%;
+    }
     .brand-adjectives img{
-        margin-top: 200px;
+        margin-top: 7%;
+        margin-bottom: 2%;
+        max-width: 60%;
     }
 }
 @media (min-width:800px){

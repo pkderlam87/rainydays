@@ -76,7 +76,7 @@
 .discount_image{
     position: absolute;
     max-width: 10%;
-    top: 18%;
+    top: 15%;
     right: 26%;
 }
 /*Modal Raincoat-dovre*/
@@ -203,7 +203,7 @@
     }
     .discount_image{
         max-width: 5%;
-        top: 60%;
+        top: 40%;
         left: 37%;
     }
     .products-photos{
