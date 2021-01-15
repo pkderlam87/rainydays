@@ -148,7 +148,7 @@ i.fas.fa-cart-plus{
     }
     .cta-products__autumn2020,
     .cta-products__winter2020-2021{
-        font-size: 1em;
+        font-size: 0.6em;
     }
     .ctas-modal_products-specific h6{
         max-width: 70%;
@@ -169,5 +169,16 @@ i.fas.fa-cart-plus{
     }
     .cta_wait-continuebuying{
         max-width: 15%;
+    }
+}
+@media (min-width:1000px){
+    .cta-products__autumn2020,
+    .cta-products__winter2020-2021{
+        font-size: 1em;
+    }
+    .cta_add{
+        position: relative;
+        top: -40px;
+        left: 180px;
     }
 }

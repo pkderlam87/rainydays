@@ -73,11 +73,11 @@
     left: 3%;
     top: 3%;
 }
-.discount_image{
+.discount_image img{
     position: absolute;
-    max-width: 10%;
-    top: 15%;
-    right: 26%;
+    max-width: 30%;
+    border: none;
+    top:-600%;
 }
 /*Modal Raincoat-dovre*/
 #raincoat-dovre, .modal_raincoat-dovre{
@@ -186,9 +186,11 @@
     #raincoat-dovre:checked ~ .modal_raincoat-dovre{
         top: 45%;
     }
-    .discount_image{
-        top: 23%;
-        right: 28%;
+    .discount_image img{
+        top: -1200%;
+    }
+    .products_collections{
+        align-items: end;
     }
 }
 @media (min-width:1000px){
@@ -201,10 +203,9 @@
     .products_winter-wrap{
         margin: 0 auto;
     }
-    .discount_image{
-        max-width: 5%;
-        top: 30%;
-        left: 37%;
+    .discount_image img{
+        width: 35%;
+        top: -700%;
     }
     .products-photos{
         margin-left: 8%;
@@ -226,18 +227,33 @@
     }
     .raincoat-dovre_secondary img,
     .raincoat-dovre_tertiary img{
-    max-width: 40%;
+    max-width: 50%;
+    margin-right: -70px;
     }
     .raincoat-dovre_main img{
-    max-width: 47%;
+    max-width: 60%;
+    margin-right: -15%;
     }
     .select-color img{
         max-width: 20%;
     }
+    #add-to-cart:checked ~ .cart{
+        top: 90px;
+        right: -300px;
+    }    
     .cart,
     .cart h5,
     .cart h6{
         font-size: 1em;
     }
-
+    .price{
+        justify-content: space-evenly;
+        position: relative;
+        right: 90px;
+    }
+}
+@media (min-width:1200px){
+    .discount_image img{
+        top: -950%;
+    }
 }
