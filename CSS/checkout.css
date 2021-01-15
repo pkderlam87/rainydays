@@ -79,7 +79,7 @@ input[type="number"] {
     70% {rotate: 240deg;}
     100% {rotate: 360deg;}
 }
-/*Checkout sucess*/
+/*Checkout success*/
 .payment_wrap{
     border: 3px solid #768C56;
     overflow: hidden;
@@ -101,7 +101,7 @@ input[type="number"] {
     float: left;
     margin: 2% 1%;
 }
-.pay-sucess{
+.pay-success{
     color: #768C56;
 }
 .datails_delivery{
@@ -115,7 +115,7 @@ input[type="number"] {
         position: relative;
         top: 10px;
     }
-    .sucess_wrap{
+    .success_wrap{
         max-width: 600px;
         margin: 0 auto;
         }
