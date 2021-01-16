@@ -192,7 +192,14 @@
     .products_collections{
         align-items: end;
     }
+
 }
+@media (min-width:940px){
+    .autumn2020_wrap,
+    .products-menu{
+        display:flex;
+    }
+}    
 @media (min-width:1000px){
     .products-menu{
         display: block;
