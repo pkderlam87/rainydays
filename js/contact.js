@@ -6,7 +6,7 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 
-function validateForm() {
+function validateName() {
     event.preventDefault();
     if (checkLength(myname.value, 1) === true) {
         nameError.style.display = "none";
@@ -14,6 +14,8 @@ function validateForm() {
         nameError.style.display = "block";
         myname.invalid = true;
     }
+};
+function validationEmail() {
     if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
     } else {
@@ -33,13 +35,15 @@ function validateEmail(email) {
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
-button.addEventListener("click", validateForm);
+myname.addEventListener("keyup", validateName);
+email.addEventListener("keyup", validationEmail);
+
 
 function sendForm(event) {
     event.preventDefault();
     if ((checkLength(myname.value, 1) && (validateEmail(email.value)))) {
-        checked.innerHTML = createMessage("Success", "Your message has been sent!");
         form.reset();
+        checked.innerHTML = createMessage("success", "Your message has been sent!");
     }
-}
+};
 button.addEventListener("click", sendForm);
