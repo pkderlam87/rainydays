@@ -21,7 +21,8 @@ footer p,
 .contact_message,
 legend,
 .payment_option,
-.buyer_card-cvv{
+.buyer_card-cvv,
+.checked{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -29,7 +30,6 @@ legend,
 }
 p{
     font-family: 'verdana', sans-serif;
-    font-size: 0.6em;
 }
 i{
     color: #0F100A;
@@ -38,5 +38,15 @@ i{
 .contact_email,
 .contact_message,
 legend{
-    font-size: 0.7em;
+    font-size: 1em;
+}
+@media (min-width:300px) and (max-width:599px) {
+    p{
+        font-size: 0.8em;
+    }
+}
+@media (min-width:600px){
+    p{
+        font-size: 1em;
+    }
 }
