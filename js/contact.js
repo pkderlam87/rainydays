@@ -5,6 +5,7 @@ const nameError = document.querySelector("#nameError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
+const checked = document.querySelector(".checked");
 
 function validateName() {
     event.preventDefault();
@@ -42,8 +43,8 @@ email.addEventListener("keyup", validationEmail);
 function sendForm(event) {
     event.preventDefault();
     if ((checkLength(myname.value, 1) && (validateEmail(email.value)))) {
-        form.reset();
         checked.innerHTML = createMessage("success", "Your message has been sent!");
+        form.reset();
     }
 };
 button.addEventListener("click", sendForm);
