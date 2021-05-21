@@ -1,3 +1,7 @@
+.productsCards {
+    border: 2px solid grey;
+}
+
 /*Products*/
 .products_page-container,
 .products-menu,
