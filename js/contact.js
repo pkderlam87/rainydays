@@ -46,5 +46,8 @@ function sendForm(event) {
         checked.innerHTML = createMessage("success", "Your message has been sent!");
         form.reset();
     }
+    setTimeout(function () {
+        checked.style.display = "none";
+    }, 5000);
 };
 button.addEventListener("click", sendForm);
