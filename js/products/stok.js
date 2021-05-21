@@ -1,41 +1,103 @@
 const productsStok = [
     {
-        type: "waterproof",
+        type: "Waterproof Men",
         price: 399,
         units: 10,
-        photo: `<img src="images/raincoat-1245688_1920.jpg">`,
+        photo: `<img src="images/raincoat-1245688_1920.jpg" alt= "A person wearing a red raincoat">`,
+        waterproof: "10.000 mm",
+        minTemp: "-3 C",
+        hoursOut: 10,
     },
     {
-        type: "waterproof",
+        type: "Waterproof Unisex",
         price: 399,
         units: 10,
-        photo: `<img src="images/karsten-winegeart-jVT8vo04UT0-unsplash.jpg">`,
+        photo: `<img src="images/raincoat-1245688_1920.jpg" alt= "A person wearing a red raincoat">`,
+        waterproof: "10.000 mm",
+        minTemp: "-3 C",
+        hoursOut: 10,
     },
     {
-        type: "skiSnowboard",
+        type: "Waterproof Woman",
+        price: 399,
+        units: 10,
+        photo: `<img src="images/karsten-winegeart-jVT8vo04UT0-unsplash.jpg" alt="A woman wearing a yellow raincoat at the top of a cliff">`,
+        waterproof: "10.000 mm",
+        minTemp: "-3 C",
+        hoursOut: 10,
+    },
+    {
+        type: "Ski and Snowboard Men",
         price: 599,
         units: 5,
-        photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg">`,
+        photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket">`,
+        waterproof: "5.000 mm",
+        minTemp: "-20 C",
+        hoursOut: 3,
     },
     {
-        type: "windbreaker",
+        type: "Ski and Snowboard Unisex",
+        price: 599,
+        units: 5,
+        photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket">`,
+        waterproof: "5.000 mm",
+        minTemp: "-20 C",
+        hoursOut: 3,
+    },
+    {
+        type: "Ski and Snowboard Woman",
+        price: 599,
+        units: 5,
+        photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket">`,
+        waterproof: "5.000 mm",
+        minTemp: "-20 C",
+        hoursOut: 3,
+    },
+    {
+        type: "Windbreaker Men",
         price: 299,
         units: 15,
-        photo: `<img src="images/joshua-earle-ICE__bo2Vws-unsplash.jpg">`,
+        photo: `<img src="images/joshua-earle-ICE__bo2Vws-unsplash.jpg" alt="A men wearing a hooded jacket on a beach">`,
+        waterproof: "7.000 mm",
+        maxWind: "10 m/s",
+        minTemp: "+10 C",
+        hoursOut: 3,
     },
     {
-        type: "accessories",
+        type: "Windbreaker Unisex",
+        price: 299,
+        units: 15,
+        photo: `<img src="images/joshua-earle-ICE__bo2Vws-unsplash.jpg" alt="A men wearing a hooded jacket on a beach">`,
+        waterproof: "7.000 mm",
+        maxWind: "10 m/s",
+        minTemp: "+10 C",
+        hoursOut: 3,
+    },
+    {
+        type: "Windbreaker Woman",
+        price: 299,
+        units: 15,
+        photo: `<img src="images/joshua-earle-ICE__bo2Vws-unsplash.jpg" alt="A men wearing a hooded jacket on a beach">`,
+        waterproof: "7.000 mm",
+        maxWind: "10 m/s",
+        minTemp: "+10 C",
+        hoursOut: 3,
+    },
+    {
+        type: "Accessories Men",
         price: 99,
         units: 20,
-        photo: `<img src="images/roberto-martinez-WBgPMst9toY-unsplash.jpg">`,
+        photo: `<img src="images/roberto-martinez-WBgPMst9toY-unsplash.jpg" alt = "A sewing workplace">`,
+    },
+    {
+        type: "Accessories Unisex",
+        price: 99,
+        units: 20,
+        photo: `<img src="images/roberto-martinez-WBgPMst9toY-unsplash.jpg" alt = "A sewing workplace">`,
+    }, {
+        type: "Accessories Woman",
+        price: 99,
+        units: 20,
+        photo: `<img src="images/roberto-martinez-WBgPMst9toY-unsplash.jpg" alt = "A sewing workplace">`,
     },
 ];
-console.log(productsStok);
-const products_collections = document.querySelector(".products_collections");
-
-for (let i = 0; i < productsStok.length; i++) {
-    products_collections.innerHTML += `<div class="productsCards">
-    ${productsStok[i].photo}
-    ${productsStok[i].type}
-    ${productsStok[i].price}</div>`;
-}

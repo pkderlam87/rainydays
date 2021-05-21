@@ -4,7 +4,7 @@
     src: url("https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nWBi8Jpg.woff2") format('woff2');
 }
 /*h1 each page*/
-.title-page h1{
+.title-page{
     background-color: #F1F2E6;
     font-size: 1em;
     padding: 2%;
@@ -104,6 +104,7 @@ li{
 
 /*Footer*/
 footer{
+    margin-top: 8%;
     display: flex;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
 }
@@ -172,7 +173,7 @@ footer h5{
         min-height: 50px;
         margin: 3%;
     }
-    .title-page h1{
+    .title-page{
         font-size: 1.3em;
         padding: 0;
         width: 40%;

@@ -1,12 +1,16 @@
 .productsCards {
+    display: grid;
     border: 2px solid grey;
+    justify-items: center;
 }
 
 /*Products*/
-.products_page-container,
-.products-menu,
 .products_collections{
-    display: flex;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    margin: 0 22%;
 }
 .products-menu{
     display: block;
@@ -180,6 +184,9 @@
 #cta_back{
     left: 2%;
 }
+@media (min-width:320px) and (max-width:599px){
+
+}    
 @media (min-width:600px){
     .products-menu li{
         display: block;
@@ -187,84 +194,10 @@
         font-size: 1.5em;
         padding: 10px 0;
     }
-    #raincoat-dovre:checked ~ .modal_raincoat-dovre{
-        top: 45%;
+    .products_collections {
+        max-width: 800px;
     }
-    .discount_image img{
-        top: -1200%;
-    }
-    .products_collections{
-        align-items: end;
-    }
-
-}
-@media (min-width:940px){
-    .autumn2020_wrap,
-    .products-menu{
-        display:flex;
-    }
-}    
-@media (min-width:1000px){
-    .products-menu{
-        display: block;
-        max-width: 50%;
-        padding: 2%;
-    }
-    .products_autumn-wrap,
-    .products_winter-wrap{
-        margin: 0 auto;
-    }
-    .discount_image img{
-        width: 35%;
-        top: -700%;
-    }
-    .products-photos{
-        margin-left: 8%;
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20%;
-        gap: 0;
-    }
-    .products-photos img{
-        max-width: 90%;
-    }
-    .products-photos p{
-        font-size: 0.6em;
-        text-align: center;
-    }
-    /*Modal Raincoat-dovre*/
-    #raincoat-dovre:checked ~ .modal_raincoat-dovre{
-        max-width: 50%;
-        top: 10%;
-    }
-    .raincoat-dovre_secondary img,
-    .raincoat-dovre_tertiary img{
-    max-width: 50%;
-    margin-right: -70px;
-    }
-    .raincoat-dovre_main img{
-    max-width: 60%;
-    margin-right: -15%;
-    }
-    .select-color img{
-        max-width: 20%;
-    }
-    #add-to-cart:checked ~ .cart{
-        top: 90px;
-        right: -300px;
-    }    
-    .cart,
-    .cart h5,
-    .cart h6{
-        font-size: 1em;
-    }
-    .price{
-        justify-content: space-evenly;
-        position: relative;
-        right: 90px;
-    }
-}
-@media (min-width:1200px){
-    .discount_image img{
-        top: -950%;
+    .productsCards:hover{
+        box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
     }
 }
