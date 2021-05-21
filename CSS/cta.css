@@ -22,17 +22,34 @@
 .cta_edit,
 .cta-contact_send,
 .cta_wait-continuebuying,
+.cta_continuebuying{
+    display: flex;
+}
+#cta_back,
+#cta_back-success,
+.cta_done,
+.cta-products__autumn2020,
+.cta-products__winter2020-2021,
+.cta-products__autumn-men,
+.cta-products__autumn-woman,
+.cta-products__autumn-unisex,
+.cta_especific-products,
+.cta_add,
+.cta_checkout,
+.cta_edit,
+.cta-contact_send,
+.cta_wait-continuebuying,
 .cta_continuebuying,
-.title-page h1{
+.title-page{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
     color: #595452;
     text-transform: uppercase ;
     border: 3px solid #707070;
-    display: flex;
     border-radius: 23px;
 }
+
 .cta-products__autumn2020,
 .cta-products__winter2020-2021{
     max-width: 40%;
@@ -120,7 +137,7 @@ i.fas.fa-cart-plus{
     background-color: #F1F2E6;
 }
 .cta-contact_send{
-    width: 20%;
+    max-width: 40%;
 }
 .cta_continuebuying{
     background: #595452;
