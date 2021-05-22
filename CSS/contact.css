@@ -1,33 +1,40 @@
 form{
     display:grid;
-    grid-template-columns: 0.1fr;
     justify-content: center;
 }
 #name:invalid,
-#email:invalid{
+#email:invalid,
+#message:invalid{
     border: 1px solid red;
 }
 .cta-contact_send{
     position: relative;
-    left: 50%;
+    left: 60%;
 }
-.form-error{
+.cta-contact_send:disabled{
+    color: rgba(157, 165, 150, 0.5);
+}
+.form-error,
+.fa-exclamation-triangle{
     display: none;
-    color: red;
+    color: rgb(189, 48, 48);
     margin-top: 5px;
     font-weight: 700;
     font-size: 0.7em;
 }
-.checked{
-    background-color: rgb(177, 221, 177);
+.checkedSuccess{
+    background-color: #DFE2DB;
+}
+.checkedError{
+    background-color: #f5b3b3;
 }
 @media (min-width:600px){
 .form_wrap{
-    max-width: 600px;
+    max-width: 300px;
     margin: 0 auto;
     text-align: center;
 }
 .form-error{
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 }

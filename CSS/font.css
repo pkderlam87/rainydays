@@ -28,7 +28,8 @@ legend,
     text-decoration: none;
     color: #595452;
 }
-p{
+p,
+.form-error{
     font-family: 'verdana', sans-serif;
 }
 i{
