@@ -24,7 +24,7 @@
 header{
     display: flex;
 }
-.logo{  
+.logo_image{  
     max-width: 80%;
 }
 .current{

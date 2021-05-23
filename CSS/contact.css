@@ -23,7 +23,7 @@ textarea{
 .fa-exclamation-triangle{
     display: none;
     color: rgb(189, 48, 48);
-    margin-top: 5px;
+    margin: 5px auto 1px auto;
     font-weight: 700;
     font-size: 0.7em;
     max-width: 200px;
@@ -39,9 +39,7 @@ textarea{
     margin-bottom: 6%;
 }
 @media (min-width:600px){
-.form-error{
-    font-size: 0.9em;
-}
+
 .form_wrap,
 .form,
 textarea{

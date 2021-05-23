@@ -24,6 +24,7 @@
 .cta_wait-continuebuying,
 .cta_continuebuying{
     display: flex;
+    cursor: pointer;
 }
 #cta_back,
 #cta_back-success,

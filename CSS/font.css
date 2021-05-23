@@ -20,6 +20,7 @@ footer p,
 .contact_email,
 .contact_message,
 legend,
+label,
 .payment_option,
 .buyer_card-cvv,
 .checked,
@@ -46,12 +47,21 @@ i{
     label,
     legend{
     font-size: 0.9em;
-}
+    }
+    .fab{
+        font-size: 1.3em;
+    }
 }
 @media (min-width:600px){
     body, 
     label,
     legend{
         font-size: 1em;
+    }
+    .fab{
+        font-size: 1.5em;
+    }
+    .form-error{
+        font-size: 0.8em;
     }
 }
