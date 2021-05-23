@@ -1,6 +1,14 @@
+.form_wrap,
+.form,
+textarea{
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
 form{
     display:grid;
     justify-content: center;
+    gap: 2%;
 }
 #name:invalid,
 #email:invalid,
@@ -12,7 +20,7 @@ form{
     left: 60%;
 }
 .cta-contact_send:disabled{
-    color: rgba(157, 165, 150, 0.5);
+    color: rgba(157, 165, 150, 0.7);
 }
 .form-error,
 .fa-exclamation-triangle{
@@ -29,12 +37,12 @@ form{
     background-color: #f5b3b3;
 }
 @media (min-width:600px){
-.form_wrap{
-    max-width: 300px;
-    margin: 0 auto;
-    text-align: center;
-}
 .form-error{
     font-size: 0.9em;
+}
+.form_wrap,
+.form,
+textarea{
+    max-width: 300px;
 }
 }

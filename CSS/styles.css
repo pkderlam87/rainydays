@@ -1,7 +1,7 @@
 /*h1 each page*/
 .title-page{
     background-color: #F1F2E6;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
 }
 /*Background*/
@@ -52,6 +52,7 @@ header{
 footer{
     display: flex;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
+    margin-top: 7%;
 }
 footer h6,
 footer h5{
@@ -157,10 +158,10 @@ li{
         margin: 3%;
     }
     .title-page{
-        max-width: 30%;
+        max-width: 50%;
         margin: 3% auto;
+        font-size: 1.2em;
     }
-
     .contact_wrap,
     .about_wrap{
     background-position-x: 300px;
