@@ -1,6 +1,4 @@
-.form_wrap,
-.form,
-textarea{
+.form_wrap{
     max-width: 250px;
     margin: 0 auto;
     text-align: center;
@@ -15,13 +13,7 @@ form{
 #message:invalid{
     border: 1px solid red;
 }
-.cta-contact_send{
-    position: relative;
-    left: 60%;
-}
-.cta-contact_send:disabled{
-    color: rgba(157, 165, 150, 0.7);
-}
+
 .form-error,
 .fa-exclamation-triangle{
     display: none;
@@ -32,9 +24,13 @@ form{
 }
 .checkedSuccess{
     background-color: #DFE2DB;
+    z-index: 100;
+    box-shadow: 5px 5px rgba(157, 165, 150, 0.5);
+    border: 3px solid rgba(191, 245, 104, 0.596);
 }
-.checkedError{
-    background-color: #f5b3b3;
+.checked{
+    width: 300px;
+    margin-bottom: 6%;
 }
 @media (min-width:600px){
 .form-error{

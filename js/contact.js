@@ -60,7 +60,7 @@ email.addEventListener("keyup", checkIfButtonIsDisabled);
 // function to run when the form is submitted
 function submitForm(event) {
     event.preventDefault();
-    checked.innerHTML = createMessage("Success", "Your message has been sent!");
+    checked.innerHTML = createMessage("Success", `<i class="far fa-smile-wink"></i> Your message has been sent! <i class="far fa-smile-wink"></i>`);
     form.reset();
     button.disabled = true;
 }

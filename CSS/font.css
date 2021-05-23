@@ -22,30 +22,36 @@ footer p,
 legend,
 .payment_option,
 .buyer_card-cvv,
-.checked{
+.checked,
+.fa-smile-wink{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
     color: #595452;
 }
 p,
-.form-error{
+.form-error,
+.form,
+textarea{
     font-family: 'verdana', sans-serif;
 }
 i{
     color: #0F100A;
 }
-label,
-legend{
-    font-size: 1em;
-}
+
 @media (min-width:300px) and (max-width:599px) {
     p{
         font-size: 0.8em;
     }
+    label,
+    legend{
+    font-size: 0.9em;
+}
 }
 @media (min-width:600px){
-    p{
+    p, 
+    label,
+    legend{
         font-size: 1em;
     }
 }

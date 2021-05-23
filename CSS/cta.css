@@ -133,7 +133,8 @@ i.fas.fa-cart-plus{
 }
 .cta-products__autumn2020,
 .cta-products__autumn-unisex,
-.cta_wait-continuebuying{
+.cta_wait-continuebuying,
+.cta-contact_send{
     background-color: #F1F2E6;
 }
 .cta-contact_send{
@@ -156,6 +157,13 @@ i.fas.fa-cart-plus{
 }
 #cta_back-success{
     left: 2%;
+}
+.cta-contact_send{
+    position: relative;
+    left: 70%;
+}
+.cta-contact_send:disabled{
+    color: rgba(157, 165, 150, 0.7);
 }
 @media (min-width:600px){
     .cta-products__autumn2020,
