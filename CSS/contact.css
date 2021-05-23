@@ -1,5 +1,5 @@
 .form_wrap{
-    max-width: 250px;
+    max-width: 200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -19,7 +19,6 @@ textarea{
 #message:invalid{
     border: 1px solid red;
 }
-
 .form-error,
 .fa-exclamation-triangle{
     display: none;
@@ -27,6 +26,7 @@ textarea{
     margin-top: 5px;
     font-weight: 700;
     font-size: 0.7em;
+    max-width: 200px;
 }
 .checkedSuccess{
     background-color: #DFE2DB;
