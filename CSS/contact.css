@@ -22,10 +22,7 @@ textarea{
 .form-error,
 .fa-exclamation-triangle{
     display: none;
-    color: rgb(189, 48, 48);
     margin: 5px auto 1px auto;
-    font-weight: 700;
-    font-size: 0.7em;
     max-width: 200px;
 }
 .checkedSuccess{

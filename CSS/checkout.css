@@ -66,16 +66,9 @@
 .buyer_phone{
     text-align: center;
 }
-.form-error,
-.fa-exclamation-triangle{
-    display: none;
-    color: rgb(189, 48, 48);
-    margin: 5px auto 1px auto;
-    font-weight: 700;
-    font-size: 0.7em;
-    max-width: 200px;
+#number_card{
+    width: 20%;
 }
-
 .product_bought img{
     max-width: 40%;
     float: left;
@@ -90,9 +83,12 @@ input::-webkit-inner-spin-button {
    -webkit-appearance: none;
    margin: 0;
 }
+#cvv,
+#card_expire{
+    max-width: 15%;
+}
 input[type="number"] {
    -moz-appearance: textfield;
-   max-width: 15%;
 }
 .buyer_number-card,
 .buyer_card-cvv{
@@ -163,9 +159,12 @@ input[type="number"] {
         max-width: 500px;
     }
     #nameError,
-    #messageError,
+    #addressError,
     #postError,
-    #emailError{
+    #emailError,
+    #giftAddressError,
+    #giftNameError,
+    #cvvError{
         margin: 5px 0 1px 0;
     }
     .checkout_wrap{

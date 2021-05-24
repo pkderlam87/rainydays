@@ -39,14 +39,19 @@ textarea{
 i{
     color: #0F100A;
 }
-
+.form-error,
+.fa-exclamation-triangle{
+    color: rgb(189, 48, 48);
+    font-weight: 700;
+    font-size: 0.7em;
+}
 @media (min-width:300px) and (max-width:599px) {
     p{
         font-size: 0.8em;
     }
     label,
     legend{
-    font-size: 0.9em;
+        font-size: 0.9em;
     }
     .fab{
         font-size: 1.3em;
@@ -63,5 +68,8 @@ i{
     }
     .form-error{
         font-size: 0.8em;
+    }
+    #cvvError{
+        font-size: 0.9em;
     }
 }

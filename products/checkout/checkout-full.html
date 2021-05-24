@@ -63,31 +63,38 @@
                             least 1 character<i class="fas fa-exclamation-triangle"></i></div>
                         <input type="text" name="name" id="name">
                         <legend>Your address*</legend>
-                        <div class="form-error" id="messageError"><i class="fas fa-exclamation-triangle"></i>Your
+                        <div class="form-error" id="addressError"><i class="fas fa-exclamation-triangle"></i>Your
                             address must
                             have at least 5 characters<i class="fas fa-exclamation-triangle"></i></div>
-                        <input type="text" name="message" id="message">
+                        <input type="text" name="address" id="address">
                         <legend>Post Number*</legend>
                         <div class="form-error" id="postError"><i class="fas fa-exclamation-triangle"></i>Your
-                            post
-                            number must
+                            post number must
                             have at least 4 numbers<i class="fas fa-exclamation-triangle"></i></div>
-                        <input type="number" name="buyer_postNumber" class="buyer_postNumber">
+                        <input type="number" name="buyer_postNumber" id="postNumber">
                         <legend>Your e-mail*</legend>
                         <div class="form-error" id="emailError"><i class="fas fa-exclamation-triangle"></i>Your
                             email
                             must be
                             anything@anything.com<i class="fas fa-exclamation-triangle"></i></div>
-                        <input type="email" name="email" id="email">
+                        <input type="email" inputmode="email" name="email" id="email">
                         <div class="wrap_gift">
                             <input type="checkbox" id="gift">
                             <label for="gift"><i class="fas fa-gift"></i> It's a gift. My friend will receive in this
                                 address bellow.</label>
                             <div class="gift_box">
-                                <legend>Delivery address</legend>
-                                <input type="text" name="buyer_delivery-address">
-                                <legend>Name of contact person for delivery</legend>
-                                <input type="text" name="buyer_contact-person">
+                                <legend>Delivery address*</legend>
+                                <div class="form-error" id="giftAddressError"><i
+                                        class="fas fa-exclamation-triangle"></i>The
+                                    address of your dear must
+                                    have at least 5 characters<i class="fas fa-exclamation-triangle"></i></div>
+                                <input type="text" name="delivery-address" id="giftAddress">
+                                <legend>Name of contact person for delivery*</legend>
+                                <div class="form-error" id="giftNameError"><i
+                                        class="fas fa-exclamation-triangle"></i>The
+                                    name of your dear is important, don't forget it<i
+                                        class="fas fa-exclamation-triangle"></i></div>
+                                <input type="text" name="contact-person" id="giftName">
                             </div>
                         </div>
                     </div>
@@ -104,18 +111,23 @@
                         </div>
                         <div class="wrap_payment-by-card">
                             <div class="buyer_number-card">
-                                <input type="number" name="buyer_number-card1">.<input type="number"
-                                    name="buyer_number-card2">.<input type="number" name="buyer_number-card3">.<input
-                                    type="number" name="buyer_number-card4">
+                                <div class="form-error" id="numberCardError"><i
+                                        class="fas fa-exclamation-triangle"></i>Each field must have 4 numbers<i
+                                        class="fas fa-exclamation-triangle"></i></div>
+                                <legend>Credit card number</legend>
+                                <input type="number" inputmode="numeric" class="number_card"
+                                    placeholder="xxxx.xxxx.xxxx.xxxx" id="credit_card">
                             </div>
                             <div class="buyer_card-cvv">
-                                <input type="number" name="buyer_card-cvv">CVV
+                                <div class="form-error" id="cvvError"><i class="fas fa-exclamation-triangle"></i>CVV
+                                    must have 3 numbers<i class="fas fa-exclamation-triangle"></i></div>
+                                <input type="number" name="buyer_card-cvv" id="cvv" /><span>CVV</span>
                             </div>
                             <div class="buyer_card-expire">
-                                <input type="date" name="buyer_card-expire">
+                                <input type="number" name="buyer_card-expire" placeholder="MM/AAAA" id="card_expire">
                             </div>
                             <div>
-                                <p>Same name as in the card</p>
+                                <legend>Same name as in the card</legend>
                                 <input type="text" name="buyer_card-name">
                             </div>
                         </div>
@@ -126,7 +138,7 @@
                             </div>
                             <div class="buyer_phone">
                                 <legend>Your phone</legend>
-                                <input type="tel" name="buyer_phone">
+                                <input type="number" inputmode="tel" name="buyer_phone">
                             </div>
                         </div>
                     </div>
