@@ -18,42 +18,52 @@
 <body>
     <header>
         <section class="logo">
-            <a href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html"><img src="images/logo.png" alt="The logo of rainydays" class="logoImg"></a>
         </section>
-        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-menu" />
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <section>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <nav id="nav_main" aria-label="mainMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
         <div class="search_shopping">
-            <input id="search" class="form" type="text" name="search">
-            <label for="search"><i class="fas fa-search"></i></label>
-            <a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
+            <div class="search">
+                <input id="search" class="form" type="text" name="search"><label for="search"><i
+                        class="fas fa-search"></i></label>
+            </div>
+            <div>
+                <a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
         </div>
     </header>
     <main>
         <h1 class="title-page">Products</h1>
         <div class="products_page-container">
-            <nav class="products-menu">
+            <nav id="products-menu" aria-label="products" class="products-menu">
                 <ul>
-                    <li class="products_current"><a href="products.html">Products</a></li>
-                    <li><a href="/products/autumn2020.html">Autumn 2020</a></li>
-                    <li>Men</li>
-                    <li>Woman</li>
-                    <li><a href="/products/unisex-autumn.html">Unisex</a></li>
-                    <li>Winter 2020/2021</li>
-                    <li>Men</li>
-                    <li>Woman</li>
-                    <li>Unisex</li>
+                    <li class="products-menu-option" id="products_current"><a href="products.html">Products</a></li>
+                    <div class="wrap_products-menu-option">
+                        <li class="products-menu-option">Waterproof</li>
+                        <li class="products-menu-option">Ski & Snowboard</li>
+                        <li class="products-menu-option">Windbreaker</li>
+                        <li class="products-menu-option">Accessories</li>
+                        <li class="products-menu-option">Best Sellers</li>
+                    </div>
+                    <li class="products-menu-option">Quiz</li>
                 </ul>
             </nav>
         </div>
         <section class="products_collections"></section>
+        <section class="bestSellers">
+            <h3 class="title_sectionProducts">Best Sellers</h3>
+            <div class="bestSeller"></div>
+        </section>
     </main>
     <footer>
         <div>

@@ -18,22 +18,28 @@
 <body>
   <header>
     <section class="logo">
-      <a href="index.html"><img src="images/logo.png"></a>
+      <a href="index.html"><img src="images/logo.png" alt="The logo of rainydays" class="logoImg"></a>
     </section>
-    <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="hamburger-menu" />
-    <nav>
-      <ul>
-        <li class="current"><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <section>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav id="nav_main" aria-label="mainMenu">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
     <div class="search_shopping">
-      <input id="search" class="form" type="text" name="search">
-      <label for="search"><i class="fas fa-search"></i></label>
-      <a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
+      <div class="search">
+        <input id="search" class="form" type="text" name="search"><label for="search"><i
+            class="fas fa-search"></i></label>
+      </div>
+      <div>
+        <a href="products/checkout/checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
     </div>
   </header>
   <main class="home_main">
