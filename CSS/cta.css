@@ -125,14 +125,14 @@ i.fas.fa-cart-plus{
     width: 10%;
     justify-content: center;
 }
-.cta_done{
+#done{
     background-color: #86888A;
     color: #FFF;
     margin: 3% auto;
     font-size: 0.8em;
     max-width: 30%;
 }
-.cta_done:disabled{
+#done:disabled{
     color:#595452;
 }
 .cta-products__autumn2020,
