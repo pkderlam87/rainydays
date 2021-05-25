@@ -69,6 +69,16 @@
 #number_card{
     width: 20%;
 }
+.buyer_card-expire{
+    display: block;
+}
+#card_expire_month,
+#card_expire_year{
+    max-width: 20%;
+}
+
+
+
 .product_bought img{
     max-width: 40%;
     float: left;
@@ -83,8 +93,7 @@ input::-webkit-inner-spin-button {
    -webkit-appearance: none;
    margin: 0;
 }
-#cvv,
-#card_expire{
+#cvv{
     max-width: 15%;
 }
 input[type="number"] {
@@ -94,9 +103,7 @@ input[type="number"] {
 .buyer_card-cvv{
     margin: 2% 0;
 }
-.buyer_card-cvv{
-    font-size: 0.6em;
-}
+
 .payment_option{
     border-top: 1px solid #707070;
     text-align: center;
@@ -164,7 +171,9 @@ input[type="number"] {
     #emailError,
     #giftAddressError,
     #giftNameError,
-    #cvvError{
+    #cvvError,
+    #credit_cardError,
+    #cardNameError{
         margin: 5px 0 1px 0;
     }
     .checkout_wrap{

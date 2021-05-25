@@ -106,8 +106,8 @@
                         <h3>PAYMENT</h3>
                         <div class="pay by_card">
                             <h4>By card</h4>
-                            <i class="fab fa-cc-visa"></i>
-                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-visa" id="visa"></i>
+                            <i class="fab fa-cc-mastercard" id="master"></i>
                         </div>
                         <div class="wrap_payment-by-card">
                             <div class="buyer_number-card">
@@ -115,21 +115,56 @@
                                         class="fas fa-exclamation-triangle"></i>Each field must have 4 numbers<i
                                         class="fas fa-exclamation-triangle"></i></div>
                                 <legend>Credit card number</legend>
+                                <div class="form-error" id="credit_cardError"><i
+                                        class="fas fa-exclamation-triangle"></i>You don't need add dots, spaces or other
+                                    characters. Only numbers<i class="fas fa-exclamation-triangle"></i></div>
                                 <input type="number" inputmode="numeric" class="number_card"
-                                    placeholder="xxxx.xxxx.xxxx.xxxx" id="credit_card">
+                                    placeholder="xxxx xxxx xxxx xxxx" id="credit_card">
                             </div>
                             <div class="buyer_card-cvv">
+                                <legend>CVV</legend>
                                 <div class="form-error" id="cvvError"><i class="fas fa-exclamation-triangle"></i>CVV
                                     must have 3 numbers<i class="fas fa-exclamation-triangle"></i></div>
-                                <input type="number" name="buyer_card-cvv" id="cvv" /><span>CVV</span>
+                                <input type="number" name="buyer_card-cvv" id="cvv" />
                             </div>
                             <div class="buyer_card-expire">
-                                <input type="number" name="buyer_card-expire" placeholder="MM/AAAA" id="card_expire">
+                                <legend>Expiry date card</legend>
+                                <div class="form-error" id="ExpiryDateCardError"><i
+                                        class="fas fa-exclamation-triangle"></i>Select an option for each field<i
+                                        class="fas fa-exclamation-triangle"></i></div>
+                                <select id="card_expire_month">
+                                    <option value="MM">MM</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                /
+                                <select id="card_expire_year">
+                                    <option value="YYYY">YYYY</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                </select>
                             </div>
                             <div>
                                 <legend>Same name as in the card</legend>
-                                <input type="text" name="buyer_card-name">
+                                <div class="form-error" id="cardNameError"><i
+                                        class="fas fa-exclamation-triangle"></i>The name must
+                                    have at least 1 character<i class="fas fa-exclamation-triangle"></i></div>
+                                <input type="text" name="buyer_card-name" id="cardName">
                             </div>
+                            <button id="doneCard" class="cta_done">DONE</button>
                         </div>
                         <div>
                             <div class="pay by_vipps">
@@ -138,7 +173,12 @@
                             </div>
                             <div class="buyer_phone">
                                 <legend>Your phone</legend>
-                                <input type="number" inputmode="tel" name="buyer_phone">
+                                <div class="form-error" id="phoneError"><i
+                                        class="fas fa-exclamation-triangle"></i>Include the country indicator. You
+                                    don't need add dots, spaces or other
+                                    characters<i class="fas fa-exclamation-triangle"></i></div>
+                                <input type="number" inputmode="tel" name="buyer_phone" id="phone"
+                                    placeholder="47 11111 111">
                             </div>
                         </div>
                     </div>
@@ -186,6 +226,7 @@
     <script src="js/script.js"></script>
     <script src="/js/contact.js"></script>
     <script src="/js/checkout.js"></script>
+    <script src="/js/payment.js"></script>
 </body>
 
 </html>

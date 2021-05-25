@@ -69,7 +69,9 @@ i{
     .form-error{
         font-size: 0.8em;
     }
-    #cvvError{
-        font-size: 0.9em;
+    #cvvError,
+    #credit_cardError,
+    #phoneError{
+        font-size: 0.7em;
     }
 }
