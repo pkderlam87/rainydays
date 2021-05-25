@@ -173,7 +173,8 @@ input[type="number"] {
     #giftNameError,
     #cvvError,
     #credit_cardError,
-    #cardNameError{
+    #cardNameError,
+    #expiryDateCardError{
         margin: 5px 0 1px 0;
     }
     .checkout_wrap{

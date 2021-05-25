@@ -7,7 +7,7 @@ const cvvError = document.querySelector("#cvvError");
 const credit_card = document.querySelector("#credit_card");
 const card_expire_month = document.querySelector("#card_expire_month");
 const card_expire_year = document.querySelector("#card_expire_year");
-const ExpiryDateCardError = document.querySelector("#ExpiryDateCardError");
+const expiryDateCardError = document.querySelector("#expiryDateCardError");
 const visa = document.querySelector("#visa");
 const master = document.querySelector("#master");
 const cardName = document.querySelector("#cardName");
@@ -84,11 +84,11 @@ function validateCvv(cvv) {
 function validateExpiryDateCard() {
     event.preventDefault();
     if ((card_expire_month.value !== "MM") && (card_expire_year.value !== "YYYY")) {
-        ExpiryDateCardError.style.display = "none";
+        expiryDateCardError.style.display = "none";
         return true;
     } else {
-        ExpiryDateCardError.style.display = "block";
-        ExpiryDateCard.invalid = true;
+        expiryDateCardError.style.display = "block";
+        expiryDateCard.invalid = true;
     }
 };
 //Validation name in the card
@@ -105,7 +105,7 @@ cardName.addEventListener("keyup", validateCardName);
 //enable the button
 function checkIfButtonIsDisabled() {
     // if all inputs pass validation enable the button
-    if (validateCreditCard(credit_card.value, 16) && validateCvv(cvv.value) && checkLength(cardName.value, 1) && (card_expire_month.value !== "MM") && (card_expire_year.value !== "YYYY")) {
+    if (validateCreditCard(credit_card.value, 16) && validateCvv(cvv.value) && checkLength(cardName.value, 1) && (validateExpiryDateCard)) {
         doneCard.disabled = false;
     } else {
         // disable button
