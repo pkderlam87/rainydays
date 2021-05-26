@@ -1,10 +1,9 @@
+/*Products*/
 .productsCards {
     display: grid;
     border: 2px solid grey;
     justify-items: center;
 }
-
-/*Products*/
 .products_collections,
 .bestSeller{
     display: grid;
@@ -43,102 +42,50 @@
 .productPrice{
     margin: 1% auto 1% auto;
 }
-/*Modal Raincoat-dovre*/
-#raincoat-dovre, .modal_raincoat-dovre{
-    display: none;
+/*Specific Product*/
+.spec{
+    position: relative;
 }
-#raincoat-dovre:checked ~ .modal_raincoat-dovre{
-    display: block;
-    position: absolute;
-    background: white;
-    max-width: 60%;
-    z-index: 100;
-    border: 3px solid #707070;
-    left: 20%;
-    top: 15%;
+.specific {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
 }
-.modal_raincoat-dovre h3{
-    text-align: center;
-    margin: 1% 0;
-    font-size:0.8em
+.photos_specific-product img{
+    max-width: 70%;
+    margin-left: 20%;
+    cursor: zoom-in;
 }
-.photos_specific-product{
-    display: flex;
-    align-items: center;
+.unit {
+    color: rgb(116, 19, 19);
 }
-.raincoat-dovre_secondary,
-.raincoat-dovre_tertiary{
-    margin-right: -3px;
-    margin-left: 0;
-    max-width: 50%;
-    flex: 1;
+.color{
+    padding: 9px;
+    max-width: 6%;
+    border: 2px solid #707070;;
+    border-radius: 3px;
 }
-.raincoat-dovre_main{
-    margin:0 auto;
-    max-width: 60%;
-    flex: 2;
+.white{
+    background-color: white;
 }
-.raincoat-dovre_tertiary{
-    margin-left: -25px;
+.red{
+    background-color: red;
 }
-.modal_raincoat-dovre h4{
-    margin-bottom: 1%;
+.green{
+    background-color: green;
 }
-.details_buying{
-    display: block;
-    margin: 0;
-    font-size: 0.7em;
+.yellow{
+    background-color: yellow;
 }
-.size_color_wrap{
-    display:flex;
-    justify-content: space-around;
-}
-.select-color img{
-    max-width: 20%;
-    border: none;
-}
-.select-color{
-    margin-left: 6%;
-}
-#color-yellow,
-#color-marine,
-#color-gray,
-#color-red{
-    display:none;
-}
-.price{
-    display: flex;
-    justify-content: space-around;
-}
-.sale{
-    text-decoration: line-through;
-}
-#add-to-cart, .cart {
-    display: none;
-}
-#add-to-cart:checked ~ .cart{
-    display: block;
-    position: absolute;
-    top:0;
-    z-index: 1000;
-    background-color:white;
-}
-.cart{
-    border: 3px solid #707070;
-    width: 90%;
-}
-.cart,
-.cart h5,
-.cart h6{
-    margin: 0;
-    padding: 1%;   
-}
-.success_add,
-.success_add i{
-    color: #768C56;
+.starsBest{
+    margin-top: 8%;
+    max-width: 30%;
 }
 #cta_back{
     left: 2%;
+}
+.cart{
+    border: 1px solid #595452;
+    position: fixed;
 }
 @media (min-width:320px) and (max-width:599px){
 
@@ -165,7 +112,12 @@
     .quiz {
         margin-left: 0;
     }
-    .specific{
-        cursor: pointer;
+    .details_buying{
+        font-size: 1em;
+        margin-left: 2%;
+    }
+    .size_color{
+        margin-left: 5%;
+        border-left: 1px solid #707070;
     }
 }

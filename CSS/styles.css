@@ -183,7 +183,9 @@ footer h5{
         width: 40%;
         margin: 2% auto;
     }
-
+    button:hover{
+        box-shadow: 20px 20px 10px rgba(136, 127, 127, 0.3);
+    }
     .contact_wrap,
     .about_wrap{
     background-position-x: 300px;
