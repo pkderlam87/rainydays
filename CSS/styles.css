@@ -109,7 +109,7 @@ header{
 
 /*Footer*/
 footer{
-    margin-top: 8%;
+    margin-top: 14%;
     display: flex;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
 }

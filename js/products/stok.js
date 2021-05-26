@@ -1,5 +1,7 @@
 const productsStok = [
     {
+        productId: 0,
+        class: "waterproof",
         type: "Waterproof Men",
         price: 399,
         units: 10,
@@ -10,6 +12,8 @@ const productsStok = [
         bestseller: false,
     },
     {
+        productId: 1,
+        class: "waterproof",
         type: "Waterproof Unisex",
         price: 399,
         units: 10,
@@ -20,6 +24,8 @@ const productsStok = [
         bestseller: false,
     },
     {
+        productId: 2,
+        class: "waterproof",
         type: "Waterproof Woman",
         price: 399,
         units: 10,
@@ -30,6 +36,8 @@ const productsStok = [
         bestseller: true,
     },
     {
+        productId: 3,
+        class: "skiSnowboard",
         type: "Ski & Snowboard Men",
         price: 599,
         units: 5,
@@ -40,6 +48,8 @@ const productsStok = [
         bestseller: false,
     },
     {
+        productId: 4,
+        class: "skiSnowboard",
         type: "Ski & Snowboard Unisex",
         price: 599,
         units: 5,
@@ -50,6 +60,8 @@ const productsStok = [
         bestseller: false,
     },
     {
+        productId: 5,
+        class: "skiSnowboard",
         type: "Ski & Snowboard Woman",
         price: 599,
         units: 5,
@@ -60,6 +72,8 @@ const productsStok = [
         bestseller: false,
     },
     {
+        productId: 6,
+        class: "windbreaker",
         type: "Windbreaker Men",
         price: 299,
         units: 15,
@@ -71,6 +85,8 @@ const productsStok = [
         bestseller: true,
     },
     {
+        productId: 7,
+        class: "windbreaker",
         type: "Windbreaker Unisex",
         price: 299,
         units: 15,
@@ -82,6 +98,8 @@ const productsStok = [
         bestseller: false,
     },
     {
+        productId: 8,
+        class: "windbreaker",
         type: "Windbreaker Woman",
         price: 299,
         units: 15,
@@ -93,6 +111,8 @@ const productsStok = [
         bestseller: false,
     },
     {
+        productId: 9,
+        class: "accessories",
         type: "Accessories Men",
         price: 99,
         units: 20,
@@ -100,12 +120,17 @@ const productsStok = [
         bestseller: false,
     },
     {
+        productId: 10,
+        class: "accessories",
         type: "Accessories Unisex",
         price: 99,
         units: 20,
         photo: `<img src="images/roberto-martinez-WBgPMst9toY-unsplash.jpg" alt = "A sewing workplace" class="spotlightImage">`,
         bestseller: true,
-    }, {
+    },
+    {
+        productId: 11,
+        class: "accessories",
         type: "Accessories Woman",
         price: 99,
         units: 20,

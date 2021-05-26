@@ -18,7 +18,7 @@
 <body>
     <header>
         <section class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="The logo of rainydays" class="logoImg"></a>
+            <a href="index.html"><img src="/images/logo.png" alt="The logo of rainydays" class="logoImg"></a>
         </section>
         <section>
             <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -42,27 +42,21 @@
             </div>
         </div>
     </header>
-    <div class="filter_sorter">
-        <i class="fas fa-filter"></i>
-        <i class="fas fa-sort-amount-down"></i>
-    </div>
-    <main class="products-options-unisex-autumn">
-        <nav class="products-menu">
-            <ul>
-                <li><a href="../products.html">Products</a></li>
-                <li><a href="autumn2020.html">Autumn 2020</a></li>
-                <li>Men</li>
-                <li>Woman</li>
-                <li class="products_current"><a href="unisex-autumn.html">Unisex</a></li>
-                <li>Winter 2020/2021</li>
-                <li>Men</li>
-                <li>Woman</li>
-                <li>Unisex</li>
-            </ul>
-        </nav>
-        <section>
+    <main class="specific_product">
+        <div id="titleOfPage"></div>
+        </div>
+        <div class="products_page-container">
+            <nav id="products-menu" aria-label="products" class="products-menu">
+                <ul>
+                    <li class="products-menu-option" id="products_current"><a href="/products.html">Products</a></li>
+                    <div class="wrap_products-menu-option">
 
-        </section>
+                        <li class="products-menu-option"><a href="#bestSellers">Best Sellers</a></li>
+                    </div>
+                    <li class="products-menu-option quiz"><a href="/quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
         <input type="checkbox" id="raincoat-dovre">
         <div class="modal_raincoat-dovre">
             <h3>Raincoat Dovre</h3>
@@ -149,30 +143,32 @@
         </div>
     </main>
     <p id="cta_back">back</p>
+    <footer>
+        <div>
+            <img src="../images/footer_rainydays.jpg" alt="The second logo of the Rainydays brand." class="footer_logo">
+            <p>Phone: +47 911 11 111</p>
+            <p>E-mail:
+                <a href: "emailto:contact@rainydays.com" class="email_footer">contact@rainydays.com</a>
+            </p>
+        </div>
+        <div class="social-media">
+            <h5>Social Media</h5>
+            <figure>
+                <i class="fab fa-facebook-f"></i>
+            </figure>
+            <figure>
+                <i class="fab fa-instagram"></i>
+            </figure>
+        </div>
+        <div class="footer_about">
+            <h5><a href="../about.html">About</a></h5>
+        </div>
+        <div class="footer_contactus">
+            <h5><a href="../contact.html">Contact us</a></h5>
+        </div>
+    </footer>
+    <script src="/js/products/stok.js"></script>
+    <script src="/js/products/specificProduct.js"></script>
 </body>
-<footer>
-    <div>
-        <img src="../images/footer_rainydays.jpg" alt="The second logo of the Rainydays brand." class="footer_logo">
-        <p>Phone: +47 911 11 111</p>
-        <p>E-mail:
-            <a href: "emailto:contact@rainydays.com" class="email_footer">contact@rainydays.com</a>
-        </p>
-    </div>
-    <div class="social-media">
-        <h5>Social Media</h5>
-        <figure>
-            <i class="fab fa-facebook-f"></i>
-        </figure>
-        <figure>
-            <i class="fab fa-instagram"></i>
-        </figure>
-    </div>
-    <div class="footer_about">
-        <h5><a href="../about.html">About</a></h5>
-    </div>
-    <div class="footer_contactus">
-        <h5><a href="../contact.html">Contact us</a></h5>
-    </div>
-</footer>
 
 </html>

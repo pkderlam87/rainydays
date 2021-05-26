@@ -24,12 +24,13 @@
 }
 .products-menu{
     display: block;
-    position: relative;
-    left: 0;
+    position: fixed;
+    left: 1%;
     background: #EFF1E2;
-    max-width: 70%;
+    height: max-content;
+    max-width: 80%;
     font-size: 0.6em;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 #products_current a{
     color: #908E83;
@@ -149,15 +150,22 @@
         font-size: 1.7em;
         padding: 10px 0;
         margin-left: 8%;
+        
     }
     .products_collections{
         max-width: 800px;
     }
+    .products-menu-option:hover{
+        box-shadow: 20px 20px 10px rgba(136, 127, 127, 0.3);
+    }
     .productsCards:hover{
-        box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+        box-shadow: 0px 0px 20px rgba(36, 35, 35, 0.6);
     }
     #products_current,
     .quiz {
         margin-left: 0;
+    }
+    .specific{
+        cursor: pointer;
     }
 }
