@@ -1,6 +1,8 @@
 /*Products*/
 .productsCards {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 2px solid grey;
     justify-items: center;
 }
@@ -84,8 +86,14 @@
     left: 2%;
 }
 .cart{
-    border: 1px solid #595452;
+    border: 2px solid #595452;
     position: fixed;
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 200px;
+    padding: 20px;
+    right: 50px;
+    top: 450px;
 }
 @media (min-width:320px) and (max-width:599px){
 
@@ -112,10 +120,7 @@
     .quiz {
         margin-left: 0;
     }
-    .details_buying{
-        font-size: 1em;
-        margin-left: 2%;
-    }
+
     .size_color{
         margin-left: 5%;
         border-left: 1px solid #707070;

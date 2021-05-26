@@ -65,12 +65,12 @@
     width: 60%;
 }
 .cta_addCart{
-    background-color: #DAE1E6;
-    width: 30%;
-    padding: 1% 2%;
-    font-size: 1.2em;
-    margin: 3% auto;
     justify-content: center;
+    background-color: #DAE1E6;
+    width: 90%;
+    padding: 5% 2%;
+    font-size: 1.2em;
+    margin-top: 40%;
 }
 .cta_add{
     background-color: #86888A;
@@ -157,6 +157,9 @@ i.fas.fa-cart-plus{
     }
     .cta_wait-continuebuying{
         max-width: 15%;
+    }
+    button:hover{
+        box-shadow: 0 10px 30px rgba(136, 127, 127, 0.3);
     }
 }
 @media (min-width:1000px){

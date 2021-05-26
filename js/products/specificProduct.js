@@ -7,9 +7,10 @@ const photosSpecificProduct = document.querySelector(".photos_specific-product")
 const detailsBuying = document.querySelector(".details_buying");
 const best_seller = document.querySelector(".best_seller");
 const form = document.querySelector("form");
+var radios = document.getElementsByName("color");
+const addCart = document.querySelector("#addCart");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-
 // get the id from the query string
 const id = params.get("id");
 
@@ -34,9 +35,30 @@ function details() {
     <h4>Watterproof: ${productsStok[id].waterproof}</h4>
     <h4>Hours outside: until ${productsStok[id].hoursOut} hours</h4>
     <h4>Suitable for until ${productsStok[id].minTemp}°C</h4>
-    <h4 class ="unit">Only remain ${productsStok[id].units} units</h4></div>`
+    <h4 class ="unit">Only remain ${productsStok[id].units} units</h4>
+    </div>`
     if ((productsStok[id].bestseller) === true) {
         best_seller.innerHTML = `<img src= "images/fivestars.jpg" alt= "Five star for the best seller" class="starsBest">`;
     }
 }
 details(id);
+//----------------Cart
+let cartArray = [];
+function submitForm(event) {
+    event.preventDefault();
+    for (let i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+            var colorSelected = radios[i].checked;
+            break;
+        }
+    }
+    form.reset();
+}
+form.addEventListener("submit", submitForm);
+/*function submitForm(event) {
+    event.preventDefault();
+    console.log(event.target);
+    cartArray.push(event.target);
+    form.reset();
+}
+form.addEventListener("submit", submitForm);*/

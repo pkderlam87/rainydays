@@ -12,8 +12,6 @@ nav,
 a,
 figure p,
 footer p,
-.bought p,
-.product_raincoat-dovre p,
 .checkout-empty_text,
 .payment_wrap p,
 .contact_name,
@@ -27,8 +25,11 @@ legend,
     text-decoration: none;
     color: #595452;
 }
-p{
+p,
+body{
     font-family: 'verdana', sans-serif;
+}
+p{
     font-size: 0.6em;
 }
 i{
@@ -39,4 +40,7 @@ i{
 .contact_message,
 legend{
     font-size: 0.7em;
+}
+.details_buying{
+    font-size: 1em;
 }
