@@ -1,4 +1,4 @@
-const productsStok = [
+export const productsStok = [
     {
         productId: 0,
         class: "waterproof",

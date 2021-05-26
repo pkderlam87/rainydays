@@ -1,3 +1,5 @@
+import { productsStok } from "../constants/stok.js";
+
 const products_collections = document.querySelector(".products_collections");
 const bestSeller = document.querySelector(".bestSeller");
 for (let i = 0; i < productsStok.length; i++) {

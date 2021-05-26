@@ -1,3 +1,5 @@
+import { productsStok } from "../constants/stok.js";
+
 const title = document.querySelector("title");
 const titlePage = document.querySelector("#titleOfPage");
 const specificMenu = document.querySelector(".wrap_products-menu-option");
