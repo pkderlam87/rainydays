@@ -11,7 +11,7 @@
 #cta_back,
 #cta_back-success,
 .cta_done,
-.cta-products__autumn2020,
+.cta_productSpecific,
 .cta-products__winter2020-2021,
 .cta-products__autumn-men,
 .cta-products__autumn-woman,
@@ -32,11 +32,12 @@
     border: 3px solid #707070;
     display: flex;
     border-radius: 23px;
+    cursor: pointer;
 }
-.cta-products__autumn2020,
-.cta-products__winter2020-2021{
+.cta_productSpecific{
     max-width: 40%;
-    font-size: 0.5em;
+    margin: 3% auto 1% auto;
+    font-size: 0.6em;
 }
 .cta-products__winter2020-2021,
 .cta_continuebuying{
@@ -141,8 +142,6 @@ i.fas.fa-cart-plus{
     left: 2%;
 }
 @media (min-width:600px){
-    .cta-products__autumn2020,
-    .cta-products__winter2020-2021,
     .cta_continuebuying{
     max-width: 50%;
     }
@@ -151,18 +150,9 @@ i.fas.fa-cart-plus{
         left: 60%;
         padding: 1%;
     }
-    .cta-products__autumn2020,
-    .cta-products__winter2020-2021{
-        font-size: 0.6em;
-    }
     .ctas-modal_products-specific h6{
         max-width: 70%;
         font-size: 0.8em;
-    }
-    .cta-products__autumn-men,
-    .cta-products__autumn-woman,
-    .cta-products__autumn-unisex{
-        font-size: 1em;
     }
     .cta_add,
     .cta_wait-continuebuying{
@@ -177,10 +167,6 @@ i.fas.fa-cart-plus{
     }
 }
 @media (min-width:1000px){
-    .cta-products__autumn2020,
-    .cta-products__winter2020-2021{
-        font-size: 1em;
-    }
     .cta_add{
         position: relative;
         top: -40px;

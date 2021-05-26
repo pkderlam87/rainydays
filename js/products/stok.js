@@ -30,7 +30,7 @@ const productsStok = [
         bestseller: true,
     },
     {
-        type: "Ski and Snowboard Men",
+        type: "Ski & Snowboard Men",
         price: 599,
         units: 5,
         photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket" class="spotlightImage">`,
@@ -40,7 +40,7 @@ const productsStok = [
         bestseller: false,
     },
     {
-        type: "Ski and Snowboard Unisex",
+        type: "Ski & Snowboard Unisex",
         price: 599,
         units: 5,
         photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket" class="spotlightImage">`,
@@ -50,7 +50,7 @@ const productsStok = [
         bestseller: false,
     },
     {
-        type: "Ski and Snowboard Woman",
+        type: "Ski & Snowboard Woman",
         price: 599,
         units: 5,
         photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket" class="spotlightImage">`,
