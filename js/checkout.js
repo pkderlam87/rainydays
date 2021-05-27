@@ -28,7 +28,7 @@ const cardName = document.querySelector("#cardName");
 const cardNameError = document.querySelector("#cardNameError");
 const phone = document.querySelector("#phone");
 const done = document.querySelector("button");
-done.disabled = true;
+
 //error message for name problem 
 function validateName() {
     event.preventDefault();
@@ -42,7 +42,7 @@ function validateName() {
 };
 myname.addEventListener("keyup", validateName);
 //------------------------------------Enable the button
-function checkIfButtonIsDisabled() {
+/*function checkIfButtonIsDisabled() {
     // if all inputs pass validation enable the button
     if (checkLength(myname.value, 1) && checkLength(address.value, 5) && validateEmail(email.value)) {
         button.disabled = false;
@@ -53,7 +53,7 @@ function checkIfButtonIsDisabled() {
 }
 myname.addEventListener("keyup", checkIfButtonIsDisabled);
 email.addEventListener("keyup", checkIfButtonIsDisabled);
-address.addEventListener("keyup", checkIfButtonIsDisabled);
+address.addEventListener("keyup", checkIfButtonIsDisabled);*/
 /*function checkIfButtonIsDisabled() {
     // if all inputs pass validation enable the button
     if ((checkLength(myname.value, 1))/* && (validateEmail(email.value)) && (checkLength(address.value, 5)) && (checkLength(postNumber.value, 4))) validateCreditCard(credit_card.value, 16) && validateCvv(cvv.value) && checkLength(cardName.value, 1) && (validateExpiryDateCard))) {
@@ -75,8 +75,8 @@ cardName.addEventListener("keyup", checkIfButtonIsDisabled);
 address.addEventListener("keyup", checkIfButtonIsDisabled);
 postNumber.addEventListener("keyup", checkIfButtonIsDisabled);
 giftAddress.addEventListener("keyup", checkIfButtonIsDisabled);
-giftName.addEventListener("keyup", checkIfButtonIsDisabled);
-done.addEventListener("click", validateExpiryDateCard);*/
+giftName.addEventListener("keyup", checkIfButtonIsDisabled);*/
+done.addEventListener("click", validateExpiryDateCard);
 //error message for email problem 
 function validationEmail() {
     if (validateEmail(email.value) === true) {
