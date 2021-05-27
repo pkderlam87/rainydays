@@ -69,11 +69,11 @@ li{
 }
 /*Header*/
 .logo{
-    max-width: 20%;
+    max-width: 30%;
     display: flex;
 }
 .logoImg{
-    max-width: 30%;
+    max-width: 60%;
 }
 header{
     display:flex;
@@ -135,7 +135,7 @@ footer h5{
 }
 .email_footer{
     font-style:italic;
-    color: #A3A7A2;
+    color: #595452;
     text-decoration: underline;
 }
 .social-media figure{
@@ -159,16 +159,12 @@ footer h5{
     }
     nav li {
         display: inline-block;
-        padding: 5px 40px;
         border:1px solid #707070;
         border-radius: 6px;
         margin: 0 -0.5%;
     }
     .current {
         background: #F4F6F8;
-    }
-    #search{
-        padding: 6px 20px;
     }
     .fas.fa-bars{
         display: none;
@@ -186,5 +182,9 @@ footer h5{
     .contact_wrap,
     .about_wrap{
     background-position-x: 300px;
-}
+    }
+    footer{
+        display:grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
 }
