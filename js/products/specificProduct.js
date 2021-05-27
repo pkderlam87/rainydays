@@ -48,6 +48,7 @@ function details() {
 details(id);
 //----------------Cart
 let cartArray = [];
+let cartArrayAll = [];
 let total = 0;
 function submitForm(event) {
     event.preventDefault();
@@ -61,11 +62,13 @@ function submitForm(event) {
                 productPhoto: productsStok[id].photo,
             };
             total += (cartArray.productPrice);
+            cartArrayAll += (cartArray);
+            console.log(cartArrayAll);
         } else {
             messageError.innerHTML = "Please select one option of size and color";
         }
     }
-    console.log(cartArray);
+    localStorage.setItem("cartList", JSON.stringify(cartArrayAll));
     showTotal(total);
     showCart(cartArray);
     form.reset();
