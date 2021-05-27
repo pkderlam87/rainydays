@@ -93,7 +93,9 @@
     min-width: 200px;
     padding: 20px;
     right: 50px;
-    top: 450px;
+    top: 50px;
+    display: none;
+    background: #fff;
 }
 @media (min-width:320px) and (max-width:599px){
 

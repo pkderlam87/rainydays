@@ -8,7 +8,10 @@ const detailsBuying = document.querySelector(".details_buying");
 const best_seller = document.querySelector(".best_seller");
 const form = document.querySelector("form");
 var radios = document.getElementsByName("color");
-const addCart = document.querySelector("#addCart");
+var size = document.querySelector("#size");
+const messageError = document.querySelector(".messageError");
+const cart = document.querySelector(".cart");
+const cartList = document.querySelector(".cart-list");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 // get the id from the query string
@@ -46,19 +49,31 @@ details(id);
 let cartArray = [];
 function submitForm(event) {
     event.preventDefault();
-    for (let i = 0, length = radios.length; i < length; i++) {
+    for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
-            var colorSelected = radios[i].checked;
+            const color = radios[i].value;
+            const sizeChoice = size.value;
+            const product = productsStok[id];
+            cartArray.push(color, sizeChoice, product);
             break;
+        } else {
+            messageError.innerHTML = "Please select one option of size and color";
         }
     }
+    console.log(cartArray);
+    showCart(cartArray);
     form.reset();
 }
 form.addEventListener("submit", submitForm);
-/*function submitForm(event) {
-    event.preventDefault();
-    console.log(event.target);
-    cartArray.push(event.target);
-    form.reset();
+
+function showCart(cartItems) {
+    cart.style.display = "block";
+    cartList.innerHTML = "";
+    cartItems.forEach(function () {
+        cartList.innerHTML +=
+            `<div class="cart-item">
+        <h5>${cartArray[2].type}</h5>
+        <h5>Color: ${cartArray[0]}</h5>
+        <h5>Size: ${cartArray[1]}</h5> </div>`;
+    });
 }
-form.addEventListener("submit", submitForm);*/
