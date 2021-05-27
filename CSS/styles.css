@@ -38,11 +38,6 @@ nav{
     position: fixed;
     z-index: 1000;
 }
-nav ul,
-.cart ul{
-    padding: 3%;
-    margin: 3%;
-}
 li{
     list-style: none;
     padding: 3%;
@@ -73,13 +68,17 @@ li{
     display: flex;
 }
 .logoImg{
-    max-width: 60%;
+    max-width: 90%;
 }
 header{
     display:flex;
 }
 .current{
     text-decoration: underline;
+}
+.navigation{
+    order: -1;
+    margin-right: 2%;
 }
 /*Search icon and filter*/
 .fa-search{
@@ -149,16 +148,20 @@ footer h5{
     .logoImg{
         max-width: 80%;
     }
-    nav{
-        display: block;
+    .navigation{
+        order: 0;
+        display: inline-flex;
+    }
+    #nav_main{
+        display: flex;
+        flex-grow: 5;
     }
     nav ul{
         float: left;
-        padding: 0;
         margin: 1% 0;
     }
     nav li {
-        display: inline-block;
+        display: inline-flex;
         border:1px solid #707070;
         border-radius: 6px;
         margin: 0 -0.5%;

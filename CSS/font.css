@@ -44,6 +44,9 @@ legend{
 .details_buying{
     font-size: 1em;
 }
+.fa-bars{
+    font-size: 1.3em;
+}
 @media (min-width:600px){
     footer{
         font-size: 1.2em;
