@@ -11,7 +11,7 @@ h6,
 nav,
 a,
 figure p,
-footer p,
+footer,
 .checkout-empty_text,
 .payment_wrap p,
 .contact_name,
@@ -47,8 +47,15 @@ legend{
 .fa-bars{
     font-size: 1.3em;
 }
+footer{
+    font-size: 0.7em;
+}
 @media (min-width:600px){
     footer{
         font-size: 1.2em;
     }
+    p{
+        font-size: 0.8em;
+    }
+
 }

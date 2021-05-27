@@ -162,6 +162,11 @@ i.fas.fa-cart-plus{
         box-shadow: 0 10px 30px rgba(136, 127, 127, 0.3);
     }
 }
+@media (min-width:300px) and (max-width:999px){
+    #cta_back{
+        width: 15%;
+    }
+}
 @media (min-width:1000px){
     .cta_add{
         position: relative;

@@ -38,9 +38,12 @@ nav{
     position: fixed;
     z-index: 1000;
 }
+ul{
+    padding: 0 1% 0 0;
+}
 li{
     list-style: none;
-    padding: 3%;
+    padding: 7%;
 }
 @keyframes menu{
         0% {left: -1000px;}
@@ -90,7 +93,7 @@ header{
 }
 .search{
     display: flex;
-    margin:0 15% 0 3%;
+    margin-right:-7%;
 }
 .search_shopping i,
 .filter_sorter i{
@@ -105,18 +108,18 @@ header{
     position: relative;
     left: 80%;
 }
-
+#search{
+    max-width: 50%;
+}
 /*Footer*/
 footer{
     margin-top: 14%;
     display: flex;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
 }
-footer h6,
-footer h5{
+footer{
     color: #5F5C54;
     margin: 2% 0;
-    font-size: 0.7em;
 }
 .footer_about,
 .footer_contactus{
@@ -145,37 +148,6 @@ footer h5{
 }
 /*Media Querie*/
 @media (min-width:600px){
-    .logoImg{
-        max-width: 80%;
-    }
-    .navigation{
-        order: 0;
-        display: inline-flex;
-    }
-    #nav_main{
-        display: flex;
-        flex-grow: 5;
-    }
-    nav ul{
-        float: left;
-        margin: 1% 0;
-    }
-    nav li {
-        display: inline-flex;
-        border:1px solid #707070;
-        border-radius: 6px;
-        margin: 0 -0.5%;
-    }
-    .current {
-        background: #F4F6F8;
-    }
-    .fas.fa-bars{
-        display: none;
-    }
-    .search_shopping{
-        display: flex;
-        margin:0.5% 0 3% 0;
-    }
     .title-page{
         font-size: 1.3em;
         padding: 0;
@@ -189,5 +161,54 @@ footer h5{
     footer{
         display:grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width:600px) and (max-width:1175px){  
+    #search{
+        max-width: 90%;
+    }
+    .search{
+        margin-right: 15%;
+    }
+}
+@media (min-width:1176px){
+    .current {
+        background: #F4F6F8;
+    }
+    .logoImg{
+        max-width: 80%;
+    }
+    .navigation{
+        order: 0;
+        display: inline-flex;
+        flex-grow: 0.3;
+    }
+    #nav_main{
+        display: flex;
+        flex-grow: 5;
+    }
+    nav ul{
+        display: flex;
+        margin-top: 0;
+    }
+    nav li {
+        display: inline-flex;
+        align-items: center;
+        border:1px solid #707070;
+        border-radius: 6px;
+        margin-right: 1%;
+    }
+    .fas.fa-bars{
+        display: none;
+    }
+    #search{
+        max-width: 100%;
+    }
+    .search_shopping{
+        display: flex;
+        margin:1% 0 3% 0;
+    }
+    .search{
+        margin-right: 18%;
     }
 }

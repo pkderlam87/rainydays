@@ -20,9 +20,6 @@
     margin-top: 3%;
     max-width: 800px;
 }
-.title_sectionProducts{
-    margin:8% 15% 0;
-}
 .products-menu{
     display: block;
     position: fixed;
@@ -103,7 +100,23 @@
     margin-bottom: 2%;
 }
 @media (min-width:320px) and (max-width:599px){
-
+    .products_collections,
+    .bestSeller{
+        display: block;
+    }
+    .products-menu{
+        display: none;
+    }
+    .specific{
+        display: block;
+    }
+    .details_buying{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    #addCart{
+        margin: 6% auto 5% auto;
+    }
 }    
 @media (min-width:600px){
     .products-menu-option{
@@ -112,7 +125,9 @@
         font-size: 1.7em;
         padding: 10px 0;
         margin-left: 8%;
-        
+    }
+    #products-menu ul{
+        display: block;
     }
     .products_collections{
         max-width: 800px;
