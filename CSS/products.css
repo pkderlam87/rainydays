@@ -44,6 +44,8 @@
 /*Specific Product*/
 .spec{
     position: relative;
+    max-width: 15%;
+    margin-left: -1%;
 }
 .specific {
     display: grid;
@@ -82,10 +84,11 @@
 #cta_back{
     left: 2%;
 }
+/*Cart*/
 .cart{
     border: 2px solid #595452;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 400px;
     min-width: 200px;
     padding: 20px;
     right: 50px;
@@ -99,12 +102,19 @@
 .cart-productChosen{
     margin-bottom: 2%;
 }
+.checkout-modal_photo img{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-size: cover;
+}
 @media (min-width:320px) and (max-width:599px){
     .products_collections,
     .bestSeller{
         display: block;
     }
-    .products-menu{
+    .spec{
         display: none;
     }
     .specific{

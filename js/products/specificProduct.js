@@ -12,6 +12,7 @@ var size = document.querySelector("#size");
 const messageError = document.querySelector(".messageError");
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 // get the id from the query string
@@ -19,7 +20,7 @@ const id = params.get("id");
 
 // if the id is null (doesn't exist) redirect to the home page
 if (id === null) {
-    location.href = "/";
+    window.history.back();
 }
 function titleOfPage() {
     title.innerHTML = `Rainydays | ${productsStok[id].type}`;
@@ -47,6 +48,7 @@ function details() {
 details(id);
 //----------------Cart
 let cartArray = [];
+let total = 0;
 function submitForm(event) {
     event.preventDefault();
     for (let i = 0; i < radios.length; i++) {
@@ -56,13 +58,15 @@ function submitForm(event) {
                 sizeChoice: size.value,
                 productType: productsStok[id].type,
                 productPrice: productsStok[id].price,
+                productPhoto: productsStok[id].photo,
             };
+            total += (cartArray.productPrice);
         } else {
             messageError.innerHTML = "Please select one option of size and color";
         }
-
     }
     console.log(cartArray);
+    showTotal(total);
     showCart(cartArray);
     form.reset();
 }
@@ -72,8 +76,12 @@ function showCart() {
     cart.style.display = "block";
     cartList.innerHTML +=
         `<div class="cart-productChosen">
+        <figure class = "checkout-modal_photo">${cartArray.productPhoto}</figure>
         <h5 class="cart-item">${cartArray.productType}</h5>
         <h5 class="cart-item">Price: ${cartArray.productPrice},-</h5>
         <h5 class="cart-item">Size: ${cartArray.sizeChoice}</h5>
         <h5 class="cart-item">Color: ${cartArray.color}</h5></div>`;
 };
+function showTotal() {
+    totalContainer.innerHTML = `Total: ${total}`;
+}

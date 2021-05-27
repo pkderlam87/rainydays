@@ -47,11 +47,16 @@ legend{
 .fa-bars{
     font-size: 1.3em;
 }
-footer{
+footer,
+.productType, 
+.productPrice{
     font-size: 0.7em;
 }
+
 @media (min-width:600px){
-    footer{
+    footer,
+    .productType, 
+    .productPrice{
         font-size: 1.2em;
     }
     p{
