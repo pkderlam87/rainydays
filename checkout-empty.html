@@ -18,29 +18,35 @@
 <body>
     <header>
         <section class="logo">
-            <a href="../../index.html"><img src="../../images/logo.png"></a>
+            <a href="index.html"><img src="images/logo.png" alt="The logo of rainydays" class="logoImg"></a>
         </section>
-        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-menu" />
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../products.html">Products</a></li>
-                <li><a href="../../about.html">About</a></li>
-                <li><a href="../../contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <section>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <nav id="nav_main" aria-label="mainMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section class="navigation">
         <div class="search_shopping">
-            <input id="search" class="form" type="text" name="search">
-            <label for="search"><i class="fas fa-search"></i></label>
-            <a href="checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
+            <div class="search">
+                <input id="search" class="form" type="text" name="search"><label for="search"><i
+                        class="fas fa-search"></i></label>
+            </div>
+            <div>
+                <a href="checkout-empty.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
         </div>
     </header>
     <main class="checkout_wrap">
         <h1 class="title-page">Checkout</h1>
         <h2 class="checkout-empty_text">Your cart is empty.</h2>
     </main>
-    <a href="../../products.html" class="cta_continuebuying">Continue Buying</a>
+    <a href="products.html" class="cta_continuebuying">Continue Buying</a>
     <p id="cta_back-success">back</p>
     <footer>
         <div>
@@ -48,7 +54,7 @@
                 class="footer_logo">
             <p>Phone: +47 911 11 111</p>
             <p>E-mail:
-                <a href: "emailto:contact@rainydays.com" class="email_footer">contact@rainydays.com</a>
+                <a href="mailto:contact@rainydays.com" class="email_footer">contact@rainydays.com</a>
             </p>
         </div>
         <div class="social-media">

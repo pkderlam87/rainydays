@@ -11,9 +11,7 @@ h6,
 nav,
 a,
 figure p,
-footer p,
-.bought p,
-.product_raincoat-dovre p,
+footer,
 .checkout-empty_text,
 .payment_wrap p,
 .contact_name,
@@ -31,10 +29,11 @@ label,
     color: #595452;
 }
 p,
-.form-error,
-.form,
-textarea{
+body{
     font-family: 'verdana', sans-serif;
+}
+p{
+    font-size: 0.6em;
 }
 i{
     color: #0F100A;
@@ -73,5 +72,28 @@ i{
     #credit_cardError,
     #phoneError{
         font-size: 0.7em;
+    }
+
+.details_buying{
+    font-size: 1em;
+}
+.fa-bars{
+    font-size: 1.3em;
+}
+footer,
+.productType, 
+.productPrice{
+    font-size: 0.7em;
+}
+footer,
+    .productType, 
+    .productPrice{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .cta_productSpecific{
+        font-size: 1em;
     }
 }

@@ -1,266 +1,166 @@
 /*Products*/
-.products_page-container,
-.products-menu,
-.products_collections{
+.productsCards {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid grey;
+    justify-items: center;
+}
+.products_collections,
+.bestSeller{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    margin: 0 22%;
+}
+.products_collections{
+    max-width: 600px;
+}
+.bestSeller{
+    margin-top: 3%;
+    max-width: 800px;
 }
 .products-menu{
     display: block;
-    position: relative;
-    left: 0;
-    background: linear-gradient(0.50turn, #E5E7D1, #ffffff, #EFF1E2);
-    max-width: 50%;
-    font-size: 0.5em;
+    position: fixed;
+    left: 1%;
+    background: #EFF1E2;
+    height: max-content;
+    max-width: 80%;
+    font-size: 0.6em;
+    margin-bottom: 2%;
 }
-.products-menu li{
-    padding: 4px 0;
-}
-.products_current a{
+#products_current a{
     color: #908E83;
 }
-.products_autumn-wrap,
-.products_winter-wrap{
-    display: grid;
+.products_collections img,
+.bestSeller img{
+    max-width: 95%;
+}
+.productType,
+.productPrice{
+    margin: 1% auto 1% auto;
+}
+.starsBest-products_cards{
+    max-width: 15%;
+}
+/*Specific Product*/
+.spec{
     position: relative;
-    max-width: 40%;
-    left: 50px;
-    justify-content: center;
+    max-width: 15%;
+    margin-left: -1%;
 }
-.products_collections img{
-    max-width: 50%;
-}
-/*Autumn2020*/
-.autumn2020_wrap,
-.options-autumn{
-    display: flex;
-}
-.options-autumn{
-    justify-items: center;
-}
-.options-autumn img{
-    max-width: 50%;
-}
-.men_autumn,
-.woman_autumn,
-.unisex_autumn{
-    position: relative;
-    flex: 1;
-    left: 3%;
-    top: 3%;
-}
-.men_autumn img{
-    min-height: 53%;
-}
-/*Unisex-autumn*/
-.products-options-unisex-autumn{
-    display: flex;
-}
-.products-photos{
+.specific {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 0;
+    grid-template-columns: 3fr 1fr 2fr;
 }
-.products-photos img{
+.photos_specific-product img{
     max-width: 70%;
+    margin-left: 20%;
+    cursor: zoom-in;
 }
-.autumn_bergen,
-.product_raincoat-dovre,
-.autumn_arendal,
-.autumn_brekstad,
-.autumn_namsos,
-.autumn_trondheim{
-    position: relative;
-    left: 3%;
-    top: 3%;
+.unit {
+    color: rgb(116, 19, 19);
 }
-.discount_image img{
-    position: absolute;
+.color{
+    padding: 9px;
+    max-width: 6%;
+    border: 2px solid #707070;;
+    border-radius: 3px;
+}
+.white{
+    background-color: white;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.starsBest{
+    margin-top: 8%;
     max-width: 30%;
-    border: none;
-    top:-600%;
-}
-/*Modal Raincoat-dovre*/
-#raincoat-dovre, .modal_raincoat-dovre{
-    display: none;
-}
-#raincoat-dovre:checked ~ .modal_raincoat-dovre{
-    display: block;
-    position: absolute;
-    background: white;
-    max-width: 60%;
-    z-index: 100;
-    border: 3px solid #707070;
-    left: 20%;
-    top: 15%;
-}
-.modal_raincoat-dovre h3{
-    text-align: center;
-    margin: 1% 0;
-    font-size:0.8em
-}
-.photos_specific-product{
-    display: flex;
-    align-items: center;
-}
-.raincoat-dovre_secondary,
-.raincoat-dovre_tertiary{
-    margin-right: -3px;
-    margin-left: 0;
-    max-width: 50%;
-    flex: 1;
-}
-.raincoat-dovre_main{
-    margin:0 auto;
-    max-width: 60%;
-    flex: 2;
-}
-.raincoat-dovre_tertiary{
-    margin-left: -25px;
-}
-.modal_raincoat-dovre h4{
-    margin-bottom: 1%;
-}
-.details_buying{
-    display: block;
-    margin: 0;
-    font-size: 0.7em;
-}
-.size_color_wrap{
-    display:flex;
-    justify-content: space-around;
-}
-.select-color img{
-    max-width: 20%;
-    border: none;
-}
-.select-color{
-    margin-left: 6%;
-}
-#color-yellow,
-#color-marine,
-#color-gray,
-#color-red{
-    display:none;
-}
-.price{
-    display: flex;
-    justify-content: space-around;
-}
-.sale{
-    text-decoration: line-through;
-}
-#add-to-cart, .cart {
-    display: none;
-}
-#add-to-cart:checked ~ .cart{
-    display: block;
-    position: absolute;
-    top:0;
-    z-index: 1000;
-    background-color:white;
-}
-.cart{
-    border: 3px solid #707070;
-    width: 90%;
-}
-.cart,
-.cart h5,
-.cart h6{
-    margin: 0;
-    padding: 1%;   
-}
-.success_add,
-.success_add i{
-    color: #768C56;
 }
 #cta_back{
     left: 2%;
 }
-@media (min-width:600px){
-    .products-menu li{
-        display: block;
-        border: none;
-        font-size: 1.5em;
-        padding: 10px 0;
-    }
-    #raincoat-dovre:checked ~ .modal_raincoat-dovre{
-        top: 45%;
-    }
-    .discount_image img{
-        top: -1200%;
-    }
-    .products_collections{
-        align-items: end;
-    }
-
+/*Cart*/
+.cart{
+    border: 2px solid #595452;
+    margin: 0 auto;
+    max-width: 400px;
+    min-width: 200px;
+    padding: 20px;
+    right: 50px;
+    top: 50px;
+    display: none;
+    background: #fff;
 }
-@media (min-width:940px){
-    .autumn2020_wrap,
-    .products-menu{
-        display:flex;
-    }
-}    
-@media (min-width:1000px){
-    .products-menu{
+.cart-item{
+    margin:0;
+}
+.cart-productChosen{
+    margin-bottom: 2%;
+}
+.checkout-modal_photo img{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-size: cover;
+}
+@media (min-width:320px) and (max-width:599px){
+    .products_collections,
+    .bestSeller{
         display: block;
-        max-width: 50%;
-        padding: 2%;
     }
-    .products_autumn-wrap,
-    .products_winter-wrap{
+    .spec{
+        display: none;
+    }
+    .specific{
+        display: block;
+    }
+    .details_buying{
+        max-width: 320px;
         margin: 0 auto;
     }
-    .discount_image img{
-        width: 35%;
-        top: -700%;
+    #addCart{
+        margin: 6% auto 5% auto;
     }
-    .products-photos{
+}    
+@media (min-width:600px){
+    .products-menu-option{
+        display: block;
+        border: none;
+        font-size: 1.7em;
+        padding: 10px 0;
         margin-left: 8%;
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20%;
-        gap: 0;
     }
-    .products-photos img{
-        max-width: 90%;
+    #products-menu ul{
+        display: block;
     }
-    .products-photos p{
-        font-size: 0.6em;
+    .products_collections{
+        max-width: 800px;
+    }
+    .products-menu-option:hover{
+        box-shadow: 20px 20px 10px rgba(136, 127, 127, 0.3);
+    }
+    .productsCards:hover{
+        box-shadow: 0px 0px 20px rgba(36, 35, 35, 0.6);
+    }
+    #products_current,
+    .quiz {
+        margin-left: 0;
+    }
+    .bestSellers{
+        margin-top: 10%;
         text-align: center;
     }
-    /*Modal Raincoat-dovre*/
-    #raincoat-dovre:checked ~ .modal_raincoat-dovre{
-        max-width: 50%;
-        top: 10%;
-    }
-    .raincoat-dovre_secondary img,
-    .raincoat-dovre_tertiary img{
-    max-width: 50%;
-    margin-right: -70px;
-    }
-    .raincoat-dovre_main img{
-    max-width: 60%;
-    margin-right: -15%;
-    }
-    .select-color img{
-        max-width: 20%;
-    }
-    #add-to-cart:checked ~ .cart{
-        top: 90px;
-        right: -300px;
-    }    
-    .cart,
-    .cart h5,
-    .cart h6{
-        font-size: 1em;
-    }
-    .price{
-        justify-content: space-evenly;
-        position: relative;
-        right: 90px;
-    }
-}
-@media (min-width:1200px){
-    .discount_image img{
-        top: -950%;
+    .size_color{
+        margin-left: 5%;
+        border-left: 1px solid #707070;
     }
 }

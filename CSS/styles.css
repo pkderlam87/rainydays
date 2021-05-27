@@ -3,6 +3,47 @@
     background-color: #F1F2E6;
     font-size: 1em;
     text-align: center;
+    padding: 2%;
+    justify-content: center;
+}
+/*Images*/
+.spotlightImage{
+    border-width: 6px;
+    border-style: solid;
+    border-image: linear-gradient(0.4turn, #F2F1F1, #808080) 2;
+    border-radius: 6px;
+}
+/*hamburger menu*/
+nav{
+    display: none;
+}
+#hamburger-menu{
+    display:none;
+}
+#hamburger-menu:checked ~nav{
+    display: block;
+    background-color:#f7f7f7;
+    border: 2px solid #595452;
+    border-radius: 6px;
+    color:#595452;
+    width: 23%;
+    animation-name: menu;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    left: -1000px;
+    position: fixed;
+    z-index: 1000;
+}
+ul{
+    padding: 0 1% 0 0;
+}
+li{
+    list-style: none;
+    padding: 7%;
+}
+@keyframes menu{
+        0% {left: -1000px;}
+        100% {left: 0px;}
 }
 /*Background*/
 .home_main,
@@ -21,44 +62,61 @@
     background-position-x: -15%;
 }
 /*Header*/
-header{
+.logo{
+    max-width: 30%;
     display: flex;
 }
-.logo_image{  
-    max-width: 80%;
+.logoImg{
+    max-width: 90%;
+}
+header{
+    display:flex;
 }
 .current{
     text-decoration: underline;
 }
+.navigation{
+    order: -1;
+    margin-right: 2%;
+}
 /*Search icon and filter*/
+.fa-search{
+    padding: 50%;
+    margin-left: 5%;
+}
+.fa-shopping-cart{
+    padding: 45%;
+}
+.search{
+    display: flex;
+    margin-right:-7%;
+}
 .search_shopping i,
 .filter_sorter i{
-    padding: 1%;
     background-color: #E5EAED;
     border: 1px solid #707070;
-    border-radius: 10px;
+    border-radius: 3px;
 }
-.search_shopping,
-.search_shopping i{
-    display: inline;
-    position: unset;
+.search_shopping{
+    display: inline-flex;
 }
 .filter_sorter i{
     position: relative;
     left: 80%;
 }
-
+#search{
+    max-width: 50%;
+}
 /*Footer*/
 footer{
+    margin-top: 14%;
     display: flex;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
     margin-top: 7%;
 }
-footer h6,
-footer h5{
+footer{
     color: #5F5C54;
     margin: 2% 0;
-    font-size: 0.7em;
 }
 .footer_about,
 .footer_contactus{
@@ -76,7 +134,7 @@ footer h5{
 }
 .email_footer{
     font-style:italic;
-    color: #3a3b3a;
+    color: #595452;
     text-decoration: underline;
 }
 .social-media figure{
@@ -125,37 +183,65 @@ li{
 }
 /*Media Querie*/
 @media (min-width:600px){
-    nav{
-        display: block;
-    }
-    nav ul{
-        float: left;
+    .title-page{
+        font-size: 1.3em;
         padding: 0;
-        margin: 1% 0;
+        width: 40%;
+        margin: 2% auto;
     }
-    nav li {
-        display: inline-block;
-        padding: 5px 40px;
-        border:1px solid #707070;
-        border-radius: 6px;
-        margin: 0 -0.5%;
+    .contact_wrap,
+    .about_wrap{
+    background-position-x: 300px;
     }
+    footer{
+        display:grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width:600px) and (max-width:1175px){  
+    #search{
+        max-width: 90%;
+    }
+    .search{
+        margin-right: 15%;
+    }
+}
+@media (min-width:1176px){
     .current {
         background: #F4F6F8;
     }
-    #search{
-        padding: 6px 20px;
+    .logoImg{
+        max-width: 80%;
+    }
+    .navigation{
+        order: 0;
+        display: inline-flex;
+        flex-grow: 0.3;
+    }
+    #nav_main{
+        display: flex;
+        flex-grow: 5;
+    }
+    nav ul{
+        display: flex;
+        margin-top: 0;
+    }
+    nav li {
+        display: inline-flex;
+        align-items: center;
+        border:1px solid #707070;
+        border-radius: 6px;
+        margin-right: 1%;
     }
     .fas.fa-bars{
         display: none;
     }
-    .logo{
-        max-width: 40%;
+    #search{
+        max-width: 100%;
     }
     .search_shopping{
-        display: block ruby;
-        min-height: 50px;
-        margin: 3%;
+        display: flex;
+        margin:1% 0 3% 0;
     }
     .title-page{
         max-width: 50%;
@@ -165,5 +251,8 @@ li{
     .contact_wrap,
     .about_wrap{
     background-position-x: 300px;
-}
+    }
+    .search{
+        margin-right: 18%;
+    }
 }
