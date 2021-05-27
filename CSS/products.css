@@ -87,7 +87,6 @@
 }
 .cart{
     border: 2px solid #595452;
-    position: fixed;
     margin: 0 auto;
     max-width: 600px;
     min-width: 200px;
@@ -96,6 +95,12 @@
     top: 50px;
     display: none;
     background: #fff;
+}
+.cart-item{
+    margin:0;
+}
+.cart-productChosen{
+    margin-bottom: 2%;
 }
 @media (min-width:320px) and (max-width:599px){
 

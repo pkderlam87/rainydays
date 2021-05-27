@@ -51,14 +51,16 @@ function submitForm(event) {
     event.preventDefault();
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
-            const color = radios[i].value;
-            const sizeChoice = size.value;
-            const product = productsStok[id];
-            cartArray.push(color, sizeChoice, product);
-            break;
+            cartArray = {
+                color: radios[i].value,
+                sizeChoice: size.value,
+                productType: productsStok[id].type,
+                productPrice: productsStok[id].price,
+            };
         } else {
             messageError.innerHTML = "Please select one option of size and color";
         }
+
     }
     console.log(cartArray);
     showCart(cartArray);
@@ -66,14 +68,12 @@ function submitForm(event) {
 }
 form.addEventListener("submit", submitForm);
 
-function showCart(cartItems) {
+function showCart() {
     cart.style.display = "block";
-    cartList.innerHTML = "";
-    cartItems.forEach(function () {
-        cartList.innerHTML +=
-            `<div class="cart-item">
-        <h5>${cartArray[2].type}</h5>
-        <h5>Color: ${cartArray[0]}</h5>
-        <h5>Size: ${cartArray[1]}</h5> </div>`;
-    });
-}
+    cartList.innerHTML +=
+        `<div class="cart-productChosen">
+        <h5 class="cart-item">${cartArray.productType}</h5>
+        <h5 class="cart-item">Price: ${cartArray.productPrice},-</h5>
+        <h5 class="cart-item">Size: ${cartArray.sizeChoice}</h5>
+        <h5 class="cart-item">Color: ${cartArray.color}</h5></div>`;
+};
