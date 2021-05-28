@@ -22,7 +22,8 @@ label,
 .payment_option,
 .buyer_card-cvv,
 .checked,
-.fa-smile-wink{
+.fa-smile-wink,
+.myTotal{
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -52,7 +53,8 @@ i{
         font-size: 0.8em;
     }
     label,
-    legend{
+    legend,
+    .myTotal{
         font-size: 0.9em;
     }
     .fab{
@@ -65,7 +67,8 @@ i{
     legend{
         font-size: 1em;
     }
-    .fab{
+    .fab,
+    .myTotal{
         font-size: 1.5em;
     }
     .form-error{

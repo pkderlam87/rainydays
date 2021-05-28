@@ -76,10 +76,22 @@
 #card_expire_year{
     max-width: 20%;
 }
+.product_bought{
+    display: block;
+}
+.cart-productChosen{
+    margin-top: 1%;
+}
 /*body*/
 .bought_payment{
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1.7fr 3fr;
+}
+.myTotal{
+    margin: 3% auto;
+    text-align: center;
+    border: 2px solid #98a586;
+    box-shadow: 5px rgba(157, 165, 150, 0.5);
 }
 form{
     max-width: 300px;

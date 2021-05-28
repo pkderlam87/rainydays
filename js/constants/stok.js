@@ -38,7 +38,7 @@ export const productsStok = [
     {
         productId: 3,
         class: "skiSnowboard",
-        type: "Ski & Snowboard Men",
+        type: "Ski and Snowboard Men",
         price: 599,
         units: 5,
         photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket" class="spotlightImage">`,
@@ -50,7 +50,7 @@ export const productsStok = [
     {
         productId: 4,
         class: "skiSnowboard",
-        type: "Ski & Snowboard Unisex",
+        type: "Ski and Snowboard Unisex",
         price: 599,
         units: 5,
         photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket" class="spotlightImage">`,
@@ -62,7 +62,7 @@ export const productsStok = [
     {
         productId: 5,
         class: "skiSnowboard",
-        type: "Ski & Snowboard Woman",
+        type: "Ski and Snowboard Woman",
         price: 599,
         units: 5,
         photo: `<img src="images/simon-berger-PcVqr8v4XaA-unsplash.jpg" alt="A person skiing wearing a winter jacket" class="spotlightImage">`,

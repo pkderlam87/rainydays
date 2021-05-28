@@ -5,13 +5,14 @@
     justify-content: space-between;
     border: 2px solid grey;
     justify-items: center;
+    text-align: center;
 }
 .products_collections,
 .bestSeller{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3%;
-    margin: 0 22%;
+    margin: 2% 22%;
 }
 .products_collections{
     max-width: 600px;

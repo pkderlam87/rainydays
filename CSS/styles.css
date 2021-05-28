@@ -102,11 +102,10 @@ header{
 .search_shopping{
     display: flex;
     justify-content: right;
-    align-items: right;
 }
 #search{
-    max-width: 50%;
-    max-height: 40%;
+    max-width: 60%;
+    max-height: 84%;
 }
 /*Checked Messages - Error and Success*/
 .checkedSuccess{
@@ -203,6 +202,7 @@ footer{
 #search{
     margin-top: 2%;
 }
+}
 /*Media Querie ------- Ipad and Desktop*/
 @media (min-width:600px){
     .title-page{
@@ -220,7 +220,6 @@ footer{
         grid-template-columns: 2fr 1fr 1fr 1fr;
     }
 }
-
 @media (min-width:1176px){
     .current {
         background: #F4F6F8;
@@ -270,5 +269,4 @@ footer{
     .search{
         margin-right: 9%;
     }
-}
 }
