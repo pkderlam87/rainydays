@@ -55,6 +55,9 @@ i{
     .fab{
         font-size: 1.3em;
     }
+    .fa-bars{
+        font-size: 1.7em;
+    }
 }
 @media (min-width:600px){
     body, 

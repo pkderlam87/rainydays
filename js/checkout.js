@@ -41,42 +41,6 @@ function validateName() {
     }
 };
 myname.addEventListener("keyup", validateName);
-//------------------------------------Enable the button
-/*function checkIfButtonIsDisabled() {
-    // if all inputs pass validation enable the button
-    if (checkLength(myname.value, 1) && checkLength(address.value, 5) && validateEmail(email.value)) {
-        button.disabled = false;
-    } else {
-        // disable button
-        button.disabled = true;
-    }
-}
-myname.addEventListener("keyup", checkIfButtonIsDisabled);
-email.addEventListener("keyup", checkIfButtonIsDisabled);
-address.addEventListener("keyup", checkIfButtonIsDisabled);*/
-/*function checkIfButtonIsDisabled() {
-    // if all inputs pass validation enable the button
-    if ((checkLength(myname.value, 1))/* && (validateEmail(email.value)) && (checkLength(address.value, 5)) && (checkLength(postNumber.value, 4))) validateCreditCard(credit_card.value, 16) && validateCvv(cvv.value) && checkLength(cardName.value, 1) && (validateExpiryDateCard))) {
-        done.disabled = false;
-    }
-    /*if ((validateGiftAddress) && (validateGiftName)) {
-        done.disabled = false;
-    }
-    else {
-        // disable button
-        done.disabled = true;
-    }
-}*/
-/*credit_card.addEventListener("keyup", checkIfButtonIsDisabled);
-cvv.addEventListener("keyup", checkIfButtonIsDisabled);
-cardName.addEventListener("keyup", checkIfButtonIsDisabled);
-/*myname.addEventListener("keyup", checkIfButtonIsDisabled);*/
-/*email.addEventListener("keyup", checkIfButtonIsDisabled);
-address.addEventListener("keyup", checkIfButtonIsDisabled);
-postNumber.addEventListener("keyup", checkIfButtonIsDisabled);
-giftAddress.addEventListener("keyup", checkIfButtonIsDisabled);
-giftName.addEventListener("keyup", checkIfButtonIsDisabled);*/
-done.addEventListener("click", validateExpiryDateCard);
 //error message for email problem 
 function validationEmail() {
     if (validateEmail(email.value) === true) {
@@ -199,6 +163,7 @@ function validateExpiryDateCard() {
         expiryDateCard.invalid = true;
     }
 };
+done.addEventListener("click", validateExpiryDateCard);
 //Validation name in the card
 function validateCardName() {
     event.preventDefault();
@@ -253,11 +218,10 @@ function checkLength(value, len) {
         return false;
     }
 }
-
 // function to run when the form is submitted
-/*function submitForm(event) {
+function submitForm(event) {
     event.preventDefault();
     form.reset();
     button.disabled = true;
 }
-form.addEventListener("submit", submitForm);*/
+form.addEventListener("submit", submitForm);

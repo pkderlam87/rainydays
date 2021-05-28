@@ -47,9 +47,10 @@
         <h1 class="title-page">Checkout</h1>
         <div class="progression_bar"></div>
         <section class="bought_payment">
-            <form action="buyer_data.php" method="POST">
-                <div class="product_bought"></div>
+            <section class="product_bought">
                 <button class="cta_edit"><a href="specific_product.html">Edit</a></button>
+            </section>
+            <form action="buyer_data.php" method="POST">
                 <div>
                     <legend>Your name*</legend>
                     <div class="form-error" id="nameError"><i class="fas fa-exclamation-triangle"></i>Your
@@ -176,18 +177,6 @@
                 </div>
             </form>
         </section>
-        </section>
-        <section class="checkout-wait">
-            <button type="checkbox" id="cta_done" class="cta_done">done</button>
-            <div class="modal_wait">
-                <h5>Wait a minute please...</h5>
-                <h5>We are confirming your payment</h5>
-                <figure class="circle">
-                    <img src="../../images/checkout_wait.jpg" alt="A circle moving from left to right">
-                </figure>
-                <h6 class="cta_wait-continuebuying"><a href="../unisex-autumn.html"> Continue Buying</h6></a>
-            </div>
-        </section>
     </main>
     <footer>
         <div>
@@ -213,9 +202,9 @@
             <h5><a href="../../contact.html">Contact us</a></h5>
         </div>
     </footer>
-    <script src="/js/script.js"></script>
-    <script src="/js/components.js"></script>
-    <script src="/js/checkout.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/components.js" type="module"></script>
+    <script src="js/checkout.js"></script>
 </body>
 
 </html>

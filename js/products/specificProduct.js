@@ -1,4 +1,5 @@
 import { productsStok } from "../constants/stok.js";
+import { createMessage } from "../components.js";
 
 const title = document.querySelector("title");
 const titlePage = document.querySelector("#titleOfPage");
@@ -48,8 +49,8 @@ function details() {
 details(id);
 //----------------Cart
 let cartArray = [];
-let cartArrayAll = [];
 let total = 0;
+let cartArrayAll = [];
 function submitForm(event) {
     event.preventDefault();
     for (let i = 0; i < radios.length; i++) {
@@ -62,15 +63,12 @@ function submitForm(event) {
                 productPhoto: productsStok[id].photo,
             };
             total += (cartArray.productPrice);
-            cartArrayAll += (cartArray);
-            console.log(cartArrayAll);
-        } else {
-            messageError.innerHTML = "Please select one option of size and color";
         }
+        console.log(total);
     }
-    localStorage.setItem("cartList", JSON.stringify(cartArrayAll));
-    showTotal(total);
+    saveData(cartArray);
     showCart(cartArray);
+    showTotal(total);
     form.reset();
 }
 form.addEventListener("submit", submitForm);
@@ -84,7 +82,16 @@ function showCart() {
         <h5 class="cart-item">Price: ${cartArray.productPrice},-</h5>
         <h5 class="cart-item">Size: ${cartArray.sizeChoice}</h5>
         <h5 class="cart-item">Color: ${cartArray.color}</h5></div>`;
+    //localStorage.setItem("myCart", JSON.parse(cartArray));
 };
 function showTotal() {
+    //if (total === 0) {
+    //    messageError.innerHTML = createMessage("Error", `<i class="fas fa-exclamation-triangle"></i> Please select one option of size and color! <i class="fas fa-exclamation-triangle"></i>`);
+    //cartList.style.display = "none";
+    //}
     totalContainer.innerHTML = `Total: ${total}`;
+}
+function saveData() {
+    cartArrayAll += [cartArray.color, cartArray.sizeChoice, cartArray.productType, cartArray.productPrice, cartArray.productPhoto];
+    localStorage.setItem("cartList", JSON.stringify(cartArrayAll));
 }

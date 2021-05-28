@@ -25,12 +25,7 @@ textarea{
     margin: 5px auto 1px auto;
     max-width: 200px;
 }
-.checkedSuccess{
-    background-color: #DFE2DB;
-    z-index: 100;
-    box-shadow: 5px 5px rgba(157, 165, 150, 0.5);
-    border: 3px solid rgba(191, 245, 104, 0.596);
-}
+
 .checked{
     width: 300px;
     margin-bottom: 6%;
