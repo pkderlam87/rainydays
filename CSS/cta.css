@@ -197,8 +197,9 @@ i.fas.fa-cart-plus{
     }
 }
 @media (min-width:300px) and (max-width:999px){
-    #cta_back{
-        width: 15%;
+    #cta_back,
+    #cta_back-success{
+        width: 20%;
     }
     .cta_edit,
     .cta_done{
