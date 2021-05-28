@@ -79,33 +79,31 @@ header{
     order: -1;
     margin-right: 2%;
 }
+.fa-bars{
+    margin: 0.2% 2% auto auto;
+}
 /*Search icon and filter*/
 .fa-search{
     padding: 50%;
-    margin-left: 5%;
 }
 .fa-shopping-cart{
     padding: 45%;
 }
 .search{
     display: flex;
-    margin-right:-7%;
 }
-.search_shopping i,
-.filter_sorter i{
+.search_shopping i{
     background-color: #E5EAED;
     border: 1px solid #707070;
     border-radius: 3px;
 }
 .search_shopping{
-    display: inline-flex;
-}
-.filter_sorter i{
-    position: relative;
-    left: 80%;
+    display: flex;
+    justify-content: right;
 }
 #search{
     max-width: 50%;
+    max-height: 40%;
 }
 /*Checked Messages - Error and Success*/
 .checkedSuccess{
@@ -123,7 +121,6 @@ header{
 /*Footer*/
 footer{
     margin-top: 14%;
-    display: flex;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
     margin-top: 7%;
 }
@@ -193,8 +190,16 @@ li{
         0% {left: -1000px;}
         100% {left: 0px;}
 }
+.logo{
+    max-width: 50%;
 }
-/*Media Querie*/
+footer{
+    display: block;
+}
+#search{
+    margin-top: 2%;
+}
+/*Media Querie ------- Ipad and Desktop*/
 @media (min-width:600px){
     .title-page{
         font-size: 1.3em;
@@ -211,14 +216,7 @@ li{
         grid-template-columns: 2fr 1fr 1fr 1fr;
     }
 }
-@media (min-width:600px) and (max-width:1175px){  
-    #search{
-        max-width: 90%;
-    }
-    .search{
-        margin-right: 15%;
-    }
-}
+
 @media (min-width:1176px){
     .current {
         background: #F4F6F8;
@@ -253,8 +251,8 @@ li{
         max-width: 100%;
     }
     .search_shopping{
-        display: flex;
-        margin:1% 0 3% 0;
+        justify-content: right;
+        margin:1% 0 3% 70%;
     }
     .title-page{
         max-width: 50%;
@@ -266,6 +264,7 @@ li{
     background-position-x: 300px;
     }
     .search{
-        margin-right: 18%;
+        margin-right: 9%;
     }
+}
 }

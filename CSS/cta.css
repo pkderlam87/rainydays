@@ -12,10 +12,6 @@
 #cta_back-success,
 .cta_done,
 .cta_productSpecific,
-.cta-products__winter2020-2021,
-.cta-products__autumn-men,
-.cta-products__autumn-woman,
-.cta-products__autumn-unisex,
 .cta_addCart,
 .cta_add,
 .cta_checkout,
@@ -26,6 +22,20 @@
     display: flex;
     cursor: pointer;
 }
+#cta_back,
+#cta_back-success,
+button,
+.cta_especific-products,
+.cta_add,
+.cta_checkout,
+.cta_edit,
+.cta-contact_send,
+.cta_wait-continuebuying,
+.cta_continuebuying,
+.title-page{
+    color: #595452;
+}
+
 #cta_back,
 #cta_back-success,
 button,
@@ -41,7 +51,6 @@ button,
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
-    color: #595452;
     text-transform: uppercase ;
     border: 3px solid #707070;
     border-radius: 23px;
@@ -115,12 +124,13 @@ i.fas.fa-cart-plus{
     width: 20%;
     justify-content: center;
 }
-#done{
+.cta_done{
     background-color: #86888A;
-    color: #FFF;
     margin: 3% auto;
     font-size: 0.8em;
-    max-width: 30%;
+}
+.cta_done a{
+    color: #FFF;
 }
 .cta-products__autumn2020,
 .cta-products__autumn-unisex,
@@ -174,8 +184,8 @@ i.fas.fa-cart-plus{
         justify-content: center;
     }
     .cta_done{
-        max-width: 20%;
-        padding: 1%;
+        max-width: 50%;
+        padding: 2%;
     }
     .cta_wait-continuebuying{
         max-width: 15%;
@@ -190,6 +200,10 @@ i.fas.fa-cart-plus{
 @media (min-width:300px) and (max-width:999px){
     #cta_back{
         width: 15%;
+    }
+    .cta_edit,
+    .cta_done{
+        width: 40%;
     }
 }
 @media (min-width:1000px){

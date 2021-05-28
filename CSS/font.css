@@ -44,6 +44,9 @@ i{
     font-weight: 700;
     font-size: 0.7em;
 }
+.fa-bars{
+    font-size: 1.7em;
+}
 @media (min-width:300px) and (max-width:599px) {
     p{
         font-size: 0.8em;
@@ -54,9 +57,6 @@ i{
     }
     .fab{
         font-size: 1.3em;
-    }
-    .fa-bars{
-        font-size: 1.7em;
     }
 }
 @media (min-width:600px){
@@ -79,9 +79,6 @@ i{
 
 .details_buying{
     font-size: 1em;
-}
-.fa-bars{
-    font-size: 1.3em;
 }
 footer,
 .productType, 

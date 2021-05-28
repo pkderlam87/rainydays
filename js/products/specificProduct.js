@@ -1,5 +1,4 @@
 import { productsStok } from "../constants/stok.js";
-import { createMessage } from "../components.js";
 
 const title = document.querySelector("title");
 const titlePage = document.querySelector("#titleOfPage");
@@ -55,16 +54,17 @@ function submitForm(event) {
     event.preventDefault();
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
-            cartArray = {
-                color: radios[i].value,
-                sizeChoice: size.value,
-                productType: productsStok[id].type,
-                productPrice: productsStok[id].price,
-                productPhoto: productsStok[id].photo,
-            };
-            total += (cartArray.productPrice);
+            cartArray.push(
+                {
+                    color: radios[i].value,
+                    sizeChoice: size.value,
+                    productType: productsStok[id].type,
+                    productPrice: productsStok[id].price,
+                    productPhoto: productsStok[id].photo,
+                }
+            );
+            //total += (cartArray[i].productPrice);
         }
-        console.log(total);
     }
     saveData(cartArray);
     showCart(cartArray);
@@ -74,15 +74,18 @@ function submitForm(event) {
 form.addEventListener("submit", submitForm);
 
 function showCart() {
+    console.log(cartArray);
     cart.style.display = "block";
-    cartList.innerHTML +=
-        `<div class="cart-productChosen">
-        <figure class = "checkout-modal_photo">${cartArray.productPhoto}</figure>
-        <h5 class="cart-item">${cartArray.productType}</h5>
-        <h5 class="cart-item">Price: ${cartArray.productPrice},-</h5>
-        <h5 class="cart-item">Size: ${cartArray.sizeChoice}</h5>
-        <h5 class="cart-item">Color: ${cartArray.color}</h5></div>`;
-    //localStorage.setItem("myCart", JSON.parse(cartArray));
+    cartList.innerHTML = "";
+    for (let i = 0; i < cartArray.length; i++) {
+        cartList.innerHTML +=
+            `<div class="cart-productChosen">
+        <figure class = "checkout-modal_photo">${cartArray[i].productPhoto}</figure>
+        <h5 class="cart-item">${cartArray[i].productType}</h5>
+        <h5 class="cart-item">Price: ${cartArray[i].productPrice},-</h5>
+        <h5 class="cart-item">Size: ${cartArray[i].sizeChoice}</h5>
+        <h5 class="cart-item">Color: ${cartArray[i].color}</h5></div>`;
+    }
 };
 function showTotal() {
     //if (total === 0) {
@@ -92,6 +95,5 @@ function showTotal() {
     totalContainer.innerHTML = `Total: ${total}`;
 }
 function saveData() {
-    cartArrayAll += [cartArray.color, cartArray.sizeChoice, cartArray.productType, cartArray.productPrice, cartArray.productPhoto];
-    localStorage.setItem("cartList", JSON.stringify(cartArrayAll));
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
 }
