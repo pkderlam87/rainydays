@@ -137,6 +137,9 @@
     }
 }    
 @media (min-width:600px){
+    footer{
+        margin-top: 20%;
+    }
     .products-menu-option{
         display: block;
         border: none;

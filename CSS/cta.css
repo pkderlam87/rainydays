@@ -126,7 +126,8 @@ i.fas.fa-cart-plus{
 }
 .cta_done{
     background-color: #86888A;
-    margin: 3% auto;
+    justify-items: right;
+    margin: 7% 180%;
     font-size: 0.8em;
     color: #FFF;
 }
@@ -166,7 +167,7 @@ i.fas.fa-cart-plus{
 }
 @media (min-width:600px){
     .cta_continuebuying{
-    max-width: 50%;
+    max-width: 25%;
     }
     .cta_continuebuying{
         top: 50px;

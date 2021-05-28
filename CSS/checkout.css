@@ -88,7 +88,7 @@
     grid-template-columns: 1.7fr 3fr;
 }
 .myTotal{
-    margin: 3% auto;
+    margin: 6% auto;
     text-align: center;
     border: 2px solid #98a586;
     box-shadow: 5px rgba(157, 165, 150, 0.5);
@@ -153,10 +153,14 @@ input[type="number"] {
 .congrat{
     text-align: center;
 }
-.photo-product-bought img{
-    max-width: 15%;
-    float: left;
-    margin: 2% 1%;
+#myProductPurchased{
+    display: flex;
+    margin: 0 auto;
+    max-width: 320px;
+}
+#myProductPurchased img{
+    max-width: 60%;
+    margin: 0 auto;
 }
 .pay-success{
     color: #768C56;

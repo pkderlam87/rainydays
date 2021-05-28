@@ -27,7 +27,7 @@ const master = document.querySelector("#master");
 const cardName = document.querySelector("#cardName");
 const cardNameError = document.querySelector("#cardNameError");
 const phone = document.querySelector("#phone");
-const done = document.querySelector("button");
+/*const done = document.querySelector("button");*/
 const myProduct = document.querySelector("#myProduct");
 const myTotal = document.querySelector(".myTotal");
 const edit = document.querySelector("#edit");
@@ -173,7 +173,7 @@ cvv.oninput = function () {
     }
 }
 //Validation Expiry date card
-function validateExpiryDateCard() {
+/*function validateExpiryDateCard() {
     event.preventDefault();
     if ((card_expire_month.value !== "MM") && (card_expire_year.value !== "YYYY")) {
         expiryDateCardError.style.display = "none";
@@ -183,7 +183,7 @@ function validateExpiryDateCard() {
         expiryDateCard.invalid = true;
     }
 };
-done.addEventListener("click", validateExpiryDateCard);
+done.addEventListener("click", validateExpiryDateCard);*/
 //Validation name in the card
 function validateCardName() {
     event.preventDefault();
@@ -239,9 +239,8 @@ function checkLength(value, len) {
     }
 }
 // function to run when the form is submitted
-function submitForm(event) {
+/*function submitForm(event) {
     event.preventDefault();
     form.reset();
-    button.disabled = true;
 }
-form.addEventListener("submit", submitForm);
+form.addEventListener("submit", submitForm);*/
