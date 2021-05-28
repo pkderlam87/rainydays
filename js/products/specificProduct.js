@@ -96,8 +96,7 @@ function showTotal() {
 function saveData() {
     localStorage.setItem("cartList", JSON.stringify(cartArray));
 }
-/*if (cartArray.length === 0) {
+/*if (!cartArray.color) {
     messageError.innerHTML = createMessage("Error", `<i class="fas fa-exclamation-triangle"></i> Please select one option of size and color! <i class="fas fa-exclamation-triangle"></i>`);
     cartList.style.display = "none";
-}
-totalContainer.innerHTML = `Total: ${total}`;*/
+}*/
