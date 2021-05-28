@@ -3,8 +3,10 @@
     background-color: #F1F2E6;
     font-size: 1em;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
     justify-content: center;
+    max-width: 60%;
+    margin: 0 auto;
 }
 /*Images*/
 .spotlightImage{
@@ -100,6 +102,7 @@ header{
 .search_shopping{
     display: flex;
     justify-content: right;
+    align-items: right;
 }
 #search{
     max-width: 50%;
@@ -120,6 +123,7 @@ header{
 }
 /*Footer*/
 footer{
+    display: flex;
     margin-top: 14%;
     background: linear-gradient(0.50turn, #B8BF80, #ebf8e1, #B8BF80);
     margin-top: 7%;
@@ -204,7 +208,7 @@ footer{
     .title-page{
         font-size: 1.3em;
         padding: 0;
-        width: 40%;
+        max-width: 40%;
         margin: 2% auto;
     }
     .contact_wrap,

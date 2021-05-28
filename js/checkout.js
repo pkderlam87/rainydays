@@ -28,8 +28,28 @@ const cardName = document.querySelector("#cardName");
 const cardNameError = document.querySelector("#cardNameError");
 const phone = document.querySelector("#phone");
 const done = document.querySelector("button");
-
-//error message for name problem 
+const myProduct = document.querySelector("#myProduct");
+const myTotal = document.querySelector(".myTotal");
+const edit = document.querySelector("#edit");
+//--------------------------Product buy
+const cartItems = JSON.parse(localStorage.getItem("cartList"));
+let total = 0;
+cartItems.forEach(function (cartElement) {
+    total += cartElement.productPrice;
+    myProduct.innerHTML +=
+        `<div class="cart-productChosen">
+    <figure class = "checkout-modal_photo">${cartElement.productPhoto}</figure>
+    <h5 class="cart-item">${cartElement.productType}</h5>
+    <h5 class="cart-item">Price: ${cartElement.productPrice},-</h5>
+    <h5 class="cart-item">Size: ${cartElement.sizeChoice}</h5>
+    <h5 class="cart-item">Color: ${cartElement.color}</h5></div>`;
+});
+myTotal.innerHTML = `Total: ${total}`;
+//--------------Edit
+edit.onclick = function () {
+    window.history.back();
+}
+//------------Form - error message for name problem 
 function validateName() {
     event.preventDefault();
     if (checkLength(myname.value, 1) === true) {

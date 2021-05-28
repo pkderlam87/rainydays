@@ -49,7 +49,6 @@ details(id);
 //----------------Cart
 let cartArray = [];
 let total = 0;
-let cartArrayAll = [];
 function submitForm(event) {
     event.preventDefault();
     for (let i = 0; i < radios.length; i++) {
@@ -63,7 +62,6 @@ function submitForm(event) {
                     productPhoto: productsStok[id].photo,
                 }
             );
-            //total += (cartArray[i].productPrice);
         }
     }
     saveData(cartArray);
@@ -88,12 +86,18 @@ function showCart() {
     }
 };
 function showTotal() {
-    //if (total === 0) {
-    //    messageError.innerHTML = createMessage("Error", `<i class="fas fa-exclamation-triangle"></i> Please select one option of size and color! <i class="fas fa-exclamation-triangle"></i>`);
-    //cartList.style.display = "none";
-    //}
-    totalContainer.innerHTML = `Total: ${total}`;
+    totalContainer.innerHTML = "";
+    let total = 0;
+    for (let i = 0; i < cartArray.length; i++) {
+        total += (cartArray[i].productPrice);
+        totalContainer.innerHTML = `Total: ${total}`;
+    }
 }
 function saveData() {
     localStorage.setItem("cartList", JSON.stringify(cartArray));
 }
+/*if (cartArray.length === 0) {
+    messageError.innerHTML = createMessage("Error", `<i class="fas fa-exclamation-triangle"></i> Please select one option of size and color! <i class="fas fa-exclamation-triangle"></i>`);
+    cartList.style.display = "none";
+}
+totalContainer.innerHTML = `Total: ${total}`;*/
