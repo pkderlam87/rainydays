@@ -5,32 +5,7 @@
     background-size: cover;
     background-position-x: -10%;
 }
-/*Checkout empty*/
-.checkout-empty_text{
-    padding-bottom: 80%;
-}
-@media (min-width:320px) and (max-width:499){
-    .checkout_wrap{
-        max-width: 300px;
-        margin: 0 auto;
-    }
-}
 
-@media (min-width:500px){
-    .checkout-empty_text{
-        padding-bottom: 60%;
-    }
-}
-@media (min-width:600px){
-    .checkout-empty_text{
-        padding-bottom: 50%;
-    }
-}
-@media (min-width:700px){
-    .checkout-empty_text{
-        padding-bottom: 20%;
-    }
-}
 /*Checkout-full*/
 .progression_bar{
     max-width: 320px;
@@ -149,8 +124,7 @@ input[type="number"] {
     overflow: hidden;
     padding: 0;
     width: 230px;
-    position: relative;
-    left: 30%;
+
 }
 .payment_wrap p,
 .payment_wrap h4{
@@ -202,4 +176,28 @@ input[type="number"] {
         max-width: 600px;
         margin: 0 auto;
         }
+}
+/*Checkout empty*/
+.checkout-empty_text{
+    padding-bottom: 80%;
+}
+@media (min-width:320px) and (max-width:599){
+    .checkout_wrap{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+@media (min-width:600px) and (max-width:699px){
+    .checkout-empty_text{
+        padding-bottom: 50%;
+    }
+}
+@media (min-width:700px){
+    .checkout-empty_text{
+        padding-bottom: 20%;
+    }
+    .payment_wrap{
+    position: relative;
+    left: 30%;
+    }
 }
