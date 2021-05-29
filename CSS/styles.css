@@ -196,11 +196,15 @@ li{
 .logo{
     max-width: 50%;
 }
+.search_shopping{
+    max-width: 292px;
+}
 footer{
     display: block;
 }
 #search{
     margin-top: 2%;
+    max-height: 64%;
 }
 .productsCards{
     border: 2px solid #595452;

@@ -9,6 +9,13 @@
 .checkout-empty_text{
     padding-bottom: 80%;
 }
+@media (min-width:320px) and (max-width:499){
+    .checkout_wrap{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width:500px){
     .checkout-empty_text{
         padding-bottom: 60%;
